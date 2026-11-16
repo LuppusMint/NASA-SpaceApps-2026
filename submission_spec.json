@@ -1,0 +1,31 @@
+{
+  "required_columns": [
+    "record_id",
+    "iso_a3",
+    "country_name",
+    "year_month",
+    "year",
+    "month",
+    "harmonized_srehi",
+    "harmonized_frp_mw",
+    "raw_srehi",
+    "raw_frp_mw",
+    "clean_det_count",
+    "raw_all_det_count",
+    "data_maturity",
+    "constellation_regime"
+  ],
+  "exact_columns": true,
+  "row_count": 4014,
+  "id_column": "record_id",
+  "value_columns": [
+    "harmonized_srehi",
+    "harmonized_frp_mw",
+    "raw_srehi",
+    "raw_frp_mw",
+    "clean_det_count",
+    "raw_all_det_count"
+  ],
+  "min": 0.0,
+  "allow_nan": false
+}

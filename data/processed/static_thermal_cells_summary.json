@@ -1,0 +1,17 @@
+{
+  "generated_at_utc": "2026-11-15T06:18:05.892437+00:00",
+  "parquet_glob": "data/parquet/south_america_hotspots/year=*/data_*.parquet",
+  "out_parquet": "data/processed/static_thermal_cells.parquet",
+  "min_active_months": 48,
+  "min_active_years": 5,
+  "min_months_per_year": 9.0,
+  "min_type12_count": 5,
+  "min_type_12_ratio": 0.5,
+  "n_cells_observed": 145311,
+  "static_cell_count": 358,
+  "n_static_cells": 358,
+  "static_det_count": 2872511,
+  "n_static_rows": 2872511,
+  "n_persistent_temporal": 153,
+  "n_type_12_dominant": 304
+}

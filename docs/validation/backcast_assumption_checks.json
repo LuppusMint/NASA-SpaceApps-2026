@@ -1,0 +1,364 @@
+{
+  "schema": "backcast_assumption_checks_v1",
+  "generated_at": "2026-11-16T02:55:08.266021+00:00",
+  "inputs": {
+    "data/processed/overlap_cell50km_2012_2020.parquet": "ff927d7b27a7124d44cfcb776bb26ae26b13f24cc7c4ed1b786feb3db02ee0d6",
+    "data/processed/harmonized_south_america_monthly.parquet": "4dd429bfa99fca396fdfa39a14f5b9f1eb635deeadadf985cd4407d3b91aa85f",
+    "data/processed/benchmarks_m0_m3.json": "5c0ba9d0baf522d8268d5422dd27b49d285f45500aa93a4327d7a2e8fc599f3a"
+  },
+  "ratio_drift_2012_2020": {
+    "by_regime": {
+      "TERRA_AQUA": {
+        "srehi": {
+          "annual_ratio": {
+            "2012": 2.4066350148738453,
+            "2013": 2.5926534857134116,
+            "2014": 2.5597331543948223,
+            "2015": 2.4479534273436885,
+            "2016": 2.438701027856398,
+            "2017": 2.279874411115393,
+            "2018": 2.5637538409407705,
+            "2019": 2.3494488471164905,
+            "2020": 2.3964829174119324
+          },
+          "coefficient_of_variation_pct": 4.313718625050947,
+          "trend_pct_per_year": -0.7290158516527145,
+          "trend_pct_per_year_ci95": [
+            -2.39278218580834,
+            1.0596249482814235
+          ],
+          "ci_excludes_zero": false,
+          "implied_ratio_change_at_2006_pct": 7.591193738349666,
+          "implied_ratio_change_at_2006_pct_ci95": [
+            -10.004005922724435,
+            27.40329533812076
+          ]
+        },
+        "frp_mw": {
+          "annual_ratio": {
+            "2012": 0.8546477859960384,
+            "2013": 0.9129068655546051,
+            "2014": 0.8968559157485526,
+            "2015": 0.8756949770916176,
+            "2016": 0.876443782270439,
+            "2017": 0.8046628589529766,
+            "2018": 0.9222995174044525,
+            "2019": 0.8281260043462171,
+            "2020": 0.8729464815496911
+          },
+          "coefficient_of_variation_pct": 4.371482219480596,
+          "trend_pct_per_year": -0.44933446661210574,
+          "trend_pct_per_year_ci95": [
+            -1.8724883537177495,
+            1.27777109956686
+          ],
+          "ci_excludes_zero": false,
+          "implied_ratio_change_at_2006_pct": 4.606415856270152,
+          "implied_ratio_change_at_2006_pct_ci95": [
+            -11.923783392930776,
+            20.807011274320075
+          ]
+        }
+      },
+      "TERRA_ONLY": {
+        "srehi": {
+          "annual_ratio": {
+            "2012": 6.26700481206919,
+            "2013": 6.9079758351246445,
+            "2014": 6.610768285638312,
+            "2015": 6.0419425255992305,
+            "2016": 6.391508043376066,
+            "2017": 5.7542732626086694,
+            "2018": 6.808450589005235,
+            "2019": 5.904286689618106,
+            "2020": 5.92364265366727
+          },
+          "coefficient_of_variation_pct": 6.641078113174001,
+          "trend_pct_per_year": -1.442288318029561,
+          "trend_pct_per_year_ci95": [
+            -2.608430267347228,
+            0.9716507655274986
+          ],
+          "ci_excludes_zero": false,
+          "implied_ratio_change_at_2006_pct": 15.63621963856825,
+          "implied_ratio_change_at_2006_pct_ci95": [
+            -9.21681090415123,
+            30.25258245827922
+          ]
+        },
+        "frp_mw": {
+          "annual_ratio": {
+            "2012": 2.754090762105869,
+            "2013": 2.911272908693871,
+            "2014": 2.8766055194329403,
+            "2015": 2.793146798801503,
+            "2016": 2.8615711858448454,
+            "2017": 2.4724486721054335,
+            "2018": 3.0293910147178966,
+            "2019": 2.6892541734691275,
+            "2020": 2.7161324698678206
+          },
+          "coefficient_of_variation_pct": 5.7021433156414,
+          "trend_pct_per_year": -0.5649893840420361,
+          "trend_pct_per_year_ci95": [
+            -2.049778774264055,
+            1.6005784936371725
+          ],
+          "ci_excludes_zero": false,
+          "implied_ratio_change_at_2006_pct": 5.829502761123795,
+          "implied_ratio_change_at_2006_pct_ci95": [
+            -14.682485963847803,
+            23.011520847273136
+          ]
+        }
+      }
+    },
+    "by_country_terra_aqua": {
+      "Brazil": {
+        "annual_ratio": {
+          "2012": 2.318704842170077,
+          "2013": 2.6066813275622245,
+          "2014": 2.4418575041524155,
+          "2015": 2.332925638160268,
+          "2016": 2.3554812564428422,
+          "2017": 2.2224159207098504,
+          "2018": 2.5074054981495872,
+          "2019": 2.22623236727366,
+          "2020": 2.284969578901512
+        },
+        "coefficient_of_variation_pct": 5.466017789051067,
+        "trend_pct_per_year": -0.8091412177899215,
+        "trend_pct_per_year_ci95": [
+          -3.0900563826903427,
+          0.9295555839796243
+        ],
+        "ci_excludes_zero": false,
+        "implied_ratio_change_at_2006_pct": 8.463470530055961,
+        "implied_ratio_change_at_2006_pct_ci95": [
+          -8.83746560881371,
+          36.8726233069864
+        ]
+      },
+      "Venezuela": {
+        "annual_ratio": {
+          "2012": 3.057916666666667,
+          "2013": 3.0022474353862325,
+          "2014": 3.1301483868682936,
+          "2015": 3.249028732442471,
+          "2016": 3.2994258612081877,
+          "2017": 2.974843681838011,
+          "2018": 2.9622969449829535,
+          "2019": 3.0000586097761106,
+          "2020": 3.008866099168961
+        },
+        "coefficient_of_variation_pct": 4.014398050142278,
+        "trend_pct_per_year": -0.24827394448786455,
+        "trend_pct_per_year_ci95": [
+          -1.6819911396136478,
+          1.2747427248004817
+        ],
+        "ci_excludes_zero": false,
+        "implied_ratio_change_at_2006_pct": 2.516980832909632,
+        "implied_ratio_change_at_2006_pct_ci95": [
+          -11.897442799128,
+          18.48660445078478
+        ]
+      },
+      "Argentina": {
+        "annual_ratio": {
+          "2012": 2.1161328067866023,
+          "2013": 2.08826743812279,
+          "2014": 2.140372955039469,
+          "2015": 2.1724957107034446,
+          "2016": 2.002700270027003,
+          "2017": 1.9457244699224636,
+          "2018": 2.238100951923846,
+          "2019": 2.1621869673528256,
+          "2020": 2.0939656834393676
+        },
+        "coefficient_of_variation_pct": 4.216684343724984,
+        "trend_pct_per_year": 0.12093823211900556,
+        "trend_pct_per_year_ci95": [
+          -1.7519801702020055,
+          1.3955069827038757
+        ],
+        "ci_excludes_zero": false,
+        "implied_ratio_change_at_2006_pct": -1.2013767526448227,
+        "implied_ratio_change_at_2006_pct_ci95": [
+          -12.941157338016362,
+          19.33337948129068
+        ]
+      },
+      "Bolivia": {
+        "annual_ratio": {
+          "2012": 2.261065850241295,
+          "2013": 2.4331641285956005,
+          "2014": 2.311895645402038,
+          "2015": 2.148858542687376,
+          "2016": 2.0473908742426117,
+          "2017": 1.9823967003019813,
+          "2018": 2.093493108666312,
+          "2019": 1.9783575775770312,
+          "2020": 2.1259620096273024
+        },
+        "coefficient_of_variation_pct": 7.164578254302531,
+        "trend_pct_per_year": -1.9776139082188227,
+        "trend_pct_per_year_ci95": [
+          -4.72193336271769,
+          -0.10192667909920683
+        ],
+        "ci_excludes_zero": true,
+        "implied_ratio_change_at_2006_pct": 22.108894555277224,
+        "implied_ratio_change_at_2006_pct_ci95": [
+          1.0250041410015287,
+          62.207391554169476
+        ]
+      },
+      "Paraguay": {
+        "annual_ratio": {
+          "2012": 2.182445567651633,
+          "2013": 2.0574333800841513,
+          "2014": 2.1723958333333333,
+          "2015": 2.030328559393429,
+          "2016": 2.0720107042938816,
+          "2017": 1.9754181544822402,
+          "2018": 2.1869835268701054,
+          "2019": 2.066589392062033,
+          "2020": 2.04072675308768
+        },
+        "coefficient_of_variation_pct": 3.6219602872686827,
+        "trend_pct_per_year": -0.5203511938527194,
+        "trend_pct_per_year_ci95": [
+          -1.9735841024621892,
+          0.4435301932188329
+        ],
+        "ci_excludes_zero": false,
+        "implied_ratio_change_at_2006_pct": 5.355585730249568,
+        "implied_ratio_change_at_2006_pct_ci95": [
+          -4.328998653203431,
+          22.05870562389474
+        ]
+      },
+      "Colombia": {
+        "annual_ratio": {
+          "2012": 3.1715087338220656,
+          "2013": 3.106191369606004,
+          "2014": 3.0558206706015323,
+          "2015": 3.2517746228926354,
+          "2016": 3.0090697389385954,
+          "2017": 3.013842520967348,
+          "2018": 2.89540059347181,
+          "2019": 2.9981032665964173,
+          "2020": 2.8856440895639066
+        },
+        "coefficient_of_variation_pct": 3.9369583069788425,
+        "trend_pct_per_year": -1.0499542085744218,
+        "trend_pct_per_year_ci95": [
+          -1.9069579675913717,
+          -0.3806406049954969
+        ],
+        "ci_excludes_zero": true,
+        "implied_ratio_change_at_2006_pct": 11.132223783892492,
+        "implied_ratio_change_at_2006_pct_ci95": [
+          3.887322519084613,
+          21.23219555543592
+        ]
+      }
+    }
+  },
+  "relay_steps_vs_natural_variability": {
+    "window_months": 12,
+    "srehi": {
+      "n_clean_start_months": 172,
+      "natural_abs_step_as_ratio": {
+        "p50": 1.173367217103968,
+        "p75": 1.2683566509839421,
+        "p90": 1.3750358143580639,
+        "p95": 1.4839720654953465
+      },
+      "relay_steps": {
+        "2002": {
+          "raw_ratio": 3.414375,
+          "harmonized_ratio": 1.5230494340016834,
+          "harmonized_percentile_in_natural": 95.34883720930233,
+          "raw_percentile_in_natural": 100.0,
+          "harmonized_within_natural_p90": false
+        },
+        "2012": {
+          "raw_ratio": 3.9383066161879166,
+          "harmonized_ratio": 1.1772473120257274,
+          "harmonized_percentile_in_natural": 51.162790697674424,
+          "raw_percentile_in_natural": 100.0,
+          "harmonized_within_natural_p90": true
+        },
+        "2018": {
+          "raw_ratio": 1.4070681375236271,
+          "harmonized_ratio": 0.8363182439244651,
+          "harmonized_percentile_in_natural": 55.23255813953488,
+          "raw_percentile_in_natural": 91.27906976744185,
+          "harmonized_within_natural_p90": true
+        },
+        "2021": {
+          "raw_ratio": 0.737898800271738,
+          "harmonized_ratio": 0.7541437249364626,
+          "harmonized_percentile_in_natural": 82.55813953488372,
+          "raw_percentile_in_natural": 88.37209302325581,
+          "harmonized_within_natural_p90": true
+        },
+        "2023": {
+          "raw_ratio": 1.374866398337578,
+          "harmonized_ratio": 1.0004508682943554,
+          "harmonized_percentile_in_natural": 0.0,
+          "raw_percentile_in_natural": 89.53488372093024,
+          "harmonized_within_natural_p90": true
+        }
+      }
+    },
+    "frp_mw": {
+      "n_clean_start_months": 172,
+      "natural_abs_step_as_ratio": {
+        "p50": 1.3218001650761233,
+        "p75": 1.5533623237047087,
+        "p90": 1.8946991862692426,
+        "p95": 2.38095742697595
+      },
+      "relay_steps": {
+        "2002": {
+          "raw_ratio": 5.021170225955947,
+          "harmonized_ratio": 1.6040296473199347,
+          "harmonized_percentile_in_natural": 79.06976744186046,
+          "raw_percentile_in_natural": 100.0,
+          "harmonized_within_natural_p90": true
+        },
+        "2012": {
+          "raw_ratio": 2.257625670304491,
+          "harmonized_ratio": 1.1858516934701353,
+          "harmonized_percentile_in_natural": 34.883720930232556,
+          "raw_percentile_in_natural": 93.6046511627907,
+          "harmonized_within_natural_p90": true
+        },
+        "2018": {
+          "raw_ratio": 0.9785701014797347,
+          "harmonized_ratio": 0.7024569189755325,
+          "harmonized_percentile_in_natural": 63.95348837209303,
+          "raw_percentile_in_natural": 4.651162790697675,
+          "harmonized_within_natural_p90": true
+        },
+        "2021": {
+          "raw_ratio": 0.7287345748132876,
+          "harmonized_ratio": 0.7415100334211826,
+          "harmonized_percentile_in_natural": 56.395348837209305,
+          "raw_percentile_in_natural": 59.30232558139535,
+          "harmonized_within_natural_p90": true
+        },
+        "2023": {
+          "raw_ratio": 1.1786851016297468,
+          "harmonized_ratio": 0.9189535103601514,
+          "harmonized_percentile_in_natural": 18.023255813953487,
+          "raw_percentile_in_natural": 34.30232558139535,
+          "harmonized_within_natural_p90": true
+        }
+      }
+    }
+  }
+}

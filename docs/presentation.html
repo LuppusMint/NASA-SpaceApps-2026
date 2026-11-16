@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fire Relay South America — KernelCrew (NASA Space Apps Challenge 2026)</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+
+  :root {
+    --ink: #111827;
+    --ink-soft: #334155;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --line-strong: #cbd5e1;
+    --paper: #fcfbf8;
+    --surface: #ffffff;
+    --subtle: #f4f2ec;
+    --accent: #b45309;
+    --fire: #b91c1c;
+    --teal: #0f766e;
+    --teal-soft: #ecfdf5;
+    --navy: #0f172a;
+    --blue: #1d4ed8;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #e5e7eb; }
+
+  body {
+    color: var(--ink);
+    font-family: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .slide {
+    position: relative;
+    width: 13.333in;
+    height: 7.5in;
+    padding: 0.44in 0.54in 0.36in;
+    margin: 18px auto;
+    overflow: hidden;
+    background: var(--paper);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .slide:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+    margin-bottom: 0;
+  }
+
+  @media print {
+    html, body { background: var(--paper); }
+    .slide {
+      margin: 0 !important;
+      padding: 0.38in 0.50in 0.30in;
+      height: 7.49in;
+      width: 13.333in;
+      box-shadow: none;
+    }
+  }
+
+  /* Cover Slide (Editorial Clean Light Layout) */
+  #slide-1 {
+    background: var(--paper);
+    border-top: 6px solid var(--fire);
+  }
+
+  .cover-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line-strong);
+    padding-bottom: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 0.48in;
+    align-items: center;
+    margin: auto 0;
+  }
+
+  .cover-eyebrow {
+    display: inline-block;
+    color: var(--fire);
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  #slide-1 h1 {
+    margin: 0 0 14px;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 46px;
+    line-height: 1.06;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .cover-lead {
+    margin: 0 0 22px;
+    font-size: 16.5px;
+    line-height: 1.48;
+    color: var(--ink-soft);
+    max-width: 95%;
+  }
+
+  .cover-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    border-top: 1px solid var(--line-strong);
+    border-bottom: 1px solid var(--line-strong);
+    padding: 14px 0;
+  }
+
+  .cm-val {
+    font-size: 18.5px;
+    font-weight: 800;
+    color: var(--navy);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    line-height: 1.1;
+  }
+
+  .cm-lbl {
+    margin-top: 4px;
+    font-size: 10.5px;
+    color: var(--muted);
+    line-height: 1.28;
+  }
+
+  .cover-meta {
+    margin-top: 18px;
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+
+  .cover-meta strong { color: var(--navy); }
+
+  .cover-figure {
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    padding: 16px 18px 12px;
+  }
+
+  .fig-caption {
+    font-size: 10.5px;
+    color: var(--muted);
+    margin-top: 6px;
+    line-height: 1.35;
+  }
+
+  .cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding-top: 9px;
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* Shared Inner Slide Header & Footer */
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1.5px solid var(--navy);
+    padding-bottom: 9px;
+    margin-bottom: 14px;
+  }
+
+  .kicker {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fire);
+    margin-bottom: 3px;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size: 25px;
+    line-height: 1.12;
+    color: var(--navy);
+    font-weight: 700;
+  }
+
+  .page-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--line);
+    padding-top: 7px;
+    font-size: 9.5px;
+    color: var(--muted);
+  }
+
+  /* Editorial Blocks & Tables */
+  .cols-2 {
+    display: grid;
+    grid-template-columns: 0.39fr 0.61fr;
+    gap: 26px;
+    align-items: start;
+    flex: 1;
+  }
+
+  .cols-equal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    flex: 1;
+    align-items: stretch;
+  }
+
+  .panel {
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    padding: 14px 16px;
+  }
+
+  .panel h3 {
+    margin: 0 0 8px;
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--navy);
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 6px;
+  }
+
+  .panel p, .panel li {
+    margin: 0;
+    font-size: 11.4px;
+    line-height: 1.46;
+    color: var(--ink-soft);
+  }
+
+  .panel ul {
+    margin: 0;
+    padding-left: 16px;
+  }
+
+  .panel li + li { margin-top: 6px; }
+
+  .num-item {
+    border-top: 1px solid var(--line-strong);
+    padding: 10px 0;
+  }
+  .num-item:last-child { border-bottom: 1px solid var(--line-strong); }
+
+  .num-tag {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--fire);
+    margin-bottom: 3px;
+  }
+
+  .num-item p {
+    margin: 0;
+    font-size: 11.6px;
+    line-height: 1.44;
+    color: var(--ink-soft);
+  }
+
+  .note-bar {
+    background: var(--subtle);
+    border-left: 3px solid var(--navy);
+    padding: 9px 13px;
+    font-size: 11.2px;
+    line-height: 1.42;
+    color: var(--ink);
+  }
+
+  .mono {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    font-size: 0.91em;
+    color: var(--navy);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  th {
+    text-align: left;
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    border-bottom: 1.5px solid var(--navy);
+    padding: 5px 8px;
+  }
+
+  td {
+    padding: 5.5px 8px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-soft);
+  }
+
+  th.num, td.num { text-align: right; }
+
+  .kpi-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .kpi {
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    padding: 10px 12px;
+  }
+
+  .kpi .v {
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--navy);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .kpi .k {
+    margin-top: 3px;
+    font-size: 10px;
+    color: var(--muted);
+    line-height: 1.25;
+  }
+
+  .trend-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .trend-row:last-child { border-bottom: none; }
+  .trend-name { font-size: 12.2px; font-weight: 700; color: var(--navy); }
+  .trend-meta { font-size: 10px; color: var(--muted); margin-top: 1px; }
+  .trend-val { font-size: 15px; font-weight: 800; color: var(--fire); font-variant-numeric: tabular-nums; text-align: right; }
+  .trend-val span { display: block; font-size: 9.5px; font-weight: 600; color: var(--muted); }
+
+  .anom-strip {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .anom {
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    padding: 7px 9px;
+  }
+  .anom .dt { font-size: 9.5px; font-weight: 700; color: var(--fire); }
+  .anom .pl { font-size: 11px; font-weight: 700; color: var(--navy); margin-top: 1px; }
+  .anom .zz { font-size: 10px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+  .module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  .mod-row {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    gap: 10px;
+    align-items: start;
+    background: var(--surface);
+    border: 1px solid var(--line-strong);
+    padding: 8px 11px;
+  }
+  .mod-id {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--teal);
+    padding-top: 1px;
+  }
+  .mod-title { font-size: 11.8px; font-weight: 700; color: var(--navy); }
+  .mod-desc { font-size: 10.4px; color: var(--ink-soft); margin-top: 2px; line-height: 1.35; }
+
+  .url-box {
+    background: var(--navy);
+    color: #f8fafc;
+    padding: 10px 14px;
+    font-size: 11px;
+    line-height: 1.45;
+  }
+  .url-box code {
+    font-family: "JetBrains Mono", "Consolas", monospace;
+    color: #5eead4;
+    font-size: 10.8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1: COVER -->
+<section class="slide" id="slide-1">
+  <div class="cover-bar">
+    <span>NASA Space Apps Challenge 2026 &nbsp;·&nbsp; Earth Observation</span>
+    <span>Team KernelCrew &nbsp;·&nbsp; South America (2000–2026)</span>
+  </div>
+
+  <div class="cover-grid">
+    <div>
+      <span class="cover-eyebrow">Harmonization of MODIS and VIIRS Active Fire Hot Spots</span>
+      <h1>Fire Relay South America</h1>
+      <p class="cover-lead">
+        Five satellite instruments observe fire through different lenses. We built a calibrated,
+        leakage-free monthly burning calendar across <strong>26 years</strong> of NASA FIRMS
+        observations so instrument transitions are never mistaken for environmental trends.
+      </p>
+
+      <div class="cover-metrics">
+        <div>
+          <div class="cm-val">85.0M → 75.6M</div>
+          <div class="cm-lbl">Raw FIRMS detections cleaned to vegetation fires</div>
+        </div>
+        <div>
+          <div class="cm-val">14 / 243</div>
+          <div class="cm-lbl">Countries &amp; Admin-1 regions, 313 months</div>
+        </div>
+        <div>
+          <div class="cm-val">0.35 → 0.82</div>
+          <div class="cm-lbl">Cross-sensor R² gain with exact hierarchy</div>
+        </div>
+        <div>
+          <div class="cm-val">−92.8%</div>
+          <div class="cm-lbl">Artificial step jumps at sensor boundaries</div>
+        </div>
+      </div>
+
+      <div class="cover-meta">
+        <div><strong>Authors:</strong> Manuel Guerrero &amp; Jessica Garay (Team KernelCrew)</div>
+        <div><strong>Live Observatory:</strong> <span class="mono">fire-relay-south-america-946659834930.us-central1.run.app</span></div>
+        <div><strong>Repository &amp; Data:</strong> <span class="mono">github.com/LuppusMint/NASA-SpaceApps-2026</span></div>
+      </div>
+    </div>
+
+    <div class="cover-figure">
+      <svg viewBox="0 0 540 345" role="img" aria-label="Conceptual comparison showing how raw sensor additions create artificial upward jumps whereas M3 harmonization produces a continuous record">
+        <rect x="0" y="0" width="540" height="345" fill="#ffffff"/>
+        <text x="16" y="24" fill="#111827" font-size="13" font-weight="700">Why multi-sensor fire records break without calibration</text>
+        <text x="16" y="40" fill="#64748b" font-size="10">South America monthly fire signal across constellation changes (2000–2026)</text>
+
+        <!-- Axes -->
+        <line x1="48" y1="278" x2="514" y2="278" stroke="#94a3b8" stroke-width="1.2"/>
+        <line x1="48" y1="68" x2="48" y2="278" stroke="#94a3b8" stroke-width="1.2"/>
+
+        <!-- Transition dashed verticals -->
+        <g stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3">
+          <line x1="94" y1="68" x2="94" y2="278"/>
+          <line x1="258" y1="68" x2="258" y2="278"/>
+          <line x1="356" y1="68" x2="356" y2="278"/>
+          <line x1="438" y1="68" x2="438" y2="278"/>
+        </g>
+
+        <!-- Regime labels -->
+        <g fill="#64748b" font-size="9" text-anchor="middle" font-weight="600">
+          <text x="94" y="294">2002</text>
+          <text x="94" y="305" font-size="8">+Aqua</text>
+          <text x="258" y="294">2012</text>
+          <text x="258" y="305" font-size="8">+VIIRS S-NPP</text>
+          <text x="356" y="294">2018</text>
+          <text x="356" y="305" font-size="8">+NOAA-20</text>
+          <text x="438" y="294">2023</text>
+          <text x="438" y="305" font-size="8">+NOAA-21</text>
+        </g>
+
+        <!-- Shaded frozen overlap window -->
+        <rect x="258" y="68" width="144" height="210" fill="#ecfdf5" opacity="0.75"/>
+        <text x="330" y="82" fill="#0f766e" font-size="9.2" font-weight="700" text-anchor="middle">Frozen 2012–2020 Overlap</text>
+        <text x="330" y="94" fill="#0f766e" font-size="8.2" text-anchor="middle">930,100 calibration rows</text>
+
+        <!-- Unharmonized raw step curve (red) -->
+        <polyline fill="none" stroke="#b91c1c" stroke-width="2.4"
+          points="56,248 90,244 98,216 140,210 185,214 254,212 262,140 315,134 352,138 360,104 434,100 442,84 506,82"/>
+
+        <!-- Harmonized continuous curve (teal) -->
+        <polyline fill="none" stroke="#0f766e" stroke-width="2.8"
+          points="56,204 94,198 140,192 185,198 258,195 315,188 356,192 402,184 438,186 506,181"/>
+
+        <!-- Legend -->
+        <rect x="64" y="76" width="168" height="44" fill="#ffffff" stroke="#e2e8f0"/>
+        <line x1="74" y1="91" x2="98" y2="91" stroke="#b91c1c" stroke-width="2.5"/>
+        <text x="104" y="94" fill="#111827" font-size="9.5" font-weight="600">Raw unharmonized sum</text>
+        <line x1="74" y1="108" x2="98" y2="108" stroke="#0f766e" stroke-width="2.8"/>
+        <text x="104" y="111" fill="#111827" font-size="9.5" font-weight="600">M3 harmonized signal</text>
+
+        <!-- Vertical Y label -->
+        <text x="18" y="180" fill="#64748b" font-size="9" transform="rotate(-90 18 180)" text-anchor="middle">Relative Detection Exposure</text>
+      </svg>
+      <div class="fig-caption">
+        Schematic of the constellation relay effect: raw counts jump sharply as 375 m VIIRS sensors join 1 km MODIS.
+        Our model learns the cross-sensor bridge strictly inside the 2012–2020 pre-drift overlap.
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-footer">
+    <span>Data: NASA FIRMS Archive &amp; NRT (MODIS C6.1, VIIRS S-NPP, NOAA-20/J1, NOAA-21/J2) · Boundaries: Natural Earth CC0</span>
+    <span>Independent submission · No NASA logo or endorsement implied · Not for tactical firefighting</span>
+  </div>
+</section>
+
+<!-- SLIDE 2: THE RELAY PROBLEM -->
+<section class="slide" id="slide-2">
+  <div class="head">
+    <div>
+      <span class="kicker">01 · Problem &amp; Physical Context</span>
+      <h2>Why adding MODIS and VIIRS detections creates artificial fire trends</h2>
+    </div>
+    <span class="page-num">02 / 07</span>
+  </div>
+
+  <div class="cols-2">
+    <div>
+      <div class="num-item">
+        <div class="num-tag">1. Different Pixel Footprints</div>
+        <p>MODIS observes at <strong>1 km</strong> nadir, whereas VIIRS resolves down to <strong>375 m</strong>. A single flaming front can trigger one MODIS pixel or several VIIRS detections, multiplying raw counts without extra fire on the ground.</p>
+      </div>
+      <div class="num-item">
+        <div class="num-tag">2. Five Constellation Transitions</div>
+        <p>Between 2000 and 2026 the fleet shifts through Terra-only, Terra+Aqua (<strong>2002</strong>), VIIRS S-NPP overlap (<strong>2012</strong>), NOAA-20 (<strong>2018</strong>), post-2021 MODIS orbital drift (<strong>2021</strong>), and NOAA-21 (<strong>2023</strong>).</p>
+      </div>
+      <div class="num-item">
+        <div class="num-tag">3. Non-Fire Contamination</div>
+        <p>Gas flares, smelters, volcanoes, and nocturnal particle artifacts inside the <strong>South Atlantic Magnetic Anomaly (SAMA)</strong> skew regional totals unless filtered systematically before modeling.</p>
+      </div>
+      <div class="note-bar" style="margin-top: 12px;">
+        <strong>Core principle:</strong> Harmonize exposure on a frozen 200 km spatial split inside the 2012–2020 pre-drift overlap before running any trend or anomaly test.
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3>Active satellite timelines and the frozen 2012–2020 calibration window</h3>
+      <svg viewBox="0 0 680 355" role="img" aria-label="Satellite active windows for MODIS Terra, MODIS Aqua, VIIRS S-NPP, NOAA-20, and NOAA-21 from 2000 to 2026">
+        <rect x="0" y="0" width="680" height="355" fill="#ffffff"/>
+        <!-- Frozen calibration highlight -->
+        <rect x="308" y="30" width="166" height="232" fill="#ecfdf5"/>
+        <text x="391" y="44" fill="#0f766e" font-size="9.5" font-weight="700" text-anchor="middle">Calibration Window (2012-02 – 2020-12)</text>
+
+        <!-- Boundary lines -->
+        <g stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3">
+          <line x1="126" y1="30" x2="126" y2="262"/>
+          <line x1="308" y1="30" x2="308" y2="262"/>
+          <line x1="422" y1="30" x2="422" y2="262"/>
+          <line x1="474" y1="30" x2="474" y2="262"/>
+          <line x1="518" y1="30" x2="518" y2="262"/>
+        </g>
+
+        <g fill="#b91c1c" font-size="9.5" font-weight="700" text-anchor="middle">
+          <text x="126" y="22">2002</text>
+          <text x="308" y="22">2012</text>
+          <text x="422" y="22">2018</text>
+          <text x="474" y="22">2021</text>
+          <text x="518" y="22">2023</text>
+        </g>
+
+        <!-- Labels -->
+        <g fill="#111827" font-size="10.5" font-weight="700">
+          <text x="10" y="76">MODIS Terra</text>
+          <text x="10" y="116">MODIS Aqua</text>
+          <text x="10" y="156">VIIRS S-NPP</text>
+          <text x="10" y="196">VIIRS NOAA-20</text>
+          <text x="10" y="236">VIIRS NOAA-21</text>
+        </g>
+
+        <!-- Timeline Bars -->
+        <rect x="100" y="64" width="540" height="16" fill="#b91c1c"/>
+        <rect x="126" y="104" width="514" height="16" fill="#d97706"/>
+        <rect x="308" y="144" width="332" height="16" fill="#0f766e"/>
+        <rect x="422" y="184" width="218" height="16" fill="#1d4ed8"/>
+        <rect x="518" y="224" width="122" height="16" fill="#4f46e5"/>
+
+        <g fill="#475569" font-size="8.8">
+          <text x="106" y="93">1 km · 10:30 LT (post-2021 orbital drift)</text>
+          <text x="132" y="133">1 km · 13:30 LT</text>
+          <text x="314" y="173">375 m · baseline VIIRS</text>
+          <text x="428" y="213">375 m · afternoon overpass</text>
+          <text x="524" y="253">375 m · recent trio</text>
+        </g>
+
+        <!-- Bottom regimes -->
+        <text x="10" y="286" fill="#64748b" font-size="9" font-weight="700">REGIME</text>
+        <rect x="100" y="274" width="26" height="22" fill="#fee2e2" stroke="#fca5a5"/>
+        <rect x="126" y="274" width="182" height="22" fill="#fef3c7" stroke="#fcd34d"/>
+        <rect x="308" y="274" width="166" height="22" fill="#d1fae5" stroke="#6ee7b7"/>
+        <rect x="474" y="274" width="166" height="22" fill="#dbeafe" stroke="#93c5fd"/>
+        <g fill="#111827" font-size="8.5" font-weight="700" text-anchor="middle">
+          <text x="113" y="288">C0</text>
+          <text x="217" y="288">C1 · Terra + Aqua</text>
+          <text x="391" y="288">C2/C3 · MODIS + VIIRS</text>
+          <text x="557" y="288">C3/C4 · VIIRS Backbone</text>
+        </g>
+
+        <text x="10" y="324" fill="#334155" font-size="10">
+          SREHI (Sensor-Regime Exposure-Harmonized Index) consolidates co-located detections within ±30 min into
+        </text>
+        <text x="10" y="339" fill="#334155" font-size="10">
+          10 km equal-area overpass events before aggregating to 50 km cells, Admin-1 units, and countries.
+        </text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Fire Relay South America · Team KernelCrew</span>
+    <span>2000-11 to 2026-11 · EPSG:102033 Albers Equal-Area</span>
+  </div>
+</section>
+
+<!-- SLIDE 3: ARCHITECTURE & QUALITY CONTROL -->
+<section class="slide" id="slide-3">
+  <div class="head">
+    <div>
+      <span class="kicker">02 · Data Engineering &amp; Modeling Architecture</span>
+      <h2>End-to-end deterministic pipeline from 85M raw rows to harmonized calendars</h2>
+    </div>
+    <span class="page-num">03 / 07</span>
+  </div>
+
+  <div class="cols-3">
+    <div class="panel">
+      <h3>1. Quality Control &amp; Cubes</h3>
+      <ul>
+        <li>Processed <strong>85,002,288</strong> raw NASA FIRMS detections out-of-core in DuckDB + Parquet down to <strong>75,556,207</strong> clean vegetation fire detections.</li>
+        <li>Removed <strong>2,703,746</strong> non-vegetation triggers (<span class="mono">type IN (1,2,3)</span>: volcanoes, offshore, static sources).</li>
+        <li>Masked <strong>358</strong> persistent stationary 10 km cells (<strong>2,872,511</strong> chronic flares/industry rows; <strong>472,710</strong> clean-band hits isolated).</li>
+        <li>Repaired <strong>138</strong> negative FRP rows and <strong>39</strong> zero-brightness anomalies; clipped to Natural Earth 1:10m coastlines.</li>
+        <li>Intersected <strong>76,388,628</strong> rows with SAMA bounds (nominal+ filter already eliminates the low-confidence suspect band).</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>2. Leakage-Free Calibration (M0–M3)</h3>
+      <ul>
+        <li>Trained strictly on the pre-drift overlap (<strong>2012-02 to 2020-12</strong>): <strong>930,100</strong> rows across <strong>7,184</strong> 50 km cells.</li>
+        <li><strong>200 km</strong> spatial 5-fold cross-validation blocks eliminate spatial autocorrelation leakage across train/test boundaries.</li>
+        <li><strong>M1</strong> robust physical biweight bridge vs. <strong>M2</strong> Hurdle LightGBM (logistic occurrence + Tweedie severity with covariate-shift weights).</li>
+        <li><strong>M3</strong> simplex blend + 1D Kalman state relay + non-negative Minimum Trace (MinT) hierarchical reconciliation across all geographic levels.</li>
+        <li>Verified temporal hold-out check (fit 2016–2020, predict 2012–2015): Terra-only R² = <strong>0.808</strong>; Terra+Aqua R² = <strong>0.920</strong>.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>3. Statistical Calendar &amp; Delivery</h3>
+      <ul>
+        <li>Reference climatology frozen strictly to <strong>2001–2020</strong> so post-2021 extreme years never leak into baseline medians or percentiles.</li>
+        <li><strong>Trends:</strong> Theil–Sen slopes with Hamed–Rao AR(1)-corrected Mann–Kendall and Benjamini–Hochberg FDR control (<strong>q &lt; 0.05</strong>).</li>
+        <li><strong>Early onset:</strong> True trailing 90-day sum across year boundaries (<span class="mono">INSUFFICIENT_HISTORY</span> for the first 89 days; complete windows, n ≥ 10).</li>
+        <li><strong>Extremes screening:</strong> Annual block-maxima GEV via L-moments/PWM with 500 parametric bootstrap replicates (<strong>475/510</strong> series pass sanity filters).</li>
+        <li><strong>Web app:</strong> Offline-capable WSGI + DuckDB server, <strong>50/50</strong> tests passing, 1-click UTF-8 <span class="mono">submission.csv</span>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="kpi-strip">
+    <div class="kpi"><div class="v">313</div><div class="k">Consecutive months (2000-11 to 2026-11)</div></div>
+    <div class="kpi"><div class="v">143,613</div><div class="k">Historical active 10 km equal-area cells</div></div>
+    <div class="kpi"><div class="v">1.454B MW</div><div class="k">Integrated Fire Radiative Power conserved</div></div>
+    <div class="kpi"><div class="v">4,014 rows</div><div class="k">Deterministic country-month submission table</div></div>
+  </div>
+
+  <div class="foot">
+    <span>Fire Relay South America · Team KernelCrew</span>
+    <span>CPU-only out-of-core architecture · Reproducible via scripts and frozen spatial blocks</span>
+  </div>
+</section>
+
+<!-- SLIDE 4: QUANTITATIVE BENCHMARK -->
+<section class="slide" id="slide-4">
+  <div class="head">
+    <div>
+      <span class="kicker">03 · Quantitative Validation</span>
+      <h2>M3 reduces cross-sensor error and cuts transition jumps by 92.8%</h2>
+    </div>
+    <span class="page-num">04 / 07</span>
+  </div>
+
+  <div class="cols-equal">
+    <div class="panel">
+      <h3>SREHI Events · 5-Fold Out-of-Fold RMSE (lower is better)</h3>
+      <svg viewBox="0 0 540 205" role="img" aria-label="SREHI RMSE across M0 24.6227, M1 26.7017, M2 11.8025, M3 12.8838">
+        <rect x="0" y="0" width="540" height="205" fill="#ffffff"/>
+        <g stroke="#e2e8f0" stroke-width="1">
+          <line x1="48" y1="165" x2="520" y2="165"/>
+          <line x1="48" y1="125" x2="520" y2="125"/>
+          <line x1="48" y1="85" x2="520" y2="85"/>
+          <line x1="48" y1="45" x2="520" y2="45"/>
+        </g>
+        <g fill="#64748b" font-size="9" text-anchor="end">
+          <text x="40" y="168">0</text>
+          <text x="40" y="128">10</text>
+          <text x="40" y="88">20</text>
+          <text x="40" y="48">30</text>
+        </g>
+        <rect x="74" y="66.5" width="58" height="98.5" fill="#94a3b8"/>
+        <rect x="184" y="58.2" width="58" height="106.8" fill="#c2410c"/>
+        <rect x="294" y="117.8" width="58" height="47.2" fill="#0f766e"/>
+        <rect x="404" y="113.5" width="58" height="51.5" fill="#111827"/>
+        <g fill="#111827" font-size="10.5" font-weight="700" text-anchor="middle">
+          <text x="103" y="60">24.6227</text>
+          <text x="213" y="52">26.7017</text>
+          <text x="323" y="111">11.8025</text>
+          <text x="433" y="107">12.8838</text>
+        </g>
+        <g fill="#475569" font-size="9.5" text-anchor="middle">
+          <text x="103" y="182" font-weight="700">M0 Raw</text>
+          <text x="213" y="182" font-weight="700">M1 Bridge</text>
+          <text x="323" y="182" font-weight="700">M2 Hurdle</text>
+          <text x="433" y="182" font-weight="700">M3 Reconciled</text>
+          <text x="103" y="196">R² = 0.3533</text>
+          <text x="213" y="196">R² = 0.2374</text>
+          <text x="323" y="196">R² = 0.8512</text>
+          <text x="433" y="196">R² = 0.8171</text>
+        </g>
+      </svg>
+    </div>
+
+    <div class="panel">
+      <h3>FRP (MW) · 5-Fold Out-of-Fold RMSE (lower is better)</h3>
+      <svg viewBox="0 0 540 205" role="img" aria-label="FRP RMSE across M0 1377.59, M1 1385.01, M2 790.28, M3 833.96">
+        <rect x="0" y="0" width="540" height="205" fill="#ffffff"/>
+        <g stroke="#e2e8f0" stroke-width="1">
+          <line x1="48" y1="165" x2="520" y2="165"/>
+          <line x1="48" y1="125" x2="520" y2="125"/>
+          <line x1="48" y1="85" x2="520" y2="85"/>
+          <line x1="48" y1="45" x2="520" y2="45"/>
+        </g>
+        <g fill="#64748b" font-size="9" text-anchor="end">
+          <text x="40" y="168">0</text>
+          <text x="40" y="128">500</text>
+          <text x="40" y="88">1000</text>
+          <text x="40" y="48">1500</text>
+        </g>
+        <rect x="74" y="54.8" width="58" height="110.2" fill="#94a3b8"/>
+        <rect x="184" y="54.2" width="58" height="110.8" fill="#c2410c"/>
+        <rect x="294" y="101.8" width="58" height="63.2" fill="#0f766e"/>
+        <rect x="404" y="98.3" width="58" height="66.7" fill="#111827"/>
+        <g fill="#111827" font-size="10.5" font-weight="700" text-anchor="middle">
+          <text x="103" y="48">1377.59</text>
+          <text x="213" y="48">1385.01</text>
+          <text x="323" y="95">790.28</text>
+          <text x="433" y="92">833.96</text>
+        </g>
+        <g fill="#475569" font-size="9.5" text-anchor="middle">
+          <text x="103" y="182" font-weight="700">M0 Raw</text>
+          <text x="213" y="182" font-weight="700">M1 Bridge</text>
+          <text x="323" y="182" font-weight="700">M2 Hurdle</text>
+          <text x="433" y="182" font-weight="700">M3 Reconciled</text>
+          <text x="103" y="196">R² = 0.3973</text>
+          <text x="213" y="196">R² = 0.3928</text>
+          <text x="323" y="196">R² = 0.8018</text>
+          <text x="433" y="196">R² = 0.7779</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top: 12px;">
+    <h3>Step-change reduction across all five satellite transitions (|delta_step|: 2.1892 → 0.1567, −92.84%)</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Transition Year &amp; Event</th>
+          <th class="num">Raw SREHI Step</th>
+          <th class="num">Harmonized M3 Step</th>
+          <th class="num">|log step| Reduction</th>
+          <th>Hierarchy &amp; Guard Check</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>2002</strong> · MODIS Aqua joins Terra</td><td class="num">3.414</td><td class="num">1.523</td><td class="num"><strong>65.7%</strong></td><td>Passed · step discontinuity suppressed</td></tr>
+        <tr><td><strong>2012</strong> · VIIRS S-NPP overlap begins</td><td class="num">3.938</td><td class="num">1.177</td><td class="num"><strong>88.1%</strong></td><td>Passed · step discontinuity suppressed</td></tr>
+        <tr><td><strong>2018</strong> · VIIRS NOAA-20 added</td><td class="num">1.407</td><td class="num">0.836</td><td class="num"><strong>47.7%</strong></td><td>Passed · step discontinuity suppressed</td></tr>
+        <tr><td><strong>2021</strong> · Terra/Aqua orbital drift</td><td class="num">0.738</td><td class="num">0.754</td><td class="num"><strong>7.2%</strong></td><td>Passed · post-drift VIIRS backbone active</td></tr>
+        <tr><td><strong>2023</strong> · VIIRS NOAA-21 added</td><td class="num">1.375</td><td class="num">1.000</td><td class="num"><strong>99.9%</strong></td><td>Passed · zero artificial inflation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note-bar" style="margin-top: 10px;">
+    <strong>Exact mass conservation:</strong> Max Admin-1 → Country discrepancy is <strong>4.37e-11 SREHI</strong> (<strong>3.73e-09 MW</strong>); Country → Continental max diff is <strong>5.82e-11 SREHI</strong>. M3 trades minimal point RMSE vs. M2 to guarantee exact hierarchical additivity.
+  </div>
+
+  <div class="foot">
+    <span>Fire Relay South America · Team KernelCrew</span>
+    <span>M3 SREHI MAE: 6.1743 · M3 FRP MAE: 208.7884 MW · 5-fold 200 km spatial validation</span>
+  </div>
+</section>
+
+<!-- SLIDE 5: CONTINENTAL FINDINGS -->
+<section class="slide" id="slide-5">
+  <div class="head">
+    <div>
+      <span class="kicker">04 · Continental Findings (2000–2026)</span>
+      <h2>Long-term FDR fire trends, early-onset regimes, and extreme anomalies</h2>
+    </div>
+    <span class="page-num">05 / 07</span>
+  </div>
+
+  <div class="cols-2">
+    <div class="panel">
+      <h3>Significant upward SREHI trends (q &lt; 0.05)</h3>
+      <p style="margin-bottom: 10px;">
+        Out of 242 Admin-1 units evaluated (2001–2025, Hamed–Rao + BH FDR), <strong>45 units</strong> show
+        statistically significant trends (<strong>34 increasing</strong>, <strong>11 decreasing</strong>).
+        <strong>Peru</strong> is the only country with a significant national trend.
+      </p>
+      <div class="trend-row">
+        <div><div class="trend-name">Peru (National)</div><div class="trend-meta">z = 3.34 · FDR q = 0.0134</div></div>
+        <div class="trend-val">+903.23<span>SREHI / yr</span></div>
+      </div>
+      <div class="trend-row">
+        <div><div class="trend-name">Amazonas, Brazil</div><div class="trend-meta">Admin-1 · FDR q = 0.0125</div></div>
+        <div class="trend-val">+785.81<span>SREHI / yr</span></div>
+      </div>
+      <div class="trend-row">
+        <div><div class="trend-name">Ucayali, Peru</div><div class="trend-meta">Admin-1 · FDR q = 0.0028</div></div>
+        <div class="trend-val">+186.55<span>SREHI / yr</span></div>
+      </div>
+      <div class="trend-row">
+        <div><div class="trend-name">Loreto, Peru</div><div class="trend-meta">Admin-1 · FDR q = 0.0028</div></div>
+        <div class="trend-val">+133.58<span>SREHI / yr</span></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <h3>90-day early-onset alerts · 2024 through November 2026</h3>
+        <svg viewBox="0 0 620 198" role="img" aria-label="Early onset critical and high alert counts for 2024, 2025, and 2026">
+          <rect x="0" y="0" width="620" height="198" fill="#ffffff"/>
+          <g stroke="#e2e8f0" stroke-width="1">
+            <line x1="54" y1="158" x2="600" y2="158"/>
+            <line x1="54" y1="118" x2="600" y2="118"/>
+            <line x1="54" y1="78" x2="600" y2="78"/>
+            <line x1="54" y1="38" x2="600" y2="38"/>
+          </g>
+          <g fill="#64748b" font-size="8.5" text-anchor="end">
+            <text x="46" y="161">0</text>
+            <text x="46" y="121">2000</text>
+            <text x="46" y="81">4000</text>
+            <text x="46" y="41">6000</text>
+          </g>
+          <!-- 2024: 5125, 3009; 2025: 2891, 2448; 2026: 3232, 2176 -->
+          <rect x="96" y="55.5" width="54" height="102.5" fill="#b91c1c"/>
+          <rect x="156" y="97.8" width="54" height="60.2" fill="#d97706"/>
+          <rect x="266" y="100.2" width="54" height="57.8" fill="#b91c1c"/>
+          <rect x="326" y="109.0" width="54" height="49.0" fill="#d97706"/>
+          <rect x="436" y="93.4" width="54" height="64.6" fill="#b91c1c"/>
+          <rect x="496" y="114.5" width="54" height="43.5" fill="#d97706"/>
+
+          <g fill="#111827" font-size="10" font-weight="700" text-anchor="middle">
+            <text x="123" y="49">5,125</text>
+            <text x="183" y="91">3,009</text>
+            <text x="293" y="94">2,891</text>
+            <text x="353" y="103">2,448</text>
+            <text x="463" y="87">3,232</text>
+            <text x="523" y="108">2,176</text>
+          </g>
+          <g fill="#334155" font-size="10.5" font-weight="700" text-anchor="middle">
+            <text x="153" y="175">2024</text>
+            <text x="323" y="175">2025</text>
+            <text x="493" y="175">2026</text>
+          </g>
+          <g font-size="8.8" fill="#475569">
+            <rect x="96" y="184" width="10" height="10" fill="#b91c1c"/><text x="110" y="192">CRITICAL (exceeds frozen p90)</text>
+            <rect x="300" y="184" width="10" height="10" fill="#d97706"/><text x="314" y="192">HIGH (exceeds frozen p75)</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="anom-strip">
+        <div class="anom"><div class="dt">2024-02</div><div class="pl">Suriname</div><div class="zz">z = 8.28</div></div>
+        <div class="anom"><div class="dt">2025-12</div><div class="pl">Peru</div><div class="zz">z = 6.51</div></div>
+        <div class="anom"><div class="dt">2024-02</div><div class="pl">Guyana</div><div class="zz">z = 5.69</div></div>
+        <div class="anom"><div class="dt">2024-03</div><div class="pl">Ecuador</div><div class="zz">z = 5.05</div></div>
+        <div class="anom"><div class="dt">2024-02</div><div class="pl">Bolivia</div><div class="zz">z = 4.95</div></div>
+      </div>
+
+      <div class="note-bar" style="margin-top: 10px;">
+        <strong>Historical context:</strong> While recent off-season anomalies triggered sharp early-onset flags against 2001–2020 normals,
+        the continental all-time peak remains <strong>September 2007 (293,471.7 SREHI)</strong> ahead of Sept 2004 and Sept 2010.
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Fire Relay South America · Team KernelCrew</span>
+    <span>Baseline frozen strictly to 2001–2020 · GEV screening passes 475/510 series</span>
+  </div>
+</section>
+
+<!-- SLIDE 6: INTERACTIVE WEB OBSERVATORY -->
+<section class="slide" id="slide-6">
+  <div class="head">
+    <div>
+      <span class="kicker">05 · Interactive Decision Tool</span>
+      <h2>Fire Relay Observatory: live Cloud Run service and reproducible local server</h2>
+    </div>
+    <span class="page-num">06 / 07</span>
+  </div>
+
+  <div class="cols-equal" style="margin: auto 0;">
+    <div class="module-list">
+      <div class="mod-row">
+        <div class="mod-id">01</div>
+        <div>
+          <div class="mod-title">Query Bench &amp; Month–Year Calendar Picker</div>
+          <div class="mod-desc">Filter 14 countries, 243 Admin-1 units, custom bounding boxes, or point-radius queries, plus Harmonized (M3) vs. Raw toggle and presets.</div>
+        </div>
+      </div>
+      <div class="mod-row">
+        <div class="mod-id">02</div>
+        <div>
+          <div class="mod-title">Annual Rhythm Heatmap vs. 2001–2020 Median</div>
+          <div class="mod-desc">Inspect intra-annual severity shifts month by month against frozen baseline medians without distorting long-term interpretation.</div>
+        </div>
+      </div>
+      <div class="mod-row">
+        <div class="mod-id">03</div>
+        <div>
+          <div class="mod-title">Historical Series &amp; 90% Prediction Intervals</div>
+          <div class="mod-desc">Interactive 26-year curve with 90% uncertainty intervals; click any monthly point to synchronize the spatial observatory.</div>
+        </div>
+      </div>
+      <div class="mod-row">
+        <div class="mod-id">04</div>
+        <div>
+          <div class="mod-title">Independent 90-Day Early-Onset Tracker</div>
+          <div class="mod-desc">Compare any season (2000–2026) against frozen p75/p90 curves independently of global range filters, with explicit <span class="mono">INSUFFICIENT_HISTORY</span> guards.</div>
+        </div>
+      </div>
+      <div class="mod-row">
+        <div class="mod-id">05</div>
+        <div>
+          <div class="mod-title">Spatial Observatory (50 km M3 &amp; 10 km Raw)</div>
+          <div class="mod-desc">Interactive pan/zoom South America map with month navigation, 1x/2x/4x playback, fixed p99 range scale vs. monthly scale, truncation controls, and active sensor badges.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="panel">
+        <h3>Engineering, Latency &amp; Transparency Guarantees</h3>
+        <ul>
+          <li><strong>Sub-millisecond analytics:</strong> Warm DuckDB Parquet scans respond in <strong>&lt; 1 ms</strong> (9.8–135.9 ms cold) with zero external map tile APIs or CDNs.</li>
+          <li><strong>Resolution honesty:</strong> 50 km layers render strictly <strong>M3 harmonized</strong> values; sub-50 km radius queries disclose <strong>10 km raw overpass counts</strong> explicitly.</li>
+          <li><strong>Scientific state clarity:</strong> UI explicitly differentiates <span class="mono">ZERO_DETECTIONS</span>, <span class="mono">PARTIAL_MONTH</span>, <span class="mono">NRT_PRELIMINARY</span>, and <span class="mono">OUT_OF_CATALOG</span>.</li>
+          <li><strong>Verification:</strong> Validated end-to-end by <strong>50/50</strong> automated tests covering cubes, M0–M3 benchmarks, HTTP API, and CSV exports.</li>
+        </ul>
+      </div>
+
+      <div class="url-box" style="margin-top: 12px;">
+        <div><strong>Live Public Deployment (Google Cloud Run):</strong></div>
+        <div style="margin-top: 3px;"><code>fire-relay-south-america-946659834930.us-central1.run.app</code></div>
+        <div style="margin-top: 8px;"><strong>Local Offline Run (CPU-only WSGI + DuckDB):</strong></div>
+        <div style="margin-top: 3px;"><code>python -m app.server --processed-dir data/processed --host 127.0.0.1 --port 8080</code></div>
+      </div>
+
+      <div class="note-bar" style="margin-top: 12px;">
+        Bilingual <strong>EN / ES</strong> interface · One-click UTF-8 CSV export · Zero external trackers or remote font dependencies.
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Fire Relay South America · Team KernelCrew</span>
+    <span>Live interactive demo available publicly without login</span>
+  </div>
+</section>
+
+<!-- SLIDE 7: GOVERNANCE, LIMITATIONS & DISCLOSURE -->
+<section class="slide" id="slide-7">
+  <div class="head">
+    <div>
+      <span class="kicker">06 · Governance, Open Science &amp; Team Accountability</span>
+      <h2>Licensing, known limitations, reproducibility, and AI Disclosure</h2>
+    </div>
+    <span class="page-num">07 / 07</span>
+  </div>
+
+  <div class="cols-3">
+    <div class="panel">
+      <h3>Attribution &amp; Operational Scope</h3>
+      <ul>
+        <li><strong>Data credit (text only):</strong> NASA LANCE / ESDIS / FIRMS (MODIS C6.1 MCD14ML/DL; VIIRS S-NPP, NOAA-20, NOAA-21) and Natural Earth 1:10m boundaries (CC0).</li>
+        <li><strong>No NASA endorsement:</strong> Independent submission; contains zero NASA badges, seals, emblems, or wordmarks.</li>
+        <li><strong>Multi-part license:</strong> Code under <strong>MIT</strong>, documentation under <strong>CC-BY-4.0</strong>, and derived data under <strong>CC0 1.0</strong> (<span class="mono">LICENSE</span>, <span class="mono">THIRD_PARTY_NOTICES.md</span>).</li>
+        <li><strong>Safety boundary:</strong> Climatological research product only; <strong>not</strong> intended for real-time tactical fire suppression or life-safety operations.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Known Limitations &amp; Verification</h3>
+      <ul>
+        <li><strong>Validation record:</strong> Temporal hold-out checks, backcast assumptions, and uncalibrated σ interval limits are documented in <span class="mono">docs/validation/KNOWN_LIMITATIONS.md</span>.</li>
+        <li><strong>GEV screening:</strong> 31 series fail sanity bounds and 4 lack active years (475/510 valid), so return levels are screening diagnostics rather than operational indices.</li>
+        <li><strong>Deterministic export:</strong> <span class="mono">submission.csv</span> (4,014 rows) passes <span class="mono">submission_spec.json</span> checks inside <span class="mono">tests/test_submission_package.py</span>.</li>
+        <li><strong>Reproducible data fetch:</strong> Multi-hundred-MB cubes download cleanly from Release <span class="mono">v1.0-processed</span> via <span class="mono">scripts/fetch_processed_data.py</span>.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h3>Synthetic Intelligence (SI) / AI Disclosure</h3>
+      <ul>
+        <li><strong>Human scientific authorship:</strong> <strong>Manuel Guerrero &amp; Jessica Garay (Team KernelCrew)</strong> authored the problem formulation, M0–M3 harmonization architecture, SAMA/static QC criteria, 90-day early-onset detector, and statistical validation.</li>
+        <li><strong>AI software assistance:</strong> Generative AI tools assisted with code scaffolding, refactoring, test writing, and bilingual copy formatting under continuous human review.</li>
+        <li><strong>Zero fabricated numbers:</strong> Every metric and chart is computed deterministically by local CPU DuckDB/Python scripts over real NASA FIRMS data (85,002,288 records; 1,453,803,616.63 MW).</li>
+        <li><strong>Human accountability:</strong> Team KernelCrew verifies and stands behind all code, claims, and outputs.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="url-box" style="margin-top: 12px; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <strong>Repository:</strong> <code>github.com/LuppusMint/NASA-SpaceApps-2026</code>
+    </div>
+    <div>
+      <strong>Live Demo:</strong> <code>fire-relay-south-america-946659834930.us-central1.run.app</code>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>Team KernelCrew: Manuel Guerrero &amp; Jessica Garay · NASA Space Apps Challenge 2026</span>
+    <span>Verified with 50 automated tests across data cubes, harmonization models, API, and legal notices</span>
+  </div>
+</section>
+
+</body>
+</html>
