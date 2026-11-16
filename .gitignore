@@ -1,0 +1,33 @@
+# Raw and intermediate multi-GB archives (regenerable; never stage)
+data/raw/
+data/parquet/
+data/boundaries/
+*.zip
+*.duckdb
+*.duckdb.*
+*.db
+*.sqlite
+*.log
+
+# Five derived artefacts above the 50 MB GitHub guidance
+# (distributed through the v1.0-processed release and fetched by
+# scripts/fetch_processed_data.py)
+data/processed/cube_cell10km_monthly.parquet
+data/processed/harmonized_cell50km_monthly.parquet
+data/processed/cube_cell50km_monthly.parquet
+data/processed/oof_m0_m3.parquet
+data/processed/splits.json
+
+# DuckDB spill and scratch directories
+.duckdb_tmp/
+data/processed/.duckdb_tmp/
+scratch/
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/

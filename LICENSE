@@ -1,0 +1,126 @@
+# Fire Relay South America — Licensing Statement
+
+Copyright (c) 2026 Fire Relay South America Contributors
+
+This repository is a multi-license work. The license that applies depends on
+the kind of material you use. The three parts below are cumulative and
+non-exclusive: source code is MIT-licensed, documentation and presentation
+assets are CC-BY-4.0-licensed, and derived data products are released under
+CC0 1.0 Universal. Third-party components remain under their own licenses, as
+recorded in `THIRD_PARTY_NOTICES.md`.
+
+---
+
+## Part I — Source Code License (MIT License)
+
+The MIT License applies to all software, scripts, models, tests, notebooks, and
+web application source code in this repository, including but not limited to
+`app/`, `src/`, `scripts/`, `tests/`, and `Dockerfile`.
+
+### MIT License
+
+Copyright (c) 2026 Fire Relay South America Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+The MIT License is an OSI-approved permissive license. It permits commercial
+and non-commercial reuse, modification, and redistribution provided that the
+copyright notice and this permission notice are retained. The software is
+provided without any warranty, including the mandatory uppercase "AS IS"
+warranty and liability disclaimer reproduced above.
+
+---
+
+## Part II — Documentation & Presentation Assets (CC-BY-4.0)
+
+The documentation and presentation assets in this repository are licensed
+under the Creative Commons Attribution 4.0 International License
+(**CC-BY-4.0**). This includes, without limitation:
+
+- `README.md` and other root-level explanatory documents;
+- `docs/` (methodology, data pipeline, application, and submission notes);
+- `submission/` (the English submission package and the seven-page slide deck,
+  including its HTML and PDF renderings); and
+- textual figures, tables, and diagrams created by the project team and
+  embedded in those documents.
+
+You are free to share (copy and redistribute the material in any medium or
+format) and to adapt (remix, transform, and build upon the material) for any
+purpose, including commercially, provided that you give appropriate credit,
+provide a link to the license, and indicate if changes were made. You may give
+credit in any reasonable manner, but not in any way that suggests the licensor
+endorses you or your use. No additional restrictions may be applied that
+legally restrict others from doing anything the license permits.
+
+The full legal code is available at
+<https://creativecommons.org/licenses/by/4.0/legalcode>. A human-readable
+summary is available at <https://creativecommons.org/licenses/by/4.0/>.
+
+Source code excerpts embedded in documentation remain governed by Part I (MIT
+License). Third-party data, figures, or quotations reproduced in documentation
+remain governed by their original terms.
+
+---
+
+## Part III — Derived Data Products (CC0 1.0 Universal)
+
+The derived tabular and spatiotemporal data products created by this project
+are released under the Creative Commons CC0 1.0 Universal public-domain
+dedication (**CC0 1.0 Universal**). This includes, without limitation:
+
+- `submission.csv` and its documented schema;
+- the derived tables under `data/processed/*`; and
+- the derived monthly, annual, and gridded summaries produced by the project
+  pipeline from the source observations.
+
+These products are built from public-domain NASA LANCE FIRMS / Earthdata
+active-fire observations and Natural Earth public-domain boundaries. NASA
+data are provided under the NASA Open Data Policy (CC0 / 17 U.S.C. § 105);
+Natural Earth data are public domain (CC0).
+
+To the extent possible under law, the Fire Relay South America Contributors
+have waived all copyright and related or neighboring rights to these derived
+data products. You may copy, modify, distribute, and use the products for any
+purpose without asking permission. The full legal code is available at
+<https://creativecommons.org/publicdomain/zero/1.0/legalcode>. A
+human-readable summary is available at
+<https://creativecommons.org/publicdomain/zero/1.0/>.
+
+The CC0 dedication applies only to the derived products created by this
+project. It does not alter the terms of the upstream NASA, Earthdata, Natural
+Earth, or other third-party sources, and it does not grant rights in the
+underlying observations beyond those provided by the source terms.
+
+---
+
+## Part IV — Third-Party Components and Attribution
+
+Third-party software, data sources, and scientific references are not
+relicensed by this document. Their licenses, terms of use, and required
+attributions are recorded in `THIRD_PARTY_NOTICES.md`, including:
+
+- the NASA LANCE / ESDIS / FIRMS acknowledgment and dataset DOIs;
+- Natural Earth 1:10m Cultural Vectors (public domain, CC0);
+- the licenses of the Python dependencies listed in `requirements.txt`;
+- the non-endorsement and operational-safety disclaimer; and
+- the scientific and statistical methodology references.
+
+Nothing in this license grants permission to use the names, trademarks,
+service marks, or trade dress of NASA, LANCE, ESDIS, NOAA, Natural Earth, or
+the U.S. Government, or to imply that any of them endorse this project.

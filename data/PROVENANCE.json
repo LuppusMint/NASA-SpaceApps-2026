@@ -1,0 +1,159 @@
+{
+  "generated_at_utc": "2026-11-15T03:22:49.459258+00:00",
+  "started_at_utc": "2026-11-15T03:16:07.715656+00:00",
+  "bbox": "-82.2,-59.5,-27.4,13.7",
+  "territories": [
+    "Argentina",
+    "Bolivia",
+    "Brazil",
+    "Chile",
+    "Colombia",
+    "Ecuador",
+    "French_Guiana",
+    "Guyana",
+    "Paraguay",
+    "Peru",
+    "Suriname",
+    "Uruguay",
+    "Venezuela"
+  ],
+  "license_firms": "NASA Earthdata / LANCE FIRMS open public-use data (attribute NASA FIRMS)",
+  "units": {
+    "latitude_longitude": "decimal degrees WGS84 (EPSG:4326)",
+    "brightness_primary": "Kelvin (MODIS Channel 21/22 brightness; VIIRS I4 bright_ti4)",
+    "brightness_secondary": "Kelvin (MODIS Channel 31 bright_t31; VIIRS I5 bright_ti5)",
+    "frp": "MW (Fire Radiative Power)",
+    "scan_track": "km nominal pixel footprint",
+    "acq_date_acq_time": "UTC date and HHMM",
+    "type_archive_only": "0=presumed vegetation fire, 1=active volcano, 2=other static land source, 3=offshore"
+  },
+  "boundaries": [
+    {
+      "file": "data/boundaries/ne_10m_admin_0_countries.zip",
+      "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_0_countries.zip",
+      "license": "Public Domain (Natural Earth)",
+      "size_bytes": 4930492,
+      "sha256": "ce1ac7036499a0edd641fbc093cd209a98f96a49d2eca8480aaacad35138a7f6",
+      "status": "downloaded"
+    },
+    {
+      "file": "data/boundaries/ne_10m_admin_1_states_provinces.zip",
+      "url": "https://naciscdn.org/naturalearth/10m/cultural/ne_10m_admin_1_states_provinces.zip",
+      "license": "Public Domain (Natural Earth)",
+      "size_bytes": 14909524,
+      "sha256": "efc59726337323058f9446210adc96673179cd344e053666ee3d28cb58ba2b05",
+      "status": "downloaded"
+    }
+  ],
+  "user_archive_zips": [
+    {
+      "file": "DL_FIRE_J1V-C2_850291.zip",
+      "size_bytes": 92556549,
+      "sha256": "901be906e3ae46943ac4a758ca21dbb0afa46f7a778cabcc19131f48bb5988db",
+      "note": "User-downloaded NASA FIRMS Archive (2024-07-01..2026-07-01, South America bbox)"
+    },
+    {
+      "file": "DL_FIRE_J2V-C2_850292.zip",
+      "size_bytes": 90965640,
+      "sha256": "92f7b2cc197927b0f0fc8bcf94e631eac3984fa3597f5846b468fad66b4d081a",
+      "note": "User-downloaded NASA FIRMS Archive (2024-07-01..2026-07-01, South America bbox)"
+    },
+    {
+      "file": "DL_FIRE_M-C61_850290.zip",
+      "size_bytes": 23501013,
+      "sha256": "a1f77e9c92e67d7f5ec486b9ca7b1a956705cdc1ee2509679f8cffd1a94b00af",
+      "note": "User-downloaded NASA FIRMS Archive (2024-07-01..2026-07-01, South America bbox)"
+    },
+    {
+      "file": "DL_FIRE_SV-C2_850293.zip",
+      "size_bytes": 90128025,
+      "sha256": "e3fbeada4666a21525bd32dd9e55c3217b0ed5f9ba9900f2b852b934eecbf71a",
+      "note": "User-downloaded NASA FIRMS Archive (2024-07-01..2026-07-01, South America bbox)"
+    }
+  ],
+  "country_archives": {
+    "manifest_url": "https://firms.modaps.eosdis.nasa.gov/data/country/yearly_summary_files.txt",
+    "file_count": 624,
+    "total_bytes": 5845342379,
+    "skipped_exact": 0,
+    "downloaded": 624
+  },
+  "api_availability_snapshot": {
+    "BA_MODIS": [
+      "2000-11-01",
+      "2026-08-01"
+    ],
+    "BA_VIIRS": [
+      "2012-03-01",
+      "2026-08-01"
+    ],
+    "GOES_NRT": [
+      "2022-08-09",
+      "2026-11-15"
+    ],
+    "LANDSAT_NRT": [
+      "2022-06-20",
+      "2026-11-15"
+    ],
+    "MODIS_NRT": [
+      "2026-09-01",
+      "2026-11-15"
+    ],
+    "MODIS_SP": [
+      "2000-11-01",
+      "2026-08-31"
+    ],
+    "VIIRS_NOAA20_NRT": [
+      "2026-08-01",
+      "2026-11-15"
+    ],
+    "VIIRS_NOAA20_SP": [
+      "2018-04-01",
+      "2026-07-31"
+    ],
+    "VIIRS_NOAA21_NRT": [
+      "2024-01-17",
+      "2026-11-15"
+    ],
+    "VIIRS_NOAA21_SP": [
+      "2023-03-01",
+      "2026-07-31"
+    ],
+    "VIIRS_SNPP_NRT": [
+      "2026-08-01",
+      "2026-11-02"
+    ],
+    "VIIRS_SNPP_SP": [
+      "2012-01-20",
+      "2026-07-31"
+    ]
+  },
+  "api_gap_fills": {
+    "request_count": 208,
+    "total_bytes": 497719954,
+    "downloaded": 208,
+    "skipped_exists": 0,
+    "ranges": [
+      [
+        "MODIS_NRT",
+        "2026-09-01"
+      ],
+      [
+        "MODIS_NRT",
+        "2026-09-06"
+      ],
+      [
+        "MODIS_NRT",
+        "2026-09-11"
+      ],
+      [
+        "MODIS_NRT",
+        "2026-09-16"
+      ],
+      [
+        "MODIS_NRT",
+        "2026-09-21"
+      ]
+    ]
+  }
+}

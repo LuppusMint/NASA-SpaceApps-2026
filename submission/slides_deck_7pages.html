@@ -1,0 +1,1516 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fire Relay South America — 7-Slide Submission Deck</title>
+<style>
+  @page { size: 13.333in 7.5in; margin: 0; }
+
+  :root {
+    --ink: #102033;
+    --muted: #5a6b80;
+    --soft: #7b8ba0;
+    --line: #d8e2ec;
+    --paper: #f7f9fc;
+    --panel: #ffffff;
+    --navy: #0b1728;
+    --teal: #0f766e;
+    --teal-soft: #d9f0ec;
+    --fire: #b42318;
+    --amber: #b45309;
+    --amber-soft: #fdf0dc;
+    --blue: #1d4ed8;
+    --blue-soft: #e4ecff;
+    --slate: #64748b;
+    --slate-soft: #eef2f7;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #dfe6ef;
+  }
+
+  body {
+    color: var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .slide {
+    position: relative;
+    width: 13.333in;
+    height: 7.5in;
+    padding: 0.40in 0.48in 0.30in;
+    margin: 18px auto;
+    overflow: hidden;
+    background: var(--paper);
+    box-shadow: 0 10px 34px rgba(15, 23, 42, 0.20);
+    break-after: page;
+    page-break-after: always;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .slide:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+    margin-bottom: 0;
+  }
+
+  .slide-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 9px;
+    margin-bottom: 12px;
+  }
+
+  .kicker {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--teal);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.08;
+    letter-spacing: -0.015em;
+  }
+
+  .slide-num {
+    flex: 0 0 auto;
+    color: var(--soft);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  p { margin: 0; }
+  strong { font-weight: 800; }
+  .mono { font-family: "Cascadia Mono", "Consolas", "Liberation Mono", monospace; }
+
+  #slide-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.52in 0.64in 0.42in;
+    color: #f8fafc;
+    background:
+      radial-gradient(circle at 84% 16%, rgba(15, 118, 110, 0.42), transparent 38%),
+      radial-gradient(circle at 10% 92%, rgba(180, 35, 24, 0.32), transparent 42%),
+      linear-gradient(135deg, #081321 0%, #0d2034 56%, #102b3c 100%);
+  }
+
+  #slide-1::after {
+    content: "";
+    position: absolute;
+    inset: 0.18in;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    pointer-events: none;
+  }
+
+  #slide-1 > * { position: relative; z-index: 1; }
+
+  .cover-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    color: #9fb3c8;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .cover-mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: #e2f3ef;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+  }
+
+  .cover-mark span.dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #2dd4bf;
+    box-shadow: 0 0 0 5px rgba(45, 212, 191, 0.14);
+  }
+
+  .cover-main { max-width: 10.6in; }
+
+  #slide-1 h1 {
+    margin: 0 0 8px;
+    font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    font-size: 61px;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    color: #ffffff;
+  }
+
+  #slide-1 h1 .years {
+    display: block;
+    margin-top: 8px;
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #5eead4;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  #slide-1 .subtitle {
+    max-width: 10.2in;
+    color: #cbd8e6;
+    font-size: 17px;
+    line-height: 1.34;
+  }
+
+  #slide-1 .subtitle strong { color: #ffffff; }
+
+  .cover-stats {
+    display: grid;
+    grid-template-columns: 1.15fr 0.9fr 0.9fr 0.9fr;
+    gap: 11px;
+    margin-top: 18px;
+  }
+
+  .cover-stat {
+    padding: 11px 13px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 9px;
+    background: rgba(255, 255, 255, 0.055);
+  }
+
+  .cover-stat .value {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .cover-stat .value .arrow { color: #5eead4; font-weight: 600; }
+  .cover-stat .value .unit { color: #9fb3c8; font-size: 13px; font-weight: 700; }
+  .cover-stat .label {
+    margin-top: 5px;
+    color: #9fb3c8;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+
+  .cover-foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.14);
+    padding-top: 9px;
+    color: #93a8bd;
+    font-size: 9.5px;
+  }
+
+  .cover-foot strong { color: #dbeafe; }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: 0.37fr 0.63fr;
+    gap: 0.26in;
+  }
+
+  .stack { display: flex; flex-direction: column; gap: 9px; }
+
+  .card {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--panel);
+    padding: 11px 13px;
+  }
+
+  .card h3 {
+    margin: 0 0 5px;
+    color: var(--ink);
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+  }
+
+  .card p, .card li {
+    color: var(--muted);
+    font-size: 11.5px;
+    line-height: 1.42;
+  }
+
+  .card ul {
+    margin: 3px 0 0;
+    padding-left: 15px;
+  }
+
+  .card li + li { margin-top: 3px; }
+
+  .problem-list { gap: 10px; }
+
+  .problem-item {
+    border-left: 3px solid var(--fire);
+    padding: 1px 0 1px 10px;
+  }
+
+  .problem-item:nth-child(2) { border-left-color: var(--amber); }
+  .problem-item:nth-child(3) { border-left-color: var(--teal); }
+  .problem-item:nth-child(4) { border-left-color: var(--blue); }
+
+  .problem-item .tag {
+    display: block;
+    margin-bottom: 2px;
+    color: var(--soft);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+  }
+
+  .problem-item p {
+    color: var(--ink);
+    font-size: 11.7px;
+    line-height: 1.35;
+  }
+
+  .chart-panel {
+    border: 1px solid var(--line);
+    border-radius: 11px;
+    background: var(--panel);
+    padding: 10px 12px 7px;
+  }
+
+  .chart-panel .chart-title {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 2px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: var(--soft);
+    text-transform: uppercase;
+  }
+
+  svg { display: block; width: 100%; height: auto; }
+  svg text { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; }
+
+  .takeaway {
+    margin-top: 9px;
+    border-radius: 9px;
+    padding: 8px 12px;
+    background: var(--navy);
+    color: #dbeafe;
+    font-size: 11.2px;
+    line-height: 1.35;
+  }
+
+  .takeaway strong { color: #5eead4; }
+
+  .pipeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.18in;
+  }
+
+  .stage {
+    border: 1px solid var(--line);
+    border-top: 4px solid var(--teal);
+    border-radius: 10px;
+    background: var(--panel);
+    padding: 12px 14px 11px;
+    min-height: 4.05in;
+  }
+
+  .stage:nth-child(2) { border-top-color: var(--blue); }
+  .stage:nth-child(3) { border-top-color: var(--amber); }
+
+  .stage .stage-id {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+
+  .stage .stage-id b {
+    color: var(--teal);
+    font-size: 16px;
+    letter-spacing: -0.01em;
+  }
+
+  .stage:nth-child(2) .stage-id b { color: var(--blue); }
+  .stage:nth-child(3) .stage-id b { color: var(--amber); }
+
+  .stage .stage-id span {
+    color: var(--soft);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  .stage h3 {
+    margin: 0 0 7px;
+    font-size: 13px;
+    line-height: 1.18;
+  }
+
+  .stage ul {
+    margin: 0;
+    padding-left: 15px;
+  }
+
+  .stage li {
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-size: 11.1px;
+    line-height: 1.35;
+  }
+
+  .stage li strong { color: var(--ink); }
+
+  .fact-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 9px;
+    margin-top: 12px;
+  }
+
+  .fact {
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+    padding: 10px 12px;
+  }
+
+  .fact .n {
+    color: var(--ink);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .fact .l {
+    margin-top: 3px;
+    color: var(--soft);
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+  }
+
+  .chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.20in;
+  }
+
+  .result-note {
+    margin-top: 7px;
+    color: var(--muted);
+    font-size: 10px;
+    line-height: 1.32;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.4px;
+    line-height: 1.2;
+  }
+
+  th {
+    padding: 5px 7px;
+    border-bottom: 1px solid var(--line);
+    color: var(--soft);
+    font-size: 8.2px;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  td {
+    padding: 6px 7px;
+    border-bottom: 1px solid #e9eff5;
+    color: var(--ink);
+  }
+
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; }
+
+  .chip-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 9px;
+  }
+
+  .chip {
+    display: inline-block;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fff;
+    padding: 4px 9px;
+    color: var(--muted);
+    font-size: 8.8px;
+    font-weight: 700;
+  }
+
+  .chip strong { color: var(--ink); }
+
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: 0.43fr 0.57fr;
+    gap: 0.22in;
+  }
+
+  .trend-list { display: flex; flex-direction: column; gap: 7px; }
+
+  .trend {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+    padding: 9px 11px;
+  }
+
+  .trend .place {
+    color: var(--ink);
+    font-size: 11.8px;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .trend .meta {
+    margin-top: 2px;
+    color: var(--soft);
+    font-size: 8.8px;
+    font-weight: 700;
+  }
+
+  .trend .slope {
+    color: var(--fire);
+    font-size: 16.5px;
+    font-weight: 800;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .trend .slope small {
+    display: block;
+    color: var(--soft);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+  .extreme-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .extreme {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+    padding: 6px 7px;
+  }
+
+  .extreme .when {
+    color: var(--fire);
+    font-size: 9.2px;
+    font-weight: 800;
+  }
+
+  .extreme .where {
+    margin-top: 1px;
+    color: var(--ink);
+    font-size: 9.2px;
+    font-weight: 700;
+    line-height: 1.12;
+  }
+
+  .extreme .z {
+    margin-top: 2px;
+    color: var(--soft);
+    font-size: 8.2px;
+    font-weight: 700;
+  }
+
+  .peak-note {
+    margin-top: 8px;
+    border-left: 3px solid var(--amber);
+    background: var(--amber-soft);
+    padding: 8px 11px;
+    color: #6b3b06;
+    font-size: 10.1px;
+    line-height: 1.3;
+  }
+
+  .peak-note strong { color: #4a2804; }
+
+  .app-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 0.22in;
+  }
+
+  .arch {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .arch-box {
+    position: relative;
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--teal);
+    border-radius: 8px;
+    background: #fff;
+    padding: 9px 11px;
+  }
+
+  .arch-box:nth-child(2) { border-left-color: var(--blue); }
+  .arch-box:nth-child(3) { border-left-color: var(--amber); }
+  .arch-box:nth-child(4) { border-left-color: var(--slate); }
+
+  .arch-box b {
+    display: block;
+    color: var(--ink);
+    font-size: 11.2px;
+    line-height: 1.2;
+  }
+
+  .arch-box span {
+    display: block;
+    margin-top: 2px;
+    color: var(--soft);
+    font-size: 9.3px;
+    line-height: 1.28;
+  }
+
+  .arch-arrow {
+    color: var(--soft);
+    font-size: 12px;
+    line-height: 0.7;
+    text-align: center;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+
+  .feature {
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+    padding: 10px 12px;
+  }
+
+  .feature .big {
+    color: var(--teal);
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+
+  .feature .big small { color: var(--soft); font-size: 9px; font-weight: 700; }
+
+  .feature .label {
+    margin-top: 3px;
+    color: var(--muted);
+    font-size: 8.7px;
+    line-height: 1.22;
+  }
+
+  .ui-mock {
+    margin-top: 8px;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .ui-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 6px 9px;
+    background: var(--navy);
+    color: #dbeafe;
+    font-size: 8.5px;
+    font-weight: 700;
+  }
+
+  .ui-bar .pill {
+    border-radius: 10px;
+    background: #17324d;
+    padding: 2px 7px;
+    color: #99f6e4;
+    font-size: 7.5px;
+    letter-spacing: 0.08em;
+  }
+
+  .ui-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    padding: 9px 10px 10px;
+  }
+
+  .ui-controls {
+    color: var(--soft);
+    font-size: 7.8px;
+    line-height: 1.55;
+  }
+
+  .ui-controls b { color: var(--ink); }
+
+  .ui-field {
+    margin-top: 3px;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: #f8fafc;
+    padding: 2px 5px;
+    color: var(--muted);
+    font-size: 7.4px;
+  }
+
+  .calendar-strip {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2px;
+    align-content: center;
+  }
+
+  .calendar-strip span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    border-radius: 3px;
+    background: #e8f5f2;
+    color: #0f766e;
+    font-size: 7px;
+    font-weight: 800;
+  }
+
+  .calendar-strip span.peak {
+    background: #b42318;
+    color: #fff;
+  }
+
+  .calendar-strip span.warm {
+    background: #f6c177;
+    color: #6b3b06;
+  }
+
+  .govern-grid {
+    display: grid;
+    grid-template-columns: 0.42fr 0.58fr;
+    gap: 0.22in;
+  }
+
+  .code-box {
+    border: 1px solid #1e3a5f;
+    border-radius: 9px;
+    background: #0b1728;
+    padding: 9px 11px;
+    color: #cbd8e6;
+    font-family: "Cascadia Mono", "Consolas", "Liberation Mono", monospace;
+    font-size: 9.1px;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+
+  .code-box .c { color: #5eead4; }
+  .code-box .m { color: #93c5fd; }
+
+  .attribution {
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+    padding: 10px 12px;
+  }
+
+  .attribution .label {
+    color: var(--soft);
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .attribution .source {
+    margin-top: 5px;
+    color: var(--ink);
+    font-size: 11.2px;
+    font-weight: 800;
+    line-height: 1.35;
+  }
+
+  .attribution p {
+    margin-top: 6px;
+    color: var(--muted);
+    font-size: 9.3px;
+    line-height: 1.35;
+  }
+
+  .disclosure {
+    display: grid;
+    grid-template-columns: 0.54fr 0.46fr;
+    gap: 0.22in;
+    margin-top: 9px;
+    border: 1px solid #b9d9d4;
+    border-radius: 10px;
+    background: #effaf7;
+    padding: 10px 13px;
+  }
+
+  .disclosure h3 {
+    margin: 0 0 4px;
+    color: #0f5f58;
+    font-size: 13px;
+    letter-spacing: 0.01em;
+  }
+
+  .disclosure p {
+    color: #345a56;
+    font-size: 10.1px;
+    line-height: 1.36;
+  }
+
+  .disclosure ul {
+    margin: 2px 0 0;
+    padding-left: 14px;
+    color: #345a56;
+    font-size: 9.9px;
+    line-height: 1.35;
+  }
+
+  .disclosure li + li { margin-top: 2px; }
+
+  .compliance-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .compliance-row .chip {
+    background: #fff;
+    font-size: 8.2px;
+  }
+
+  .fineprint {
+    margin-top: 6px;
+    color: var(--soft);
+    font-size: 8px;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .insight-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+    margin-top: 9px;
+  }
+
+  .insight {
+    border: 1px solid var(--line);
+    border-radius: 9px;
+    background: #fff;
+    padding: 8px 11px;
+  }
+
+  .insight .ik {
+    display: block;
+    color: var(--soft);
+    font-size: 8.2px;
+    font-weight: 800;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+  }
+
+  .insight .iv {
+    display: block;
+    margin-top: 2px;
+    color: var(--ink);
+    font-size: 12.2px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  .insight .ip {
+    margin-top: 2px;
+    color: var(--muted);
+    font-size: 9.2px;
+    line-height: 1.28;
+  }
+
+  .command-strip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 9px;
+    border: 1px solid #1e3a5f;
+    border-radius: 8px;
+    background: #0b1728;
+    padding: 7px 11px;
+    color: #cbd8e6;
+    font-size: 9px;
+  }
+
+  .command-strip .cl {
+    flex: 0 0 auto;
+    color: #5eead4;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+
+  .command-strip code {
+    font-family: "Cascadia Mono", "Consolas", "Liberation Mono", monospace;
+    font-size: 8.8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  @media print {
+    html, body { background: #ffffff; }
+    .slide {
+      margin: 0;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .slide:last-of-type {
+      break-after: auto;
+      page-break-after: auto;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .slide { width: 100%; height: auto; min-height: 7.5in; }
+    .two-col, .pipeline, .chart-grid, .analytics-grid, .app-grid, .govern-grid, .disclosure {
+      grid-template-columns: 1fr;
+    }
+    .cover-stats, .fact-strip, .extreme-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 -->
+<section class="slide" id="slide-1" data-layout="cover">
+  <div class="cover-top">
+    <span>NASA Space Apps Challenge 2026 &nbsp;·&nbsp; Earth Science &nbsp;·&nbsp; Harmonization of MODIS and VIIRS Hot Spots</span>
+    <span class="cover-mark"><span class="dot"></span> Fire Relay South America</span>
+  </div>
+
+  <div class="cover-main">
+    <h1>Fire Relay South America<span class="years">2000–2026</span></h1>
+    <p class="subtitle">
+      <strong>Cross-sensor burning calendar across 26 years of NASA FIRMS observations.</strong>
+      A leakage-free harmonization of MODIS C6.1 and VIIRS S-NPP / NOAA-20 / NOAA-21 into one comparable monthly fire record for South America.
+    </p>
+    <div class="cover-stats">
+      <div class="cover-stat">
+        <div class="value">85.0M <span class="arrow">→</span> 75.6M <span class="unit">clean</span></div>
+        <div class="label">Raw → quality-controlled detections</div>
+      </div>
+      <div class="cover-stat">
+        <div class="value">14 <span class="unit">countries</span></div>
+        <div class="label">South American coverage</div>
+      </div>
+      <div class="cover-stat">
+        <div class="value">243 <span class="unit">Admin-1</span></div>
+        <div class="label">Subnational calendar units</div>
+      </div>
+      <div class="cover-stat">
+        <div class="value">26 <span class="unit">years</span></div>
+        <div class="label">313 consecutive months</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cover-foot">
+    <span><strong>CPU-only · local-only · zero Google Cloud</strong> &nbsp;·&nbsp; bilingual EN/ES web application</span>
+    <span>No NASA logo, emblem, seal, or wordmark is used. Data attribution is textual.</span>
+  </div>
+</section>
+
+<!-- SLIDE 2 -->
+<section class="slide" id="slide-2">
+  <div class="slide-head">
+    <div>
+      <span class="kicker">The problem</span>
+      <h2>Five satellites, five regimes, one distorted relay</h2>
+    </div>
+    <span class="slide-num">02 / 07</span>
+  </div>
+
+  <div class="two-col">
+    <div class="stack problem-list">
+      <div class="problem-item">
+        <span class="tag">Footprint</span>
+        <p>MODIS observes at <strong>1 km</strong> nadir; VIIRS at <strong>375 m</strong>. One flaming front can produce one MODIS pixel or several VIIRS pixels.</p>
+      </div>
+      <div class="problem-item">
+        <span class="tag">Relay</span>
+        <p>Terra-only, Terra+Aqua, the MODIS/VIIRS overlap, and the VIIRS backbone are different sampling systems. Adding sensors creates <strong>artificial steps</strong>.</p>
+      </div>
+      <div class="problem-item">
+        <span class="tag">Contamination</span>
+        <p>Nocturnal VIIRS, the <strong>SAMA</strong> particle environment, static gas flares, industry, and volcanoes can enter the record unless explicitly flagged.</p>
+      </div>
+      <div class="problem-item">
+        <span class="tag">Consequence</span>
+        <p>A naive multi-sensor sum turns instrument history into a fake trend. The distortion concentrates at <strong>2002, 2012, 2018, 2021, 2023</strong>.</p>
+      </div>
+    </div>
+
+    <div class="chart-panel">
+      <div class="chart-title"><span>Sensor relay and regime boundaries</span><span>2000 → 2026</span></div>
+      <svg viewBox="0 0 720 424" role="img" aria-label="Timeline of five satellite streams and five relay boundaries from 2000 to 2026">
+        <rect x="0" y="0" width="720" height="424" rx="9" fill="#ffffff"/>
+        <text x="18" y="24" fill="#102033" font-size="12" font-weight="800">Five sensor streams, five relay boundaries</text>
+        <text x="702" y="24" fill="#7b8ba0" font-size="9" text-anchor="end">active service windows</text>
+
+        <!-- boundary markers: x = 60 + (year - 2000) / 27 * 600 -->
+        <g stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3">
+          <line x1="104.4" y1="38" x2="104.4" y2="330"/>
+          <line x1="326.7" y1="38" x2="326.7" y2="330"/>
+          <line x1="460.0" y1="38" x2="460.0" y2="330"/>
+          <line x1="526.7" y1="38" x2="526.7" y2="330"/>
+          <line x1="571.1" y1="38" x2="571.1" y2="330"/>
+        </g>
+        <g fill="#b42318" font-size="9.5" font-weight="800" text-anchor="middle">
+          <text x="104.4" y="38">2002</text>
+          <text x="326.7" y="38">2012</text>
+          <text x="460.0" y="38">2018</text>
+          <text x="526.7" y="38">2021</text>
+          <text x="571.1" y="38">2023</text>
+        </g>
+
+        <!-- rows -->
+        <g font-size="9.5" font-weight="700">
+          <text x="16" y="72" fill="#102033">MODIS Terra</text>
+          <text x="16" y="112" fill="#102033">MODIS Aqua</text>
+          <text x="16" y="152" fill="#102033">VIIRS S-NPP</text>
+          <text x="16" y="192" fill="#102033">NOAA-20 / J1</text>
+          <text x="16" y="232" fill="#102033">NOAA-21 / J2</text>
+        </g>
+
+        <g>
+          <rect x="80.4" y="60" width="577.8" height="16" rx="6" fill="#b42318"/>
+          <rect x="115.6" y="100" width="542.6" height="16" rx="6" fill="#d97706"/>
+          <rect x="326.7" y="140" width="331.5" height="16" rx="6" fill="#0f766e"/>
+          <rect x="460.0" y="180" width="198.2" height="16" rx="6" fill="#1d4ed8"/>
+          <rect x="571.1" y="220" width="87.1" height="16" rx="6" fill="#7c3aed"/>
+        </g>
+
+        <g fill="#5a6b80" font-size="8.5">
+          <text x="88" y="98">1 km · 10:30 LT</text>
+          <text x="123" y="138">1 km · 13:30 LT</text>
+          <text x="334" y="178">375 m · extra overpasses</text>
+          <text x="468" y="218">375 m · afternoon</text>
+          <text x="579" y="258">375 m · 2023+</text>
+        </g>
+
+        <!-- regime band -->
+        <text x="18" y="292" fill="#7b8ba0" font-size="8.5" font-weight="800" letter-spacing="1">RELAY REGIME</text>
+        <g>
+          <rect x="80.4" y="300" width="36.1" height="30" rx="4" fill="#fee2e2"/>
+          <rect x="116.5" y="300" width="210.2" height="30" rx="4" fill="#ffedd5"/>
+          <rect x="326.7" y="300" width="178.0" height="30" rx="4" fill="#ccfbf1"/>
+          <rect x="526.7" y="300" width="131.5" height="30" rx="4" fill="#dbeafe"/>
+        </g>
+        <g fill="#102033" font-size="8.2" font-weight="800" text-anchor="middle">
+          <text x="98.5" y="319">Terra</text>
+          <text x="221.6" y="319">Terra + Aqua</text>
+          <text x="415.7" y="319">MODIS / VIIRS overlap</text>
+          <text x="592.5" y="319">VIIRS backbone</text>
+        </g>
+
+        <!-- bottom explanation -->
+        <rect x="16" y="344" width="688" height="62" rx="7" fill="#f1f5f9"/>
+        <text x="28" y="362" fill="#102033" font-size="9.6" font-weight="800">The calibration window is the overlap, not the whole record.</text>
+        <text x="28" y="377" fill="#5a6b80" font-size="9.1">M1 learns a robust physical bridge; M2 models the hurdle and covariate shift; M3 reconciles the hierarchy.</text>
+        <text x="28" y="392" fill="#5a6b80" font-size="9.1">SAMA containment, static-source removal, and overpass consolidation happen before any cross-sensor fit.</text>
+      </svg>
+    </div>
+  </div>
+
+  <div class="takeaway">
+    <strong>The design goal:</strong> make the sensor identity stop mattering, so a 2001 anomaly and a 2025 anomaly are finally measured on the same footing.
+  </div>
+</section>
+
+<!-- SLIDE 3 -->
+<section class="slide" id="slide-3">
+  <div class="slide-head">
+    <div>
+      <span class="kicker">Architecture · data + calibration</span>
+      <h2>Pipeline and leakage-free validation</h2>
+    </div>
+    <span class="slide-num">03 / 07</span>
+  </div>
+
+  <div class="pipeline">
+    <div class="stage">
+      <div class="stage-id"><b>DATA</b><span>Deterministic QC</span></div>
+      <h3>Clean the physical record before modeling</h3>
+      <ul>
+        <li><strong>85,002,288</strong> raw FIRMS detections → <strong>75,556,207</strong> clean detections.</li>
+        <li><strong>2,703,746</strong> removed by <span class="mono">type IN (1,2,3)</span>.</li>
+        <li><strong>2,872,511</strong> removed as persistent static-cell detections across <strong>358</strong> 10 km cells.</li>
+        <li><strong>472,710</strong> clean candidate detections isolated inside static cells.</li>
+        <li><strong>138</strong> negative FRP and <strong>39</strong> zero-brightness rows corrected.</li>
+        <li><strong>76,388,628</strong> rows intersect SAMA; <strong>0 rows</strong> are removed by the SAMA suspect rule (the suspect class is empty after the nominal+ filter).</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-id"><b>MODEL</b><span>Leakage-free benchmark</span></div>
+      <h3>Calibrate the relay on a frozen overlap</h3>
+      <ul>
+        <li><strong>5</strong> spatial block folds frozen in the committed <span class="mono">split manifest</span>.</li>
+        <li><strong>930,100</strong> overlap rows = <strong>465,050</strong> cell-months x 2 replicas, <strong>2012–2020</strong>.</li>
+        <li><strong>7,184</strong> cells at 50 km; dataset SHA-256 <span class="mono">ff927d7b…e0d6</span>.</li>
+        <li><strong>M0</strong> raw → <strong>M1</strong> physical bridge → <strong>M2</strong> hurdle/Tweedie → <strong>M3</strong> simplex + Kalman.</li>
+        <li>Admin-1 is a proportional downscaling of the country total; country = sum of Admin-1; non-negative by construction.</li>
+        <li>Cross-regime guard and five relay step-change diagnostics.</li>
+      </ul>
+    </div>
+
+    <div class="stage">
+      <div class="stage-id"><b>APP</b><span>Offline delivery</span></div>
+      <h3>Make the evidence usable in the browser</h3>
+      <ul>
+        <li>WSGI server in <span class="mono">app/server.py</span> with local DuckDB over Parquet.</li>
+        <li>Bilingual <strong>EN/ES</strong> calendar, Admin-1 and bounding-box selection.</li>
+        <li>Harmonized/raw toggle, severity tiers, 90-day onset, 1-click CSV.</li>
+        <li><strong>&lt; 1 ms</strong> warm queries; <strong>9.8–135.9 ms</strong> cold queries.</li>
+        <li><strong>45/45</strong> tests passing.</li>
+        <li>No CDN, no external map tile, no cloud dependency.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fact-strip">
+    <div class="fact"><div class="n">313</div><div class="l">months · 2000-11 → 2026-11</div></div>
+    <div class="fact"><div class="n">14 / 243</div><div class="l">countries / Admin-1 units</div></div>
+    <div class="fact"><div class="n">143,613</div><div class="l">historical active 10 km cells</div></div>
+    <div class="fact"><div class="n">10 km / 50 km</div><div class="l">equal-area Albers cubes</div></div>
+  </div>
+</section>
+
+<!-- SLIDE 4 -->
+<section class="slide" id="slide-4">
+  <div class="slide-head">
+    <div>
+      <span class="kicker">Verified results · benchmark</span>
+      <h2>Harmonization cuts error and smooths the relay boundaries</h2>
+    </div>
+    <span class="slide-num">04 / 07</span>
+  </div>
+
+  <div class="chart-grid">
+    <div class="chart-panel">
+      <div class="chart-title"><span>SREHI · OOF RMSE, 5-fold mean</span><span>lower is better</span></div>
+      <svg viewBox="0 0 560 250" role="img" aria-label="Grouped bar chart of SREHI RMSE for M0 through M3">
+        <rect x="0" y="0" width="560" height="250" rx="8" fill="#ffffff"/>
+        <g stroke="#e6edf4" stroke-width="1">
+          <line x1="54" y1="208" x2="540" y2="208"/>
+          <line x1="54" y1="171" x2="540" y2="171"/>
+          <line x1="54" y1="134" x2="540" y2="134"/>
+          <line x1="54" y1="97" x2="540" y2="97"/>
+          <line x1="54" y1="60" x2="540" y2="60"/>
+        </g>
+        <g fill="#94a3b8" font-size="8.5" text-anchor="end">
+          <text x="46" y="211">0</text>
+          <text x="46" y="174">10</text>
+          <text x="46" y="137">20</text>
+          <text x="46" y="100">30</text>
+        </g>
+        <g>
+          <rect x="70" y="69.1" width="62" height="138.9" rx="4" fill="#94a3b8"/>
+          <rect x="184" y="55.3" width="62" height="152.7" rx="4" fill="#c2410c"/>
+          <rect x="298" y="141.0" width="62" height="67.0" rx="4" fill="#0f766e"/>
+          <rect x="412" y="134.4" width="62" height="73.6" rx="4" fill="#1d4ed8"/>
+        </g>
+        <g fill="#102033" font-size="10" font-weight="800" text-anchor="middle">
+          <text x="101" y="62">24.6227</text>
+          <text x="215" y="48">26.7017</text>
+          <text x="329" y="134">11.8025</text>
+          <text x="443" y="127">12.8838</text>
+        </g>
+        <g fill="#5a6b80" font-size="8.3" text-anchor="middle">
+          <text x="101" y="223">M0</text>
+          <text x="215" y="223">M1</text>
+          <text x="329" y="223">M2</text>
+          <text x="443" y="223">M3</text>
+          <text x="101" y="238">R² .3533</text>
+          <text x="215" y="238">R² .2374</text>
+          <text x="329" y="238">R² .8512</text>
+          <text x="443" y="238">R² .8171</text>
+        </g>
+      </svg>
+      <p class="result-note">M2 is the point-error minimum. M3 adds exact hierarchy and uncertainty; the small RMSE trade-off is deliberate.</p>
+    </div>
+
+    <div class="chart-panel">
+      <div class="chart-title"><span>FRP MW · OOF RMSE, 5-fold mean</span><span>lower is better</span></div>
+      <svg viewBox="0 0 560 250" role="img" aria-label="Grouped bar chart of FRP RMSE for M0 through M3">
+        <rect x="0" y="0" width="560" height="250" rx="8" fill="#ffffff"/>
+        <g stroke="#e6edf4" stroke-width="1">
+          <line x1="54" y1="208" x2="540" y2="208"/>
+          <line x1="54" y1="163" x2="540" y2="163"/>
+          <line x1="54" y1="118" x2="540" y2="118"/>
+          <line x1="54" y1="73" x2="540" y2="73"/>
+          <line x1="54" y1="28" x2="540" y2="28"/>
+        </g>
+        <g fill="#94a3b8" font-size="8.5" text-anchor="end">
+          <text x="46" y="211">0</text>
+          <text x="46" y="166">500</text>
+          <text x="46" y="121">1000</text>
+          <text x="46" y="76">1500</text>
+        </g>
+        <g>
+          <rect x="70" y="84.0" width="62" height="124.0" rx="4" fill="#94a3b8"/>
+          <rect x="184" y="83.3" width="62" height="124.7" rx="4" fill="#c2410c"/>
+          <rect x="298" y="136.9" width="62" height="71.1" rx="4" fill="#0f766e"/>
+          <rect x="412" y="133.0" width="62" height="75.0" rx="4" fill="#1d4ed8"/>
+        </g>
+        <g fill="#102033" font-size="9.2" font-weight="800" text-anchor="middle">
+          <text x="101" y="77">1377.5885</text>
+          <text x="215" y="76">1385.0089</text>
+          <text x="329" y="130">790.2797</text>
+          <text x="443" y="126">833.9594</text>
+        </g>
+        <g fill="#5a6b80" font-size="8.3" text-anchor="middle">
+          <text x="101" y="223">M0</text>
+          <text x="215" y="223">M1</text>
+          <text x="329" y="223">M2</text>
+          <text x="443" y="223">M3</text>
+          <text x="101" y="238">R² .3973</text>
+          <text x="215" y="238">R² .3928</text>
+          <text x="329" y="238">R² .8018</text>
+          <text x="443" y="238">R² .7779</text>
+        </g>
+      </svg>
+      <p class="result-note">M2 substantially reduces FRP RMSE relative to M0; M3 retains most of that gain while reconciling the hierarchy.</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:8px; padding:8px 11px 6px;">
+    <table>
+      <thead>
+        <tr>
+          <th>Relay year</th>
+          <th class="num">Raw SREHI step</th>
+          <th class="num">Harmonized step</th>
+          <th class="num">Reduction in |log step|</th>
+          <th>Guard</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>2002</strong></td><td class="num">3.414</td><td class="num">1.523</td><td class="num"><strong>65.7%</strong></td><td><span class="mono">passed: true</span></td></tr>
+        <tr><td><strong>2012</strong></td><td class="num">3.938</td><td class="num">1.177</td><td class="num"><strong>88.1%</strong></td><td><span class="mono">passed: true</span></td></tr>
+        <tr><td><strong>2018</strong></td><td class="num">1.407</td><td class="num">0.836</td><td class="num"><strong>47.7%</strong></td><td><span class="mono">passed: true</span></td></tr>
+        <tr><td><strong>2021</strong></td><td class="num">0.738</td><td class="num">0.754</td><td class="num"><strong>7.2%</strong></td><td><span class="mono">passed: true</span></td></tr>
+        <tr><td><strong>2023</strong></td><td class="num">1.375</td><td class="num">1.000</td><td class="num"><strong>99.9%</strong></td><td><span class="mono">passed: true</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chip-row">
+    <span class="chip">M3 SREHI MAE <strong>6.1743</strong></span>
+    <span class="chip">M3 FRP MAE <strong>208.7884</strong></span>
+    <span class="chip">Cross-regime SREHI ratio <strong>1.2572</strong></span>
+    <span class="chip">Cross-regime FRP ratio <strong>1.3718</strong></span>
+    <span class="chip">Admin-1 → country max diff <strong>4.37e-11 / 3.73e-09</strong></span>
+    <span class="chip">Country → SA max diff <strong>5.82e-11 / 1.86e-09</strong></span>
+  </div>
+</section>
+
+<!-- SLIDE 5 -->
+<section class="slide" id="slide-5">
+  <div class="slide-head">
+    <div>
+      <span class="kicker">C2 analytics</span>
+      <h2>Continental fire calendar, FDR trends, and early onset</h2>
+    </div>
+    <span class="slide-num">05 / 07</span>
+  </div>
+
+  <div class="analytics-grid">
+    <div>
+      <div class="card" style="padding:8px 10px;">
+        <h3>FDR-controlled SREHI trends, 2001–2025</h3>
+        <p style="font-size:9.6px;"><strong>45 of 242</strong> Admin-1 units significant at <strong>q &lt; 0.05</strong>: <strong>34 increasing</strong>, <strong>11 decreasing</strong>. One country is significant: <strong>Peru</strong>.</p>
+      </div>
+      <div class="trend-list" style="margin-top:7px;">
+        <div class="trend">
+          <div><div class="place">Peru</div><div class="meta">country · z = 3.34 · q = 0.0134</div></div>
+          <div class="slope">+903.23<small>per year</small></div>
+        </div>
+        <div class="trend">
+          <div><div class="place">Amazonas · Brazil</div><div class="meta">Admin-1 · q = 0.0125</div></div>
+          <div class="slope">+785.81<small>per year</small></div>
+        </div>
+        <div class="trend">
+          <div><div class="place">Ucayali · Peru</div><div class="meta">Admin-1 · q = 0.0028</div></div>
+          <div class="slope">+186.55<small>per year</small></div>
+        </div>
+        <div class="trend">
+          <div><div class="place">Loreto · Peru</div><div class="meta">Admin-1 · q = 0.0028</div></div>
+          <div class="slope">+133.58<small>per year</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="chart-panel">
+        <div class="chart-title"><span>90-day early onset · record counts</span><span>2026 through November</span></div>
+        <svg viewBox="0 0 620 244" role="img" aria-label="Bar chart of early onset critical and high counts for 2024, 2025, and 2026">
+          <rect x="0" y="0" width="620" height="244" rx="8" fill="#ffffff"/>
+          <g stroke="#e6edf4" stroke-width="1">
+            <line x1="58" y1="194" x2="600" y2="194"/>
+            <line x1="58" y1="150" x2="600" y2="150"/>
+            <line x1="58" y1="106" x2="600" y2="106"/>
+            <line x1="58" y1="62" x2="600" y2="62"/>
+          </g>
+          <g fill="#94a3b8" font-size="8.3" text-anchor="end">
+            <text x="50" y="197">0</text>
+            <text x="50" y="153">2000</text>
+            <text x="50" y="109">4000</text>
+            <text x="50" y="65">6000</text>
+          </g>
+          <g>
+            <rect x="94" y="81.6" width="52" height="112.4" rx="4" fill="#b42318"/>
+            <rect x="152" y="123.0" width="52" height="71.0" rx="4" fill="#f59e0b"/>
+            <rect x="260" y="131.2" width="52" height="62.8" rx="4" fill="#b42318"/>
+            <rect x="318" y="140.4" width="52" height="53.6" rx="4" fill="#f59e0b"/>
+            <rect x="426" y="115.2" width="52" height="78.8" rx="4" fill="#b42318"/>
+            <rect x="484" y="137.4" width="52" height="56.6" rx="4" fill="#f59e0b"/>
+          </g>
+          <g fill="#102033" font-size="9.2" font-weight="800" text-anchor="middle">
+            <text x="120" y="75">5,125</text>
+            <text x="178" y="116">3,009</text>
+            <text x="286" y="124">2,891</text>
+            <text x="344" y="133">2,448</text>
+            <text x="452" y="108">3,232</text>
+            <text x="510" y="130">2,176</text>
+          </g>
+          <g fill="#5a6b80" font-size="10" font-weight="800" text-anchor="middle">
+            <text x="149" y="218">2024</text>
+            <text x="315" y="218">2025</text>
+            <text x="481" y="218">2026</text>
+          </g>
+          <g font-size="8" fill="#5a6b80">
+            <rect x="94" y="228" width="9" height="9" rx="2" fill="#b42318"/><text x="107" y="236">EARLY_ONSET_CRITICAL</text>
+            <rect x="260" y="228" width="9" height="9" rx="2" fill="#f59e0b"/><text x="273" y="236">EARLY_ONSET_HIGH</text>
+          </g>
+        </svg>
+      </div>
+
+      <div class="extreme-grid">
+        <div class="extreme"><div class="when">2024-02</div><div class="where">Suriname</div><div class="z">z = 8.28</div></div>
+        <div class="extreme"><div class="when">2025-12</div><div class="where">Peru</div><div class="z">z = 6.51</div></div>
+        <div class="extreme"><div class="when">2024-02</div><div class="where">Guyana</div><div class="z">z = 5.69</div></div>
+        <div class="extreme"><div class="when">2024-03</div><div class="where">Ecuador</div><div class="z">z = 5.05</div></div>
+        <div class="extreme"><div class="when">2024-02</div><div class="where">Bolivia</div><div class="z">z = 4.95</div></div>
+      </div>
+      <div class="peak-note">
+        <strong>Continental context.</strong> The historical SREHI peak is <strong>2007-09 = 293,471.7</strong>, ahead of <strong>2004-09 = 262,575.2</strong> and <strong>2010-09 = 239,710.3</strong>. The critical months above are not the same as the all-time peak; they are recent anomalies against the frozen 2001–2020 reference.
+      </div>
+    </div>
+  </div>
+
+  <div class="insight-strip">
+    <div class="insight"><span class="ik">2024 early-onset signal</span><span class="iv">5,125 critical · 3,009 high</span><span class="ip">The strongest 90-day early-onset year in the 2024–2026 window.</span></div>
+    <div class="insight"><span class="ik">Continental seasonal peak</span><span class="iv">September 2007 · 293,471.7</span><span class="ip">The highest harmonized SREHI month in the 26-year record.</span></div>
+    <div class="insight"><span class="ik">Trend evidence</span><span class="iv">45 / 242 Admin-1 significant</span><span class="ip">34 increasing, 11 decreasing; Peru is the only significant country.</span></div>
+  </div>
+</section>
+
+<!-- SLIDE 6 -->
+<section class="slide" id="slide-6">
+  <div class="slide-head">
+    <div>
+      <span class="kicker">Delivery · application</span>
+      <h2>A bilingual, offline observatory in the browser</h2>
+    </div>
+    <span class="slide-num">06 / 07</span>
+  </div>
+
+  <div class="app-grid">
+    <div>
+      <div class="arch">
+        <div class="arch-box">
+          <b>Browser · EN / ES</b>
+          <span>Accessible burning calendar, Admin-1 and bounding-box controls, harmonized/raw toggle, one-click CSV.</span>
+        </div>
+        <div class="arch-arrow">▼</div>
+        <div class="arch-box">
+          <b>WSGI application · app/server.py</b>
+          <span>Small, dependency-light Python service. No framework required. Local static files under /static.</span>
+        </div>
+        <div class="arch-arrow">▼</div>
+        <div class="arch-box">
+          <b>DuckDB · thread-local connections</b>
+          <span>read_parquet scans with column projection and filter pushdown. Bounded memory and 4 threads.</span>
+        </div>
+        <div class="arch-arrow">▼</div>
+        <div class="arch-box">
+          <b>Local Parquet + frozen manifests</b>
+          <span>Harmonized 10 km, 50 km, Admin-1, country and South America cubes; frozen splits and benchmark records.</span>
+        </div>
+      </div>
+
+      <div class="peak-note" style="margin-top:8px;">
+        <strong>Offline by construction.</strong> No cloud database, no external tile server, no CDN, no font fetch. The application is fully usable on a disconnected laptop.
+      </div>
+    </div>
+
+    <div>
+      <div class="feature-grid">
+        <div class="feature"><div class="big">&lt; 1 ms</div><div class="label">warm DuckDB query latency on real cubes</div></div>
+        <div class="feature"><div class="big">9.8–135.9 ms</div><div class="label">cold query latency across endpoints</div></div>
+        <div class="feature"><div class="big">45/45</div><div class="label">tests passing</div></div>
+        <div class="feature"><div class="big">1 click</div><div class="label">UTF-8 harmonized CSV export</div></div>
+      </div>
+
+      <div class="ui-mock">
+        <div class="ui-bar"><span>Fire Relay South America</span><span class="pill">EN · ES</span></div>
+        <div class="ui-body">
+          <div class="ui-controls">
+            <b>Country / region</b><div class="ui-field">Peru</div>
+            <b>Admin-1 / state</b><div class="ui-field">Ucayali</div>
+            <b>Series</b><div class="ui-field">Harmonized (M3)</div>
+            <b>Metric</b><div class="ui-field">SREHI Events</div>
+          </div>
+          <div class="calendar-strip" aria-label="Twelve-month calendar strip">
+            <span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span>
+            <span>J</span><span>A</span><span class="peak">S</span><span class="warm">O</span><span>N</span><span>D</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:8px; padding:8px 10px;">
+        <h3>Operational questions the app answers</h3>
+        <p style="font-size:9.5px;">Which months are unusual against the frozen 2001–2020 median? Is the current month early? Which Admin-1 units are trending up? Can I export the underlying harmonized series now?</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="command-strip">
+    <span class="cl">Local launch</span>
+    <code>python -m app.server --processed-dir data/processed --host 127.0.0.1 --port 8080</code>
+  </div>
+</section>
+
+<!-- SLIDE 7 -->
+<section class="slide" id="slide-7">
+  <div class="slide-head">
+    <div>
+      <span class="kicker">Governance · Submission</span>
+      <h2>Open attribution, reproducibility, and AI Disclosure</h2>
+    </div>
+    <span class="slide-num">07 / 07</span>
+  </div>
+
+  <div class="govern-grid">
+    <div>
+      <div class="attribution">
+        <div class="label">Data attribution · textual only</div>
+        <div class="source">NASA FIRMS Archive &amp; NRT — MODIS C6.1, VIIRS S-NPP, NOAA-20/J1, NOAA-21/J2</div>
+        <p>This is an independent challenge submission. NASA does not endorse it. <strong>Zero NASA logos, badges, seals, emblems, or graphical wordmarks</strong> appear in this deck or in the public documents.</p>
+      </div>
+
+      <div class="attribution" style="margin-top:8px;">
+        <div class="label">Delivery contract</div>
+        <p style="margin-top:0; font-size:9.3px;"><strong>4,014</strong> CSV rows · exact 14 columns · <strong>min 0.0</strong> · <strong>no NaN</strong> · unique <span class="mono">record_id</span> · sorted by <span class="mono">iso_a3, year_month</span>.</p>
+        <p style="font-size:9.3px;">Exactly <strong>7</strong> slides · 13.333 × 7.5 in · self-contained offline · inline SVG charts.</p>
+      </div>
+    </div>
+
+    <div class="code-box"><span class="c"># Local CPU only. Run from the repository root.</span>
+<span class="m">python</span> -m src.data.build_spatiotemporal_cubes --project-root .
+<span class="m">python</span> -m src.models.freeze_validation --processed-dir data/processed
+<span class="m">python</span> -m src.models.harmonize_pipeline --processed-dir data/processed
+<span class="m">python</span> -m src.models.calendar_analytics --processed-dir data/processed
+<span class="m">python</span> -m app.server --processed-dir data/processed
+<span class="m">python</span> scripts/export_submission.py --processed-dir data/processed --output submission.csv
+<span class="m">python</span> -m unittest tests/test_submission_package.py -v</div>
+  </div>
+
+  <div class="disclosure">
+    <div>
+      <h3>Synthetic Intelligence (SI) / Artificial Intelligence (AI) Disclosure</h3>
+      <p><strong>Explicit disclosure.</strong> The architecture, code engineering, quality auditing, and analytical support for this submission used assistance from AI model tools under direct human supervision. AI contributed to drafting and refactoring code, reviewing validation logic, checking documentation consistency, and structuring the scientific narrative.</p>
+      <p><strong>Data integrity.</strong> AI tools did not generate, invent, impute, or alter any reported data value. Every metric comes from deterministic Python/DuckDB pipelines executed on local CPU over the project’s Parquet artefacts, with frozen splits, fixed seeds, and reproducible commands.</p>
+    </div>
+    <div>
+      <h3>How the work was verified</h3>
+      <ul>
+        <li>Official <span class="mono">validate_submission.py</span> contract against <span class="mono">submission_spec.json</span>.</li>
+        <li><span class="mono">unittest</span> coverage for export, deck, and documents.</li>
+        <li>Deterministic re-runs, exact hierarchy conservation, and cross-regime guards.</li>
+        <li>Logo and external-URL audit of the public HTML and Markdown.</li>
+        <li>Human review of the scientific framing, code, and final copy.</li>
+      </ul>
+      <p style="margin-top:4px;"><strong>Accountability.</strong> Human contributors remain responsible for the claims, code, data handling, and public communication.</p>
+    </div>
+  </div>
+
+  <div class="compliance-row">
+    <span class="chip">CPU-only · local-only</span>
+    <span class="chip">Zero Google Cloud</span>
+    <span class="chip">Zero NASA logos</span>
+    <span class="chip">English public deliverables</span>
+    <span class="chip">7 slides · print-ready</span>
+    <span class="chip">Reproducible · deterministic</span>
+  </div>
+  <p class="fineprint">Fire Relay South America · NASA Space Apps Challenge 2026 · Harmonization of MODIS and VIIRS Hot Spots · Textual data attribution only.</p>
+</section>
+
+</body>
+</html>

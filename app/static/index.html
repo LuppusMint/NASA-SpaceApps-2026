@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Fire Relay South America: a harmonized MODIS + VIIRS burning-activity calendar and early-onset observatory for emergency responders, scientists and land managers.">
+  <title>Fire Relay South America — Harmonized Burn Calendar &amp; Early-Onset Observatory</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23c2410c'/%3E%3Cpath d='M16 5c4 5 7 8 7 14a7 7 0 0 1-14 0c0-3 1.5-5 3-7 .5 2.5 1.5 4 3 5 1.5-3.5 1.5-7.5 1-12Z' fill='%23ffffff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/static/styles.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
+
+  <header class="app-header">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-labelledby="brand-title" focusable="false">
+        <title id="brand-title">Fire Relay South America mark</title>
+        <path d="M32 5c7 11 14 16 14 28a14 14 0 0 1-28 0c0-6 3-10 6-14 1 5 3 8 6 10 3-7 3-15 2-24Z" fill="currentColor" opacity=".95"/>
+        <path d="M10 50c8 5 16 7 22 7s14-2 22-7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".55"/>
+        <path d="M16 57c6 3 11 4 16 4s10-1 16-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity=".35"/>
+      </svg>
+      <div class="brand-copy">
+        <p class="eyebrow" data-i18n="brand.eyebrow">Harmonized MODIS + VIIRS active-fire record · 2000–2026</p>
+        <h1>Fire Relay South America</h1>
+        <p class="subtitle" data-i18n="brand.subtitle">Harmonized Burn Calendar &amp; Early-Onset Observatory</p>
+      </div>
+    </div>
+
+    <div class="header-tools">
+      <p id="status-line" class="status-pill" role="status" aria-live="polite" data-state="loading" data-i18n="status.loading">Loading harmonized data…</p>
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button id="lang-en" class="lang-btn" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button id="lang-es" class="lang-btn" type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="observatory-intro" aria-labelledby="intro-title">
+      <div class="intro-copy">
+        <p class="eyebrow" data-i18n="intro.eyebrow">Earth observation · South America</p>
+        <h2 id="intro-title" data-i18n="intro.title">Read a continent’s fire season in one view.</h2>
+        <p class="intro-note" data-i18n="intro.note">MODIS and VIIRS detections are harmonized into one monthly record, then read against a frozen 2001–2020 climatology. Every chart, map cell and CSV row is queried from local Parquet cubes.</p>
+        <div class="intro-actions">
+          <a id="download-csv" class="btn btn-accent" href="/api/export.csv" download="srehi_calendar_export.csv" data-i18n="controls.download">Export CSV</a>
+          <a class="btn btn-ghost" href="#anomaly-table-title" data-i18n="intro.audit">Open transparency record</a>
+        </div>
+      </div>
+      <dl class="intro-facts" aria-label="Dataset coverage">
+        <div>
+          <dt data-i18n="intro.factWindow">Record window</dt>
+          <dd>2000–2026</dd>
+        </div>
+        <div>
+          <dt data-i18n="intro.factSensors">Harmonized sensors</dt>
+          <dd>MODIS + VIIRS</dd>
+        </div>
+        <div>
+          <dt data-i18n="intro.factGrid">Grid</dt>
+          <dd>10 km equal-area</dd>
+        </div>
+        <div>
+          <dt data-i18n="intro.factRuntime">Runtime</dt>
+          <dd data-i18n="intro.factRuntimeValue">Offline DuckDB</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="panel controls-panel" aria-labelledby="controls-title">
+      <div class="panel-head">
+        <div class="panel-heading">
+          <p class="section-kicker" data-i18n="controls.kicker">01 · Query bench</p>
+          <h2 id="controls-title" data-i18n="controls.title">Area and date controls</h2>
+          <p class="panel-note" data-i18n="controls.note">Choose a country and Admin-1 unit, or draw a bounding box / point radius. Every change re-queries the harmonized Parquet cubes locally.</p>
+        </div>
+        <div class="panel-meta" aria-hidden="true">
+          <span class="panel-meta-dot"></span>
+          <span data-i18n="controls.local">Local Parquet</span>
+        </div>
+      </div>
+
+      <form id="controls-form" class="controls-grid" novalidate>
+        <div class="field col-4">
+          <label for="country-select" data-i18n="controls.country">Country / region</label>
+          <select id="country-select" autocomplete="off"></select>
+        </div>
+
+        <div class="field col-4">
+          <label for="admin1-select" data-i18n="controls.admin1">Admin-1 / state</label>
+          <select id="admin1-select" autocomplete="off"></select>
+        </div>
+
+        <div class="field col-4">
+          <label for="metric-select" data-i18n="controls.metric">Metric</label>
+          <select id="metric-select" autocomplete="off">
+            <option value="srehi" data-i18n="metric.srehi">Hotspot events (SREHI)</option>
+            <option value="frp_mw" data-i18n="metric.frp">FRP MW</option>
+          </select>
+        </div>
+
+        <div class="field date-range-field col-12">
+          <span class="date-range-legend" data-i18n="controls.dateRange">Date range</span>
+          <div class="date-range-controls">
+            <label for="start-date-btn" data-i18n="controls.start">Start date</label>
+            <button id="start-date-btn" type="button" class="date-trigger-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="date-picker-popover">
+              <span id="start-date-label">Nov 2000</span>
+            </button>
+            <span class="date-range-sep" aria-hidden="true">→</span>
+            <label for="end-date-btn" data-i18n="controls.end">End date</label>
+            <button id="end-date-btn" type="button" class="date-trigger-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="date-picker-popover">
+              <span id="end-date-label">Nov 2026</span>
+            </button>
+            <button id="date-range-clear" type="button" class="date-clear-btn" data-i18n-aria="date.reset" aria-label="Reset date range" hidden>×</button>
+          </div>
+          <div class="date-presets" role="group" aria-label="Quick date ranges">
+            <button type="button" class="date-preset" data-preset="all" data-i18n="date.all">All (2000–2026)</button>
+            <button type="button" class="date-preset" data-preset="12m" data-i18n="date.last12m">Last 12M</button>
+            <button type="button" class="date-preset" data-preset="5y" data-i18n="date.last5y">Last 5Y</button>
+            <button type="button" class="date-preset" data-preset="baseline" data-i18n="date.baseline">Baseline (2001–2020)</button>
+            <button type="button" class="date-preset" data-preset="drift" data-i18n="date.drift">Drift Era (2021–2026)</button>
+          </div>
+          <input id="start-ym" type="hidden">
+          <input id="end-ym" type="hidden">
+
+          <div id="date-picker-popover" class="date-picker-popover" role="dialog" aria-modal="false" aria-label="Month–year range picker" hidden>
+            <div class="date-picker-tabs" role="tablist" aria-label="Range endpoint">
+              <button id="picker-tab-start" class="date-picker-tab is-active" type="button" role="tab" aria-selected="true" data-i18n="date.selectingStart">Selecting: Start</button>
+              <button id="picker-tab-end" class="date-picker-tab" type="button" role="tab" aria-selected="false" data-i18n="date.selectingEnd">Selecting: End</button>
+            </div>
+            <div class="date-picker-yearbar">
+              <button id="picker-year-prev" type="button" class="date-picker-nav" data-i18n-aria="date.previousYear" aria-label="Previous year">‹</button>
+              <select id="picker-year-select" autocomplete="off" aria-label="Picker year"></select>
+              <button id="picker-year-next" type="button" class="date-picker-nav" data-i18n-aria="date.nextYear" aria-label="Next year">›</button>
+            </div>
+            <div id="picker-month-grid" class="date-picker-months" role="grid" aria-label="Months"></div>
+            <div class="date-picker-foot">
+              <span id="picker-range-note" class="date-picker-note"></span>
+              <button id="picker-close" type="button" class="btn btn-primary date-picker-done" data-i18n="date.done">Done</button>
+            </div>
+          </div>
+        </div>
+
+        <fieldset class="field segmented col-3">
+          <legend data-i18n="controls.series">Series</legend>
+          <div class="segmented-options">
+            <label for="series-harmonized"><input id="series-harmonized" type="radio" name="series_mode" value="harmonized" checked> <span data-i18n="series.harmonized">Harmonized (M3)</span></label>
+            <label for="series-raw"><input id="series-raw" type="radio" name="series_mode" value="raw"> <span data-i18n="series.raw">Raw unharmonized</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field segmented col-5">
+          <legend data-i18n="controls.spatial">Spatial filter</legend>
+          <div class="segmented-options">
+            <label for="filter-geo"><input id="filter-geo" type="radio" name="filter_mode" value="geo" checked> <span data-i18n="filter.geo">Region</span></label>
+            <label for="filter-bbox"><input id="filter-bbox" type="radio" name="filter_mode" value="bbox"> <span data-i18n="filter.bbox">BBox</span></label>
+            <label for="filter-point"><input id="filter-point" type="radio" name="filter_mode" value="point"> <span data-i18n="filter.point">Lat/Lon/Radius</span></label>
+          </div>
+        </fieldset>
+
+        <div class="actions col-4">
+          <button id="apply-btn" class="btn btn-primary" type="submit" data-i18n="controls.apply">Update view</button>
+          <span class="actions-hint" data-i18n="controls.hint">Queries run on the local CPU.</span>
+        </div>
+
+        <div id="bbox-fields" class="field-group col-12" hidden>
+          <div class="field">
+            <label for="bbox-min-lat" data-i18n="bbox.minLat">Min latitude</label>
+            <input id="bbox-min-lat" type="number" inputmode="decimal" step="0.0001" min="-90" max="90" value="-20">
+          </div>
+          <div class="field">
+            <label for="bbox-max-lat" data-i18n="bbox.maxLat">Max latitude</label>
+            <input id="bbox-max-lat" type="number" inputmode="decimal" step="0.0001" min="-90" max="90" value="5">
+          </div>
+          <div class="field">
+            <label for="bbox-min-lon" data-i18n="bbox.minLon">Min longitude</label>
+            <input id="bbox-min-lon" type="number" inputmode="decimal" step="0.0001" min="-180" max="180" value="-75">
+          </div>
+          <div class="field">
+            <label for="bbox-max-lon" data-i18n="bbox.maxLon">Max longitude</label>
+            <input id="bbox-max-lon" type="number" inputmode="decimal" step="0.0001" min="-180" max="180" value="-45">
+          </div>
+        </div>
+
+        <div id="point-fields" class="field-group col-12" hidden>
+          <div class="field">
+            <label for="point-lat" data-i18n="point.lat">Latitude</label>
+            <input id="point-lat" type="number" inputmode="decimal" step="0.0001" min="-90" max="90" value="-12">
+          </div>
+          <div class="field">
+            <label for="point-lon" data-i18n="point.lon">Longitude</label>
+            <input id="point-lon" type="number" inputmode="decimal" step="0.0001" min="-180" max="180" value="-52">
+          </div>
+          <div class="field">
+            <label for="point-radius" data-i18n="point.radius">Radius (km)</label>
+            <input id="point-radius" type="number" inputmode="decimal" step="1" min="1" max="2000" value="150">
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section id="badges" class="badges" aria-label="Transparency badges"></section>
+
+    <section id="kpi-grid" class="kpi-grid" aria-label="Key indicators"></section>
+
+    <section class="panel calendar-panel" aria-labelledby="heatmap-title">
+      <div class="panel-head">
+        <div class="panel-heading">
+          <p class="section-kicker" data-i18n="calendar.kicker">02 · Burning calendar</p>
+          <h2 id="heatmap-title" data-i18n="heatmap.title">Burning activity calendar, 2000–2026</h2>
+          <p class="panel-note" data-i18n="heatmap.note">Each cell is one month of harmonized hotspot activity in the selected area; darker means more burning. A ringed dot marks a month above the 2001–2020 90th percentile for that calendar month. The bottom row is the 2001–2020 median of each month and the right column is the annual total. Select a cell to inspect that year below.</p>
+        </div>
+        <button id="calendar-download" type="button" class="btn btn-ghost calendar-download" data-i18n="calendar.download">Download calendar (PNG)</button>
+      </div>
+      <div id="calendar-matrix" class="calendar-matrix" role="group" aria-labelledby="heatmap-title"></div>
+      <div id="heatmap-legend" class="legend" aria-label="Heatmap color scale"></div>
+      <div class="panel-head calendar-detail-head">
+        <div class="panel-heading">
+          <h3 class="calendar-detail-title" data-i18n="calendar.detailTitle">Month-by-month detail for one year</h3>
+        </div>
+        <div class="calendar-year-control" role="group" aria-label="Calendar year">
+          <button id="calendar-year-prev" type="button" aria-label="Previous year">‹</button>
+          <label for="calendar-year" class="year-label" data-i18n="calendar.year">Year</label>
+          <select id="calendar-year" autocomplete="off"></select>
+          <button id="calendar-year-next" type="button" aria-label="Next year">›</button>
+        </div>
+      </div>
+      <div id="heatmap" class="calendar-heatmap"></div>
+      <div id="calendar-detail" class="calendar-detail" aria-live="polite"></div>
+    </section>
+
+    <section class="panel chart-panel" aria-labelledby="series-title">
+      <div class="panel-head">
+        <div class="panel-heading">
+          <p class="section-kicker" data-i18n="series.kicker">03 · Harmonized record</p>
+          <h2 id="series-title" data-i18n="series.title">Harmonized monthly series, 2000–2026</h2>
+          <p class="panel-note" data-i18n="series.note">Solid line: M3 harmonized estimate. Shaded band: 90% predictive interval. Dashed line: raw unharmonized observations. Vertical rules mark sensor-regime transitions: 2002 · 2012 · 2018 · 2021 · 2023.</p>
+        </div>
+      </div>
+      <div class="chart-frame">
+        <div id="timeseries-chart" class="chart chart-timeseries" data-transitions="2002,2012,2018,2021,2023"></div>
+      </div>
+      <div id="series-legend" class="legend" aria-label="Series legend"></div>
+    </section>
+
+    <section class="panel chart-panel" aria-labelledby="onset-title">
+      <div class="panel-head">
+        <div class="panel-heading">
+          <p class="section-kicker" data-i18n="onset.kicker">04 · Early onset</p>
+          <h2 id="onset-title" data-i18n="onset.title">Early-onset curve — 90-day window</h2>
+          <p class="panel-note" data-i18n="onset.note">Cumulative 90-day burning signal compared with the frozen 2001–2020 p75 and p90 thresholds for the same calendar day.</p>
+        </div>
+        <div class="field inline-field">
+          <label for="onset-year-inline" data-i18n="onset.year">Season year</label>
+          <select id="onset-year-inline" autocomplete="off"></select>
+        </div>
+      </div>
+      <div class="onset-range-warning" id="onset-range-warning" role="status" aria-live="polite" hidden></div>
+      <div id="onset-summary" class="summary-strip" aria-live="polite"></div>
+      <div class="chart-frame">
+        <div id="onset-chart" class="chart chart-onset"></div>
+      </div>
+      <div id="onset-legend" class="legend" aria-label="Early-onset legend"></div>
+    </section>
+
+    <section class="panel map-panel" aria-labelledby="map-title">
+      <div class="panel-head section-header">
+        <div class="panel-heading">
+          <p class="section-kicker" data-i18n="map.kicker">05 · Spatial observatory</p>
+          <h2 id="map-title" data-i18n="map.title">Interactive South America map</h2>
+          <p class="panel-note" data-i18n="map.note">True-aspect Natural Earth geometry with country and Admin-1 borders. Zoom with the wheel or toolbar, drag to pan, and click near a cell to pin its scientific context. In Lat/Lon/Radius mode, click anywhere to set the AOI.</p>
+        </div>
+        <p id="map-readout" class="map-readout" data-i18n="map.readout">Hover or pin a cell for context; use Point mode to set the AOI.</p>
+      </div>
+      <div class="map-temporal-toolbar" role="group" aria-label="Map temporal navigation and colour scale">
+        <button type="button" class="btn-secondary map-nav-btn" id="map-month-prev" aria-label="Previous month" title="Previous month" data-i18n-aria="map.prev">‹</button>
+        <select id="map-month-select" class="map-month-select" aria-label="Map active month" data-i18n-aria="map.month_label"></select>
+        <button type="button" class="btn-secondary map-nav-btn" id="map-month-next" aria-label="Next month" title="Next month" data-i18n-aria="map.next">›</button>
+        <button type="button" class="btn-secondary map-play-btn" id="map-play-btn" aria-pressed="false" data-i18n="map.play">Play</button>
+        <select id="map-speed-select" class="map-speed-select" aria-label="Playback speed" data-i18n-aria="map.speed_label">
+          <option value="1">1x</option>
+          <option value="2">2x</option>
+          <option value="4">4x</option>
+        </select>
+        <label class="map-scale-label" for="map-scale-mode" data-i18n="map.scale_label">Color scale</label>
+        <select id="map-scale-mode" class="map-scale-select">
+          <option value="fixed" data-i18n="map.scale_fixed" selected>Fixed range scale (p99 ref)</option>
+          <option value="month" data-i18n="map.scale_month">Adjusted to month</option>
+        </select>
+        <button type="button" class="btn-secondary map-download-btn" id="map-download-btn" data-i18n="map.download">Download map (PNG)</button>
+      </div>
+      <div class="map-state-banner" id="map-state-banner" role="status" aria-live="polite" hidden></div>
+      <div class="map-resolution-notice" id="map-resolution-notice" role="status" aria-live="polite" hidden></div>
+      <div class="map-truncation-banner" id="map-truncation-banner" role="status" aria-live="polite" hidden></div>
+      <div class="map-traceability-strip" id="map-traceability-strip" aria-live="polite"></div>
+      <div class="map-stage map-workbench">
+        <div class="map-wrap">
+          <div class="map-toolbar" role="group" aria-label="Map controls">
+            <button id="map-zoom-in" type="button" class="map-ctrl-btn" title="Zoom in" aria-label="Zoom in">+</button>
+            <button id="map-zoom-out" type="button" class="map-ctrl-btn" title="Zoom out" aria-label="Zoom out">−</button>
+            <button id="map-zoom-fit" type="button" class="map-ctrl-btn" data-i18n="map.fitBtn" title="Fit selection">Fit</button>
+            <button id="map-zoom-reset" type="button" class="map-ctrl-btn" data-i18n="map.resetBtn" title="Reset continental view">Reset</button>
+            <span id="map-zoom-badge" class="map-zoom-badge">1.0×</span>
+          </div>
+          <canvas id="map-canvas" width="760" height="1040" role="img" aria-label="Map of South America with country and Admin-1 borders, harmonized fire cells, static thermal cells and the South Atlantic Magnetic Anomaly zone"></canvas>
+          <div id="map-tooltip" class="map-tooltip" hidden></div>
+        </div>
+        <aside class="map-side" aria-label="Map layers and legend">
+          <div class="map-side-block">
+            <h3 data-i18n="map.inspectorTitle">Cell inspector</h3>
+            <div id="map-cell-inspector" class="map-cell-inspector" aria-live="polite"></div>
+          </div>
+          <div class="map-side-block">
+            <h3 data-i18n="map.layers">Layers</h3>
+            <ul class="layer-list">
+              <li><span class="layer-swatch layer-country"></span><span data-i18n="map.layerCountry">Country boundaries</span></li>
+              <li><span class="layer-swatch layer-admin1"></span><span data-i18n="map.layerAdmin1">Admin-1 internal borders</span></li>
+              <li><span class="layer-swatch layer-fire"></span><span data-i18n="map.layerFire">Harmonized fire cells</span></li>
+              <li><span class="layer-swatch layer-static"></span><span data-i18n="map.layerStatic">Static thermal cells</span></li>
+              <li><span class="layer-swatch layer-sama"></span><span data-i18n="map.layerSama">SAMA containment</span></li>
+              <li><span class="layer-swatch layer-aoi"></span><span data-i18n="map.layerAoi">Selected AOI</span></li>
+            </ul>
+          </div>
+          <div class="map-side-block">
+            <h3 data-i18n="map.legendTitle">Intensity</h3>
+            <div id="map-legend" class="legend" aria-label="Map legend"></div>
+          </div>
+          <p class="map-hint" data-i18n="map.hint">The map uses a cosine-corrected geographic projection at 18°S, so shapes and AOI radii stay true to atlas proportions.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="panel table-panel" aria-labelledby="anomaly-table-title">
+      <div class="panel-head">
+        <div class="panel-heading">
+          <p class="section-kicker" data-i18n="table.kicker">06 · Audit trail</p>
+          <h2 id="anomaly-table-title" data-i18n="table.title">Monthly anomalies and transparency record</h2>
+          <p class="panel-note" data-i18n="table.note">The table reports the M3 estimate, its 90% band, the raw observation, standardized anomaly, percent of the frozen monthly median, severity tier, data maturity and constellation regime.</p>
+        </div>
+      </div>
+      <div tabindex="0" role="region" aria-labelledby="anomaly-table-title" class="table-wrapper">
+        <table id="anomaly-table">
+          <caption class="sr-only" data-i18n="table.caption">Monthly anomaly table for the selected area and metric</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="table.ym">Year–month</th>
+              <th scope="col" data-i18n="table.m3">M3 harmonized</th>
+              <th scope="col" data-i18n="table.band">90% band</th>
+              <th scope="col" data-i18n="table.raw">Raw</th>
+              <th scope="col" data-i18n="table.z">Anomaly z</th>
+              <th scope="col" data-i18n="table.pct">% of median</th>
+              <th scope="col" data-i18n="table.severity">Severity</th>
+              <th scope="col" data-i18n="table.maturity">Maturity</th>
+              <th scope="col" data-i18n="table.regime">Regime</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <path d="M32 5c7 11 14 16 14 28a14 14 0 0 1-28 0c0-6 3-10 6-14 1 5 3 8 6 10 3-7 3-15 2-24Z" fill="currentColor"/>
+      </svg>
+      <div>
+        <p class="footer-title">Fire Relay South America</p>
+        <p data-i18n="footer.data">Data: &#78;ASA LANCE FIRMS MODIS C6.1 and VIIRS S-NPP / NOAA-20 / NOAA-21 active-fire detections, harmonized on a 10 km equal-area Albers grid; administrative boundaries from Natural Earth 1:10m Cultural Vectors (CC0).</p>
+      </div>
+    </div>
+    <div>
+      <p data-i18n="footer.offline">Runs entirely offline on local DuckDB + Parquet. No external CDNs, tiles, fonts or trackers.</p>
+      <p data-i18n="footer.ai">Scientific methodology, statistical harmonization, and empirical validation developed by the project team. Software engineering assisted by AI/SI tooling under human verification. Not for tactical wildfire suppression, emergency dispatch, evacuation routing, or life-and-property decisions; no &#78;ASA, LANCE, ESDIS, NOAA, or U.S. Government endorsement is implied.</p>
+      <p class="footer-meta" data-i18n="footer.meta">South America Albers (EPSG:102033) · Bilingual EN/ES · 1-click CSV export</p>
+    </div>
+  </footer>
+
+  <div id="live-region" class="sr-only" aria-live="polite"></div>
+</body>
+</html>

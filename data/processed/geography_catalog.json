@@ -1,0 +1,6547 @@
+{
+  "generated_at_utc": "2026-11-15T06:22:59.361269+00:00",
+  "source_parquet_glob": "data/parquet/south_america_hotspots/year=*/data_*.parquet",
+  "bbox_order": [
+    "min_lat",
+    "max_lat",
+    "min_lon",
+    "max_lon"
+  ],
+  "countries": [
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "bbox": [
+        -54.9,
+        -21.80942,
+        -73.19314,
+        -53.66204
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 22610,
+      "admin1": [
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Buenos Aires",
+          "bbox": [
+            -41.02557,
+            -33.2571,
+            -63.38842,
+            -56.67007
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 3170
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Catamarca",
+          "bbox": [
+            -30.08532,
+            -25.25109,
+            -69.08178,
+            -64.9473
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 873
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Chaco",
+          "bbox": [
+            -28.00257,
+            -24.12652,
+            -63.34354,
+            -58.35776
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1065
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Chubut",
+          "bbox": [
+            -45.9962,
+            -41.99905,
+            -72.145,
+            -63.69527
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 774
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Ciudad de Buenos Aires",
+          "bbox": [
+            -34.76725,
+            -34.53013,
+            -58.55053,
+            -58.31868
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 9
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Corrientes",
+          "bbox": [
+            -30.70739,
+            -27.25972,
+            -59.66733,
+            -55.62828
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 969
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Córdoba",
+          "bbox": [
+            -35.00111,
+            -29.4493,
+            -65.7572,
+            -61.75609
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1700
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Entre Ríos",
+          "bbox": [
+            -34.04856,
+            -30.15194,
+            -60.76886,
+            -57.8195
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 848
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Formosa",
+          "bbox": [
+            -26.8848,
+            -22.47297,
+            -62.341,
+            -57.5593
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 848
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Jujuy",
+          "bbox": [
+            -24.5989,
+            -21.80942,
+            -67.17835,
+            -64.1629
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 520
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "La Pampa",
+          "bbox": [
+            -39.32526,
+            -35.00054,
+            -68.2647,
+            -63.38435
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1465
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "La Rioja",
+          "bbox": [
+            -31.90953,
+            -27.7779,
+            -69.48505,
+            -65.462
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 825
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Mendoza",
+          "bbox": [
+            -37.5501,
+            -31.99251,
+            -70.56902,
+            -66.513
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1230
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Misiones",
+          "bbox": [
+            -28.14719,
+            -25.5181,
+            -56.01856,
+            -53.66204
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 337
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Neuquén",
+          "bbox": [
+            -41.06266,
+            -36.20609,
+            -71.9434,
+            -68.01878
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 723
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Río Negro",
+          "bbox": [
+            -41.99921,
+            -37.5686,
+            -71.887,
+            -62.80665
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1416
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Salta",
+          "bbox": [
+            -26.32431,
+            -21.9977,
+            -68.50555,
+            -62.33695
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1553
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "San Juan",
+          "bbox": [
+            -32.31873,
+            -28.50402,
+            -70.58448,
+            -66.76784
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 690
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "San Luis",
+          "bbox": [
+            -36.00097,
+            -31.87,
+            -67.39075,
+            -64.87533
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 790
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Santa Cruz",
+          "bbox": [
+            -52.38753,
+            -46.0034,
+            -73.19314,
+            -65.85048
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 652
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Santa Fe",
+          "bbox": [
+            -34.38149,
+            -27.99938,
+            -62.8308,
+            -58.86538
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1430
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Santiago del Estero",
+          "bbox": [
+            -30.15433,
+            -25.5812,
+            -65.1799,
+            -61.70937
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1421
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Tierra del Fuego",
+          "bbox": [
+            -54.9,
+            -52.72816,
+            -68.60679,
+            -66.4589
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 55
+        },
+        {
+          "country_name": "Argentina",
+          "iso_a3": "ARG",
+          "admin1_name": "Tucumán",
+          "bbox": [
+            -28.0457,
+            -26.07839,
+            -66.15491,
+            -64.48333
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 257
+        }
+      ],
+      "admin1_count": 24
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "bbox": [
+        -22.87274,
+        -9.67994,
+        -69.65248,
+        -57.46664
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 10387,
+      "admin1": [
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Chuquisaca",
+          "bbox": [
+            -21.51346,
+            -18.37299,
+            -65.69227,
+            -62.26519
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 567
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Cochabamba",
+          "bbox": [
+            -18.65994,
+            -15.77059,
+            -67.00985,
+            -64.21324
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 601
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "El Beni",
+          "bbox": [
+            -16.4674,
+            -10.39375,
+            -67.56753,
+            -61.59622
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2177
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "La Paz",
+          "bbox": [
+            -18.01472,
+            -11.90709,
+            -69.65248,
+            -66.75935
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1289
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Oruro",
+          "bbox": [
+            -19.82465,
+            -17.40688,
+            -69.0562,
+            -66.07712
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 527
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Pando",
+          "bbox": [
+            -12.49249,
+            -9.67994,
+            -69.57632,
+            -65.28672
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 659
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Potosí",
+          "bbox": [
+            -22.87274,
+            -17.85742,
+            -68.78341,
+            -64.79831
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1001
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Santa Cruz",
+          "bbox": [
+            -20.47202,
+            -13.46627,
+            -64.8006,
+            -57.46664
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 3607
+        },
+        {
+          "country_name": "Bolivia",
+          "iso_a3": "BOL",
+          "admin1_name": "Tarija",
+          "bbox": [
+            -22.8706,
+            -20.89382,
+            -65.28204,
+            -62.3137
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 415
+        }
+      ],
+      "admin1_count": 9
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "bbox": [
+        -33.741,
+        5.22911,
+        -73.8698,
+        -32.42027
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 72141,
+      "admin1": [
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Acre",
+          "bbox": [
+            -11.14049,
+            -7.34184,
+            -73.8698,
+            -66.6491
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1266
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Alagoas",
+          "bbox": [
+            -10.46201,
+            -8.8399,
+            -38.2084,
+            -35.16112
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 328
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Amapá",
+          "bbox": [
+            -1.21814,
+            4.07722,
+            -54.70458,
+            -49.87899
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 797
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Amazonas",
+          "bbox": [
+            -9.83772,
+            2.0637,
+            -73.53017,
+            -56.32423
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 7749
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Bahia",
+          "bbox": [
+            -18.30193,
+            -8.52902,
+            -46.57079,
+            -37.3725
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 5822
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Ceará",
+          "bbox": [
+            -7.8465,
+            -2.81316,
+            -41.4487,
+            -37.25648
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1593
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Distrito Federal",
+          "bbox": [
+            -16.042,
+            -15.49078,
+            -48.27623,
+            -47.30812
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 75
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Espírito Santo",
+          "bbox": [
+            -21.26954,
+            -17.87629,
+            -41.88068,
+            -39.68731
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 518
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Goiás",
+          "bbox": [
+            -19.4674,
+            -12.4009,
+            -53.24446,
+            -45.91348
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 3599
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Maranhão",
+          "bbox": [
+            -10.3036,
+            -1.069,
+            -48.7372,
+            -41.81578
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 3487
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Mato Grosso",
+          "bbox": [
+            -18.02468,
+            -7.33991,
+            -61.5788,
+            -50.23597
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 8988
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Mato Grosso do Sul",
+          "bbox": [
+            -24.0442,
+            -17.18764,
+            -58.16213,
+            -50.96194
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 3705
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Minas Gerais",
+          "bbox": [
+            -22.88792,
+            -14.24118,
+            -51.01548,
+            -39.86523
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 6094
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Paraná",
+          "bbox": [
+            -26.68809,
+            -22.52196,
+            -54.61234,
+            -48.10876
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2079
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Paraíba",
+          "bbox": [
+            -8.2804,
+            -6.03618,
+            -38.7443,
+            -34.79613
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 653
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Pará",
+          "bbox": [
+            -9.84368,
+            2.3755,
+            -58.79752,
+            -46.0918
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 9577
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Pernambuco",
+          "bbox": [
+            -9.48664,
+            -7.27055,
+            -41.36606,
+            -34.80828
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1102
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Piauí",
+          "bbox": [
+            -10.89495,
+            -2.764,
+            -45.98114,
+            -40.41649
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2659
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Rio Grande do Norte",
+          "bbox": [
+            -6.97738,
+            -3.85453,
+            -38.6082,
+            -32.42027
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 597
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Rio Grande do Sul",
+          "bbox": [
+            -33.741,
+            -27.08143,
+            -57.58334,
+            -49.69997
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2823
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Rio de Janeiro",
+          "bbox": [
+            -23.3302,
+            -20.779,
+            -44.85527,
+            -40.96213
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 508
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Rondônia",
+          "bbox": [
+            -13.654,
+            -8.0009,
+            -66.82697,
+            -59.8224
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2368
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Roraima",
+          "bbox": [
+            -1.40601,
+            5.22911,
+            -64.7269,
+            -58.92656
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1484
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Santa Catarina",
+          "bbox": [
+            -29.33976,
+            -25.97706,
+            -53.83038,
+            -48.3901
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1049
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Sergipe",
+          "bbox": [
+            -11.56616,
+            -9.55857,
+            -38.24404,
+            -36.41496
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 253
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "São Paulo",
+          "bbox": [
+            -25.2184,
+            -19.78569,
+            -53.15023,
+            -44.17849
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2599
+        },
+        {
+          "country_name": "Brazil",
+          "iso_a3": "BRA",
+          "admin1_name": "Tocantins",
+          "bbox": [
+            -13.37202,
+            -5.16414,
+            -50.74014,
+            -45.77084
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2976
+        }
+      ],
+      "admin1_count": 27
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "bbox": [
+        -55.25494,
+        -17.60365,
+        -109.43406,
+        -66.90752
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 4413,
+      "admin1": [
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Aisén del General Carlos Ibáñez del Campo",
+          "bbox": [
+            -48.96891,
+            -43.7307,
+            -74.246,
+            -71.22512
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 188
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Antofagasta",
+          "bbox": [
+            -25.98152,
+            -20.95483,
+            -70.66821,
+            -67.04511
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 882
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Arica y Parinacota",
+          "bbox": [
+            -19.13806,
+            -17.60365,
+            -70.32811,
+            -69.0109
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 142
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Atacama",
+          "bbox": [
+            -29.69408,
+            -25.41525,
+            -71.47576,
+            -68.3501
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 574
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Bío-Bío",
+          "bbox": [
+            -38.4833,
+            -36.44911,
+            -73.67945,
+            -71.02411
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 285
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Coquimbo",
+          "bbox": [
+            -32.15758,
+            -29.0951,
+            -71.6903,
+            -69.95424
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 299
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "La Araucanía",
+          "bbox": [
+            -39.74676,
+            -37.6345,
+            -73.9173,
+            -70.92043
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 346
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Libertador General Bernardo O'Higgins",
+          "bbox": [
+            -35.00936,
+            -33.93542,
+            -72.0827,
+            -70.18951
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 174
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Los Lagos",
+          "bbox": [
+            -43.92719,
+            -40.3018,
+            -74.15371,
+            -71.73777
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 337
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Los Ríos",
+          "bbox": [
+            -40.6442,
+            -39.37799,
+            -73.6453,
+            -71.69646
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 126
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Magallanes y Antártica Chilena",
+          "bbox": [
+            -55.25494,
+            -49.3495,
+            -74.5081,
+            -66.90752
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 123
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Maule",
+          "bbox": [
+            -36.46688,
+            -34.76698,
+            -72.78825,
+            -70.3988
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 314
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Región Metropolitana de Santiago",
+          "bbox": [
+            -34.21027,
+            -32.98731,
+            -71.69695,
+            -69.85397
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 138
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Tarapacá",
+          "bbox": [
+            -21.4457,
+            -18.98828,
+            -70.19186,
+            -68.5331
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 327
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Valparaíso",
+          "bbox": [
+            -33.9557,
+            -27.0782,
+            -109.43406,
+            -70.11999
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 166
+        },
+        {
+          "country_name": "Chile",
+          "iso_a3": "CHL",
+          "admin1_name": "Ñuble",
+          "bbox": [
+            -37.19777,
+            -36.01398,
+            -72.885,
+            -71.05782
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 165
+        }
+      ],
+      "admin1_count": 16
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "bbox": [
+        -4.22321,
+        13.35307,
+        -81.71181,
+        -66.89846
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 8437,
+      "admin1": [
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Amazonas",
+          "bbox": [
+            -4.22321,
+            0.11525,
+            -74.38611,
+            -69.42164
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 311
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Antioquia",
+          "bbox": [
+            5.46481,
+            8.83036,
+            -77.12009,
+            -73.89335
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 652
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Arauca",
+          "bbox": [
+            6.02706,
+            7.09852,
+            -72.321,
+            -69.44039
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 275
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Atlántico",
+          "bbox": [
+            10.27469,
+            11.077,
+            -75.2648,
+            -74.72207
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 48
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Bogota",
+          "bbox": [
+            3.68953,
+            4.81188,
+            -74.4856,
+            -74.01465
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 30
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Bolívar",
+          "bbox": [
+            6.99711,
+            10.78574,
+            -75.69325,
+            -73.75555
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 329
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Boyacá",
+          "bbox": [
+            4.66189,
+            7.0399,
+            -74.65744,
+            -71.97
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 266
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Caldas",
+          "bbox": [
+            4.93434,
+            5.77399,
+            -75.92287,
+            -74.63373
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 93
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Caquetá",
+          "bbox": [
+            -0.60367,
+            2.85437,
+            -76.28545,
+            -71.3653
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 505
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Casanare",
+          "bbox": [
+            4.30009,
+            6.27646,
+            -73.05605,
+            -69.85843
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 495
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Cauca",
+          "bbox": [
+            0.97344,
+            3.3128,
+            -77.93863,
+            -75.78539
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 243
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Cesar",
+          "bbox": [
+            7.68305,
+            10.865,
+            -74.13307,
+            -72.91584
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 280
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Chocó",
+          "bbox": [
+            4.2128,
+            8.65761,
+            -77.85648,
+            -76.106
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 183
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Cundinamarca",
+          "bbox": [
+            3.7123,
+            5.82341,
+            -74.88946,
+            -73.05782
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 259
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Córdoba",
+          "bbox": [
+            7.38749,
+            9.43254,
+            -76.4948,
+            -74.8014
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 276
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Guainía",
+          "bbox": [
+            1.307,
+            4.03034,
+            -70.50931,
+            -66.89846
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 327
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Guaviare",
+          "bbox": [
+            0.67067,
+            2.87866,
+            -73.66042,
+            -69.9955
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 351
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Huila",
+          "bbox": [
+            1.59646,
+            3.71671,
+            -76.4299,
+            -74.5081
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 198
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "La Guajira",
+          "bbox": [
+            10.4018,
+            12.45247,
+            -73.65,
+            -71.1572
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 206
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Magdalena",
+          "bbox": [
+            8.88914,
+            11.30348,
+            -74.94586,
+            -73.5693
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 289
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Meta",
+          "bbox": [
+            1.63113,
+            4.91698,
+            -74.8779,
+            -71.06039
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 880
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Nariño",
+          "bbox": [
+            0.361,
+            2.47684,
+            -79.00662,
+            -76.89381
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 202
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Norte de Santander",
+          "bbox": [
+            6.87644,
+            9.29455,
+            -73.62292,
+            -71.99754
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 251
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Putumayo",
+          "bbox": [
+            -0.55099,
+            1.40387,
+            -77.11878,
+            -73.87118
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 249
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Quindío",
+          "bbox": [
+            4.1339,
+            4.66101,
+            -75.87573,
+            -75.55898
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 22
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Risaralda",
+          "bbox": [
+            4.73629,
+            5.5419,
+            -76.10651,
+            -75.4052
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 38
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "San Andrés y Providencia",
+          "bbox": [
+            12.55388,
+            13.35307,
+            -81.71181,
+            -81.36185
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 3
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Santander",
+          "bbox": [
+            5.74158,
+            8.15354,
+            -74.51815,
+            -72.4796
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 349
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Sucre",
+          "bbox": [
+            8.28061,
+            10.13842,
+            -75.69775,
+            -74.55035
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 140
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Tolima",
+          "bbox": [
+            2.95442,
+            5.3115,
+            -76.09105,
+            -74.48931
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 258
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Valle del Cauca",
+          "bbox": [
+            3.10084,
+            4.99212,
+            -77.2781,
+            -75.72387
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 167
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Vaupés",
+          "bbox": [
+            -1.23566,
+            2.0685,
+            -72.0008,
+            -69.15467
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 299
+        },
+        {
+          "country_name": "Colombia",
+          "iso_a3": "COL",
+          "admin1_name": "Vichada",
+          "bbox": [
+            2.7913,
+            6.31155,
+            -71.06364,
+            -67.42596
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 925
+        }
+      ],
+      "admin1_count": 33
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "bbox": [
+        -5.0097,
+        1.422,
+        -91.6624,
+        -75.28239
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2006,
+      "admin1": [
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Azuay",
+          "bbox": [
+            -3.6345,
+            -2.49808,
+            -79.74987,
+            -78.54809
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 106
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Bolivar",
+          "bbox": [
+            -2.17645,
+            -1.15508,
+            -79.38193,
+            -78.85636
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 57
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Carchi",
+          "bbox": [
+            0.38188,
+            0.93879,
+            -78.3276,
+            -77.51972
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 37
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Cañar",
+          "bbox": [
+            -2.82328,
+            -2.2057,
+            -79.51199,
+            -78.54366
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 55
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Chimborazo",
+          "bbox": [
+            -2.39859,
+            -1.44376,
+            -79.11359,
+            -78.39981
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 71
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Cotopaxi",
+          "bbox": [
+            -1.2079,
+            -0.38959,
+            -79.32008,
+            -78.39237
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 72
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "El Oro",
+          "bbox": [
+            -3.8795,
+            -3.05167,
+            -80.31185,
+            -79.3687
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 79
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Esmeraldas",
+          "bbox": [
+            -0.04768,
+            1.422,
+            -80.09592,
+            -78.4238
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 150
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Galápagos",
+          "bbox": [
+            -1.2787,
+            0.6236,
+            -91.6624,
+            -89.2618
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 60
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Guayas",
+          "bbox": [
+            -3.0566,
+            -0.839,
+            -80.52506,
+            -79.1341
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 192
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Imbabura",
+          "bbox": [
+            0.13435,
+            0.86199,
+            -78.98604,
+            -77.85371
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 55
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Loja",
+          "bbox": [
+            -4.76054,
+            -3.34808,
+            -80.50051,
+            -79.10275
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 142
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Los Rios",
+          "bbox": [
+            -2.12536,
+            -0.5458,
+            -79.8704,
+            -79.0937
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 103
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Manabi",
+          "bbox": [
+            -1.84093,
+            0.34625,
+            -80.8899,
+            -79.41249
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 230
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Morona Santiago",
+          "bbox": [
+            -3.57464,
+            -1.62377,
+            -78.9379,
+            -76.72003
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 137
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Napo",
+          "bbox": [
+            -1.48821,
+            -0.96716,
+            -78.91753,
+            -78.34439
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 34
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Orellana",
+          "bbox": [
+            -1.2077,
+            -0.05081,
+            -77.51485,
+            -75.3131
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 117
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Pastaza",
+          "bbox": [
+            -2.53648,
+            -1.087,
+            -78.0666,
+            -75.81267
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 139
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Pichincha",
+          "bbox": [
+            -0.647,
+            0.3159,
+            -79.35992,
+            -77.9895
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 102
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Santa Elena",
+          "bbox": [
+            -2.492,
+            -1.6563,
+            -81.0023,
+            -80.2153
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 57
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Santo Domingo de los Tsáchilas",
+          "bbox": [
+            -0.69362,
+            0.02859,
+            -79.59825,
+            -78.75037
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 47
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Sucumbios",
+          "bbox": [
+            -0.6202,
+            0.45254,
+            -77.70273,
+            -75.28239
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 134
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Tungurahua",
+          "bbox": [
+            -1.23258,
+            -0.08027,
+            -78.43861,
+            -77.12202
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 69
+        },
+        {
+          "country_name": "Ecuador",
+          "iso_a3": "ECU",
+          "admin1_name": "Zamora Chinchipe",
+          "bbox": [
+            -5.0097,
+            -3.3591,
+            -79.4577,
+            -78.4516
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 98
+        }
+      ],
+      "admin1_count": 24
+    },
+    {
+      "country_name": "Falkland Islands",
+      "iso_a3": "FLK",
+      "bbox": [
+        -51.9052,
+        -51.06724,
+        -61.10386,
+        -58.45063
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 7,
+      "admin1": [
+        {
+          "country_name": "Falkland Islands",
+          "iso_a3": "FLK",
+          "admin1_name": "Falkland Islands",
+          "bbox": [
+            -51.9052,
+            -51.06724,
+            -61.10386,
+            -58.45063
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 7
+        }
+      ],
+      "admin1_count": 1
+    },
+    {
+      "country_name": "French Guiana",
+      "iso_a3": "GUF",
+      "bbox": [
+        2.2019,
+        5.74368,
+        -54.48504,
+        -51.6535
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 263,
+      "admin1": [
+        {
+          "country_name": "French Guiana",
+          "iso_a3": "GUF",
+          "admin1_name": "Guyane française",
+          "bbox": [
+            2.2019,
+            5.74368,
+            -54.48504,
+            -51.6535
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 263
+        }
+      ],
+      "admin1_count": 1
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "bbox": [
+        1.378,
+        8.50418,
+        -61.3337,
+        -57.0809
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1252,
+      "admin1": [
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Barima-Waini",
+          "bbox": [
+            6.99485,
+            8.50418,
+            -60.65413,
+            -58.797
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 149
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Cuyuni-Mazaruni",
+          "bbox": [
+            6.85117,
+            7.6489,
+            -59.07684,
+            -58.47501
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 48
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Demerara-Mahaica",
+          "bbox": [
+            6.13037,
+            6.97596,
+            -58.80828,
+            -58.17794
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 42
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "East Berbice-Corentyne",
+          "bbox": [
+            6.09649,
+            6.82482,
+            -58.29261,
+            -57.88274
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 34
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Essequibo Islands-West Demerara",
+          "bbox": [
+            5.86445,
+            6.69587,
+            -58.1187,
+            -57.52388
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 47
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Mahaica-Berbice",
+          "bbox": [
+            1.82282,
+            6.32145,
+            -58.39864,
+            -57.0809
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 111
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Pomeroon-Supenaam",
+          "bbox": [
+            5.20862,
+            7.11011,
+            -61.3337,
+            -58.57609
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 343
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Potaro-Siparuni",
+          "bbox": [
+            4.12933,
+            5.65009,
+            -60.16142,
+            -58.3298
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 137
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Upper Demerara-Berbice",
+          "bbox": [
+            1.378,
+            4.50157,
+            -59.99963,
+            -58.02431
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 259
+        },
+        {
+          "country_name": "Guyana",
+          "iso_a3": "GUY",
+          "admin1_name": "Upper Takutu-Upper Essequibo",
+          "bbox": [
+            4.63624,
+            6.44262,
+            -58.87146,
+            -57.6068
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 158
+        }
+      ],
+      "admin1_count": 10
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "bbox": [
+        -27.50617,
+        -19.28711,
+        -62.62692,
+        -54.26909
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 4113,
+      "admin1": [
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Alto Paraguay",
+          "bbox": [
+            -22.42212,
+            -19.28711,
+            -61.87621,
+            -57.81709
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 836
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Alto Paraná",
+          "bbox": [
+            -26.23842,
+            -24.46799,
+            -55.52564,
+            -54.43948
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 170
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Amambay",
+          "bbox": [
+            -23.8634,
+            -22.0798,
+            -56.837,
+            -55.52619
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 165
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Asunción",
+          "bbox": [
+            -25.39602,
+            -25.23773,
+            -57.66618,
+            -57.54393
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 6
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Boquerón",
+          "bbox": [
+            -23.87247,
+            -20.06972,
+            -62.62692,
+            -59.30667
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 928
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Caaguazú",
+          "bbox": [
+            -25.70931,
+            -24.50413,
+            -56.81308,
+            -54.94983
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 158
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Caazapá",
+          "bbox": [
+            -26.7755,
+            -25.54693,
+            -56.78195,
+            -55.2351
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 120
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Canindeyú",
+          "bbox": [
+            -24.78165,
+            -23.53815,
+            -56.158,
+            -54.26909
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 172
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Central",
+          "bbox": [
+            -26.00873,
+            -25.10726,
+            -57.81933,
+            -57.17543
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 45
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Concepción",
+          "bbox": [
+            -23.50407,
+            -22.08365,
+            -57.98045,
+            -56.12772
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 226
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Cordillera",
+          "bbox": [
+            -25.66141,
+            -24.91547,
+            -57.45389,
+            -56.49583
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 67
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Guairá",
+          "bbox": [
+            -26.17813,
+            -25.57784,
+            -56.67177,
+            -55.6274
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 59
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Itapúa",
+          "bbox": [
+            -27.43423,
+            -26.10123,
+            -56.6889,
+            -54.66371
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 185
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Misiones",
+          "bbox": [
+            -27.50617,
+            -26.40354,
+            -57.70391,
+            -56.53252
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 115
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Paraguarí",
+          "bbox": [
+            -26.62239,
+            -25.4312,
+            -57.70097,
+            -56.58665
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 120
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Presidente Hayes",
+          "bbox": [
+            -25.287,
+            -22.0891,
+            -60.78377,
+            -57.0913
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 815
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "San Pedro",
+          "bbox": [
+            -25.0382,
+            -23.3141,
+            -57.4592,
+            -55.75238
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 246
+        },
+        {
+          "country_name": "Paraguay",
+          "iso_a3": "PRY",
+          "admin1_name": "Ñeembucú",
+          "bbox": [
+            -27.41612,
+            -25.80816,
+            -58.65746,
+            -57.19939
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 157
+        }
+      ],
+      "admin1_count": 18
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "bbox": [
+        -18.33546,
+        -0.03057,
+        -81.29436,
+        -68.69036
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 9581,
+      "admin1": [
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Amazonas",
+          "bbox": [
+            -7.00918,
+            -2.9798,
+            -78.76126,
+            -77.1685
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 340
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Apurímac",
+          "bbox": [
+            -14.81026,
+            -13.22647,
+            -73.84612,
+            -72.08246
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 228
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Arequipa",
+          "bbox": [
+            -17.28985,
+            -14.6925,
+            -75.0564,
+            -70.87601
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 502
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Ayacucho",
+          "bbox": [
+            -15.59595,
+            -12.14834,
+            -75.09056,
+            -72.8754
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 427
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Cajamarca",
+          "bbox": [
+            -7.75812,
+            -4.82977,
+            -79.45772,
+            -77.7706
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 372
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Callao",
+          "bbox": [
+            -12.1117,
+            -12.00413,
+            -77.2468,
+            -77.11517
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 2
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Cusco",
+          "bbox": [
+            -15.22283,
+            -11.20269,
+            -73.95985,
+            -70.35619
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 707
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Huancavelica",
+          "bbox": [
+            -14.10698,
+            -11.9831,
+            -75.79513,
+            -74.31258
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 221
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Huánuco",
+          "bbox": [
+            -10.4373,
+            -8.37995,
+            -77.31071,
+            -74.51628
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 415
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Ica",
+          "bbox": [
+            -15.37801,
+            -13.00373,
+            -76.4644,
+            -74.71133
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 184
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Junín",
+          "bbox": [
+            -12.61298,
+            -10.68385,
+            -76.48689,
+            -73.48142
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 456
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "La Libertad",
+          "bbox": [
+            -8.96013,
+            -6.99056,
+            -79.66522,
+            -76.86098
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 287
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Lambayeque",
+          "bbox": [
+            -7.12123,
+            -5.5583,
+            -80.46588,
+            -79.16519
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 136
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Lima",
+          "bbox": [
+            -13.26697,
+            -10.33991,
+            -77.86118,
+            -75.56083
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 332
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Lima Province",
+          "bbox": [
+            -12.49371,
+            -11.68345,
+            -77.19249,
+            -76.6761
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 36
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Loreto",
+          "bbox": [
+            -8.5645,
+            -0.03057,
+            -77.78287,
+            -69.97274
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1878
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Madre de Dios",
+          "bbox": [
+            -13.24792,
+            -10.43009,
+            -72.37959,
+            -68.69036
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 516
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Moquegua",
+          "bbox": [
+            -17.77992,
+            -16.02043,
+            -71.41959,
+            -70.18962
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 133
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Pasco",
+          "bbox": [
+            -11.10197,
+            -9.72423,
+            -76.7298,
+            -74.20072
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 240
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Piura",
+          "bbox": [
+            -6.4697,
+            -4.09943,
+            -81.29436,
+            -79.23601
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 334
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Puno",
+          "bbox": [
+            -17.28205,
+            -13.01436,
+            -71.10986,
+            -68.83718
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 635
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "San Martín",
+          "bbox": [
+            -8.73484,
+            -5.52034,
+            -77.7806,
+            -75.4692
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 461
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Tacna",
+          "bbox": [
+            -18.33546,
+            -16.8524,
+            -71.13071,
+            -69.53834
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 143
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Tumbes",
+          "bbox": [
+            -4.20533,
+            -3.4153,
+            -81.04632,
+            -80.181
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 49
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Ucayali",
+          "bbox": [
+            -11.4218,
+            -7.57964,
+            -75.7945,
+            -70.52484
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 780
+        },
+        {
+          "country_name": "Peru",
+          "iso_a3": "PER",
+          "admin1_name": "Áncash",
+          "bbox": [
+            -10.7469,
+            -8.01973,
+            -78.64951,
+            -76.7393
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 373
+        }
+      ],
+      "admin1_count": 26
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "bbox": [
+        1.83398,
+        5.99289,
+        -57.99656,
+        -53.99113
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 656,
+      "admin1": [
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Brokopondo",
+          "bbox": [
+            4.15485,
+            5.32191,
+            -55.4923,
+            -54.76355
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 84
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Commewijne",
+          "bbox": [
+            5.5481,
+            5.99289,
+            -55.13226,
+            -54.70992
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 23
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Coronie",
+          "bbox": [
+            5.3363,
+            5.9379,
+            -56.60308,
+            -55.90913
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 26
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Marowijne",
+          "bbox": [
+            5.2238,
+            5.96482,
+            -54.72876,
+            -53.99113
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 54
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Nickerie",
+          "bbox": [
+            5.23396,
+            5.97401,
+            -57.27884,
+            -56.48295
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 40
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Para",
+          "bbox": [
+            4.98153,
+            5.68285,
+            -55.9961,
+            -54.6587
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 73
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Paramaribo",
+          "bbox": [
+            5.7736,
+            5.90067,
+            -55.23066,
+            -55.11323
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 5
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Saramacca",
+          "bbox": [
+            5.41997,
+            5.96066,
+            -55.88799,
+            -55.25984
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 32
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Sipaliwini",
+          "bbox": [
+            1.83398,
+            5.38542,
+            -57.99656,
+            -53.99218
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 373
+        },
+        {
+          "country_name": "Suriname",
+          "iso_a3": "SUR",
+          "admin1_name": "Wanica",
+          "bbox": [
+            5.66163,
+            5.90702,
+            -55.3581,
+            -55.05391
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 12
+        }
+      ],
+      "admin1_count": 10
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "bbox": [
+        -34.9418,
+        -30.10465,
+        -58.43371,
+        -53.20625
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1820,
+      "admin1": [
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Artigas",
+          "bbox": [
+            -31.06267,
+            -30.10465,
+            -57.86971,
+            -56.00309
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 145
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Canelones",
+          "bbox": [
+            -34.87367,
+            -34.2194,
+            -56.46532,
+            -55.3871
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 61
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Cerro Largo",
+          "bbox": [
+            -33.02021,
+            -31.66698,
+            -55.3342,
+            -53.20625
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 165
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Colonia",
+          "bbox": [
+            -34.47343,
+            -33.7806,
+            -58.4131,
+            -56.9516
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 78
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Durazno",
+          "bbox": [
+            -33.49382,
+            -32.45069,
+            -57.11969,
+            -55.04949
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 136
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Flores",
+          "bbox": [
+            -33.97913,
+            -33.15638,
+            -57.328,
+            -56.45628
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 66
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Florida",
+          "bbox": [
+            -34.41595,
+            -33.14751,
+            -56.53202,
+            -55.10249
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 128
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Lavalleja",
+          "bbox": [
+            -34.61561,
+            -33.3442,
+            -55.61598,
+            -54.1516
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 125
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Maldonado",
+          "bbox": [
+            -34.9418,
+            -33.94149,
+            -55.4637,
+            -54.46418
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 65
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Montevideo",
+          "bbox": [
+            -34.90009,
+            -34.71746,
+            -56.41838,
+            -56.03895
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 12
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Paysandú",
+          "bbox": [
+            -32.60475,
+            -31.49569,
+            -58.1912,
+            -56.35382
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 148
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Rivera",
+          "bbox": [
+            -32.11618,
+            -30.84917,
+            -56.1496,
+            -54.46938
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 115
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Rocha",
+          "bbox": [
+            -34.74437,
+            -33.16135,
+            -54.53036,
+            -53.38657
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 126
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Río Negro",
+          "bbox": [
+            -33.41844,
+            -32.3653,
+            -58.41772,
+            -56.61308
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 112
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Salto",
+          "bbox": [
+            -31.8607,
+            -30.7552,
+            -58.06784,
+            -56.02964
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 158
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "San José",
+          "bbox": [
+            -34.78112,
+            -33.87441,
+            -57.14083,
+            -56.35434
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 68
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Soriano",
+          "bbox": [
+            -33.95649,
+            -33.02356,
+            -58.43371,
+            -57.09555
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 112
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Tacuarembó",
+          "bbox": [
+            -32.82825,
+            -31.2654,
+            -56.634,
+            -54.6853
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 167
+        },
+        {
+          "country_name": "Uruguay",
+          "iso_a3": "URY",
+          "admin1_name": "Treinta y Tres",
+          "bbox": [
+            -33.4567,
+            -32.7187,
+            -55.1429,
+            -53.33992
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 109
+        }
+      ],
+      "admin1_count": 19
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "bbox": [
+        0.75787,
+        12.19161,
+        -73.3908,
+        -59.83458
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 7533,
+      "admin1": [
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Amazonas",
+          "bbox": [
+            0.75787,
+            6.17918,
+            -67.87205,
+            -63.39902
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 984
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Anzoátegui",
+          "bbox": [
+            7.66855,
+            10.24858,
+            -65.7037,
+            -62.68826
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 523
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Apure",
+          "bbox": [
+            6.08434,
+            8.0754,
+            -72.10516,
+            -66.32479
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 835
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Aragua",
+          "bbox": [
+            9.39252,
+            10.5284,
+            -67.8689,
+            -66.54359
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 94
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Barinas",
+          "bbox": [
+            7.28963,
+            9.01983,
+            -71.8418,
+            -67.51776
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 443
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Bolívar",
+          "bbox": [
+            3.62711,
+            8.44498,
+            -67.44639,
+            -60.34544
+          ],
+          "intersects_sama": true,
+          "historical_active_cells_10km": 1803
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Carabobo",
+          "bbox": [
+            9.81979,
+            10.59382,
+            -68.42259,
+            -67.52747
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 65
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Cojedes",
+          "bbox": [
+            8.53495,
+            10.12738,
+            -68.99226,
+            -67.75652
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 175
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Delta Amacuro",
+          "bbox": [
+            7.9259,
+            10.01272,
+            -62.58896,
+            -59.83458
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 301
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Dependencias Federales",
+          "bbox": [
+            10.8905,
+            11.8255,
+            -66.18034,
+            -64.6167
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 3
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Distrito Capital",
+          "bbox": [
+            10.39334,
+            10.56275,
+            -67.1419,
+            -66.87476
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 6
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Falcón",
+          "bbox": [
+            10.3094,
+            12.19161,
+            -71.2635,
+            -68.2692
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 310
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Guárico",
+          "bbox": [
+            7.63688,
+            10.0136,
+            -68.03393,
+            -64.79261
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 727
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Lara",
+          "bbox": [
+            9.39777,
+            10.75171,
+            -70.85606,
+            -68.88572
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 227
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Miranda",
+          "bbox": [
+            9.92927,
+            10.64679,
+            -67.20351,
+            -65.4306
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 112
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Monagas",
+          "bbox": [
+            8.38892,
+            10.31441,
+            -64.06149,
+            -62.00703
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 295
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Mérida",
+          "bbox": [
+            7.69433,
+            9.35346,
+            -71.9206,
+            -70.5406
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 138
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Nueva Esparta",
+          "bbox": [
+            10.7379,
+            11.15921,
+            -64.40254,
+            -63.80377
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 19
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Portuguesa",
+          "bbox": [
+            8.1124,
+            9.8398,
+            -70.181,
+            -68.5739
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 215
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Sucre",
+          "bbox": [
+            10.05161,
+            10.76014,
+            -64.52542,
+            -61.9071
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 148
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Trujillo",
+          "bbox": [
+            8.9829,
+            10.03602,
+            -71.07716,
+            -70.01672
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 106
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Táchira",
+          "bbox": [
+            7.36594,
+            8.6101,
+            -72.48608,
+            -71.3289
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 124
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Vargas",
+          "bbox": [
+            10.42576,
+            10.6307,
+            -67.3858,
+            -66.3096
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 20
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Yaracuy",
+          "bbox": [
+            9.85162,
+            10.73575,
+            -69.2363,
+            -68.25264
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 88
+        },
+        {
+          "country_name": "Venezuela",
+          "iso_a3": "VEN",
+          "admin1_name": "Zulia",
+          "bbox": [
+            8.3887,
+            11.77233,
+            -73.3908,
+            -70.63653
+          ],
+          "intersects_sama": false,
+          "historical_active_cells_10km": 525
+        }
+      ],
+      "admin1_count": 25
+    }
+  ],
+  "admin1": [
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Buenos Aires",
+      "bbox": [
+        -41.02557,
+        -33.2571,
+        -63.38842,
+        -56.67007
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 3170
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Catamarca",
+      "bbox": [
+        -30.08532,
+        -25.25109,
+        -69.08178,
+        -64.9473
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 873
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Chaco",
+      "bbox": [
+        -28.00257,
+        -24.12652,
+        -63.34354,
+        -58.35776
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1065
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Chubut",
+      "bbox": [
+        -45.9962,
+        -41.99905,
+        -72.145,
+        -63.69527
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 774
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Ciudad de Buenos Aires",
+      "bbox": [
+        -34.76725,
+        -34.53013,
+        -58.55053,
+        -58.31868
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 9
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Corrientes",
+      "bbox": [
+        -30.70739,
+        -27.25972,
+        -59.66733,
+        -55.62828
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 969
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Córdoba",
+      "bbox": [
+        -35.00111,
+        -29.4493,
+        -65.7572,
+        -61.75609
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1700
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Entre Ríos",
+      "bbox": [
+        -34.04856,
+        -30.15194,
+        -60.76886,
+        -57.8195
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 848
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Formosa",
+      "bbox": [
+        -26.8848,
+        -22.47297,
+        -62.341,
+        -57.5593
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 848
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Jujuy",
+      "bbox": [
+        -24.5989,
+        -21.80942,
+        -67.17835,
+        -64.1629
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 520
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "La Pampa",
+      "bbox": [
+        -39.32526,
+        -35.00054,
+        -68.2647,
+        -63.38435
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1465
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "La Rioja",
+      "bbox": [
+        -31.90953,
+        -27.7779,
+        -69.48505,
+        -65.462
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 825
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Mendoza",
+      "bbox": [
+        -37.5501,
+        -31.99251,
+        -70.56902,
+        -66.513
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1230
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Misiones",
+      "bbox": [
+        -28.14719,
+        -25.5181,
+        -56.01856,
+        -53.66204
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 337
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Neuquén",
+      "bbox": [
+        -41.06266,
+        -36.20609,
+        -71.9434,
+        -68.01878
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 723
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Río Negro",
+      "bbox": [
+        -41.99921,
+        -37.5686,
+        -71.887,
+        -62.80665
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1416
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Salta",
+      "bbox": [
+        -26.32431,
+        -21.9977,
+        -68.50555,
+        -62.33695
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1553
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "San Juan",
+      "bbox": [
+        -32.31873,
+        -28.50402,
+        -70.58448,
+        -66.76784
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 690
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "San Luis",
+      "bbox": [
+        -36.00097,
+        -31.87,
+        -67.39075,
+        -64.87533
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 790
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Santa Cruz",
+      "bbox": [
+        -52.38753,
+        -46.0034,
+        -73.19314,
+        -65.85048
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 652
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Santa Fe",
+      "bbox": [
+        -34.38149,
+        -27.99938,
+        -62.8308,
+        -58.86538
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1430
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Santiago del Estero",
+      "bbox": [
+        -30.15433,
+        -25.5812,
+        -65.1799,
+        -61.70937
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1421
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Tierra del Fuego",
+      "bbox": [
+        -54.9,
+        -52.72816,
+        -68.60679,
+        -66.4589
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 55
+    },
+    {
+      "country_name": "Argentina",
+      "iso_a3": "ARG",
+      "admin1_name": "Tucumán",
+      "bbox": [
+        -28.0457,
+        -26.07839,
+        -66.15491,
+        -64.48333
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 257
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Chuquisaca",
+      "bbox": [
+        -21.51346,
+        -18.37299,
+        -65.69227,
+        -62.26519
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 567
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Cochabamba",
+      "bbox": [
+        -18.65994,
+        -15.77059,
+        -67.00985,
+        -64.21324
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 601
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "El Beni",
+      "bbox": [
+        -16.4674,
+        -10.39375,
+        -67.56753,
+        -61.59622
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2177
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "La Paz",
+      "bbox": [
+        -18.01472,
+        -11.90709,
+        -69.65248,
+        -66.75935
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1289
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Oruro",
+      "bbox": [
+        -19.82465,
+        -17.40688,
+        -69.0562,
+        -66.07712
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 527
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Pando",
+      "bbox": [
+        -12.49249,
+        -9.67994,
+        -69.57632,
+        -65.28672
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 659
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Potosí",
+      "bbox": [
+        -22.87274,
+        -17.85742,
+        -68.78341,
+        -64.79831
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1001
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Santa Cruz",
+      "bbox": [
+        -20.47202,
+        -13.46627,
+        -64.8006,
+        -57.46664
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 3607
+    },
+    {
+      "country_name": "Bolivia",
+      "iso_a3": "BOL",
+      "admin1_name": "Tarija",
+      "bbox": [
+        -22.8706,
+        -20.89382,
+        -65.28204,
+        -62.3137
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 415
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Acre",
+      "bbox": [
+        -11.14049,
+        -7.34184,
+        -73.8698,
+        -66.6491
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1266
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Alagoas",
+      "bbox": [
+        -10.46201,
+        -8.8399,
+        -38.2084,
+        -35.16112
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 328
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Amapá",
+      "bbox": [
+        -1.21814,
+        4.07722,
+        -54.70458,
+        -49.87899
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 797
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Amazonas",
+      "bbox": [
+        -9.83772,
+        2.0637,
+        -73.53017,
+        -56.32423
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 7749
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Bahia",
+      "bbox": [
+        -18.30193,
+        -8.52902,
+        -46.57079,
+        -37.3725
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 5822
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Ceará",
+      "bbox": [
+        -7.8465,
+        -2.81316,
+        -41.4487,
+        -37.25648
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1593
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Distrito Federal",
+      "bbox": [
+        -16.042,
+        -15.49078,
+        -48.27623,
+        -47.30812
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 75
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Espírito Santo",
+      "bbox": [
+        -21.26954,
+        -17.87629,
+        -41.88068,
+        -39.68731
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 518
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Goiás",
+      "bbox": [
+        -19.4674,
+        -12.4009,
+        -53.24446,
+        -45.91348
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 3599
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Maranhão",
+      "bbox": [
+        -10.3036,
+        -1.069,
+        -48.7372,
+        -41.81578
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 3487
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Mato Grosso",
+      "bbox": [
+        -18.02468,
+        -7.33991,
+        -61.5788,
+        -50.23597
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 8988
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Mato Grosso do Sul",
+      "bbox": [
+        -24.0442,
+        -17.18764,
+        -58.16213,
+        -50.96194
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 3705
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Minas Gerais",
+      "bbox": [
+        -22.88792,
+        -14.24118,
+        -51.01548,
+        -39.86523
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 6094
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Paraná",
+      "bbox": [
+        -26.68809,
+        -22.52196,
+        -54.61234,
+        -48.10876
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2079
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Paraíba",
+      "bbox": [
+        -8.2804,
+        -6.03618,
+        -38.7443,
+        -34.79613
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 653
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Pará",
+      "bbox": [
+        -9.84368,
+        2.3755,
+        -58.79752,
+        -46.0918
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 9577
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Pernambuco",
+      "bbox": [
+        -9.48664,
+        -7.27055,
+        -41.36606,
+        -34.80828
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1102
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Piauí",
+      "bbox": [
+        -10.89495,
+        -2.764,
+        -45.98114,
+        -40.41649
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2659
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Rio Grande do Norte",
+      "bbox": [
+        -6.97738,
+        -3.85453,
+        -38.6082,
+        -32.42027
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 597
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Rio Grande do Sul",
+      "bbox": [
+        -33.741,
+        -27.08143,
+        -57.58334,
+        -49.69997
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2823
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Rio de Janeiro",
+      "bbox": [
+        -23.3302,
+        -20.779,
+        -44.85527,
+        -40.96213
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 508
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Rondônia",
+      "bbox": [
+        -13.654,
+        -8.0009,
+        -66.82697,
+        -59.8224
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2368
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Roraima",
+      "bbox": [
+        -1.40601,
+        5.22911,
+        -64.7269,
+        -58.92656
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1484
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Santa Catarina",
+      "bbox": [
+        -29.33976,
+        -25.97706,
+        -53.83038,
+        -48.3901
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1049
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Sergipe",
+      "bbox": [
+        -11.56616,
+        -9.55857,
+        -38.24404,
+        -36.41496
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 253
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "São Paulo",
+      "bbox": [
+        -25.2184,
+        -19.78569,
+        -53.15023,
+        -44.17849
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2599
+    },
+    {
+      "country_name": "Brazil",
+      "iso_a3": "BRA",
+      "admin1_name": "Tocantins",
+      "bbox": [
+        -13.37202,
+        -5.16414,
+        -50.74014,
+        -45.77084
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2976
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Aisén del General Carlos Ibáñez del Campo",
+      "bbox": [
+        -48.96891,
+        -43.7307,
+        -74.246,
+        -71.22512
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 188
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Antofagasta",
+      "bbox": [
+        -25.98152,
+        -20.95483,
+        -70.66821,
+        -67.04511
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 882
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Arica y Parinacota",
+      "bbox": [
+        -19.13806,
+        -17.60365,
+        -70.32811,
+        -69.0109
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 142
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Atacama",
+      "bbox": [
+        -29.69408,
+        -25.41525,
+        -71.47576,
+        -68.3501
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 574
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Bío-Bío",
+      "bbox": [
+        -38.4833,
+        -36.44911,
+        -73.67945,
+        -71.02411
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 285
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Coquimbo",
+      "bbox": [
+        -32.15758,
+        -29.0951,
+        -71.6903,
+        -69.95424
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 299
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "La Araucanía",
+      "bbox": [
+        -39.74676,
+        -37.6345,
+        -73.9173,
+        -70.92043
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 346
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Libertador General Bernardo O'Higgins",
+      "bbox": [
+        -35.00936,
+        -33.93542,
+        -72.0827,
+        -70.18951
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 174
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Los Lagos",
+      "bbox": [
+        -43.92719,
+        -40.3018,
+        -74.15371,
+        -71.73777
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 337
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Los Ríos",
+      "bbox": [
+        -40.6442,
+        -39.37799,
+        -73.6453,
+        -71.69646
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 126
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Magallanes y Antártica Chilena",
+      "bbox": [
+        -55.25494,
+        -49.3495,
+        -74.5081,
+        -66.90752
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 123
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Maule",
+      "bbox": [
+        -36.46688,
+        -34.76698,
+        -72.78825,
+        -70.3988
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 314
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Región Metropolitana de Santiago",
+      "bbox": [
+        -34.21027,
+        -32.98731,
+        -71.69695,
+        -69.85397
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 138
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Tarapacá",
+      "bbox": [
+        -21.4457,
+        -18.98828,
+        -70.19186,
+        -68.5331
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 327
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Valparaíso",
+      "bbox": [
+        -33.9557,
+        -27.0782,
+        -109.43406,
+        -70.11999
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 166
+    },
+    {
+      "country_name": "Chile",
+      "iso_a3": "CHL",
+      "admin1_name": "Ñuble",
+      "bbox": [
+        -37.19777,
+        -36.01398,
+        -72.885,
+        -71.05782
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 165
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Amazonas",
+      "bbox": [
+        -4.22321,
+        0.11525,
+        -74.38611,
+        -69.42164
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 311
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Antioquia",
+      "bbox": [
+        5.46481,
+        8.83036,
+        -77.12009,
+        -73.89335
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 652
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Arauca",
+      "bbox": [
+        6.02706,
+        7.09852,
+        -72.321,
+        -69.44039
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 275
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Atlántico",
+      "bbox": [
+        10.27469,
+        11.077,
+        -75.2648,
+        -74.72207
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 48
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Bogota",
+      "bbox": [
+        3.68953,
+        4.81188,
+        -74.4856,
+        -74.01465
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 30
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Bolívar",
+      "bbox": [
+        6.99711,
+        10.78574,
+        -75.69325,
+        -73.75555
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 329
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Boyacá",
+      "bbox": [
+        4.66189,
+        7.0399,
+        -74.65744,
+        -71.97
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 266
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Caldas",
+      "bbox": [
+        4.93434,
+        5.77399,
+        -75.92287,
+        -74.63373
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 93
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Caquetá",
+      "bbox": [
+        -0.60367,
+        2.85437,
+        -76.28545,
+        -71.3653
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 505
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Casanare",
+      "bbox": [
+        4.30009,
+        6.27646,
+        -73.05605,
+        -69.85843
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 495
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Cauca",
+      "bbox": [
+        0.97344,
+        3.3128,
+        -77.93863,
+        -75.78539
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 243
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Cesar",
+      "bbox": [
+        7.68305,
+        10.865,
+        -74.13307,
+        -72.91584
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 280
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Chocó",
+      "bbox": [
+        4.2128,
+        8.65761,
+        -77.85648,
+        -76.106
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 183
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Cundinamarca",
+      "bbox": [
+        3.7123,
+        5.82341,
+        -74.88946,
+        -73.05782
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 259
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Córdoba",
+      "bbox": [
+        7.38749,
+        9.43254,
+        -76.4948,
+        -74.8014
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 276
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Guainía",
+      "bbox": [
+        1.307,
+        4.03034,
+        -70.50931,
+        -66.89846
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 327
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Guaviare",
+      "bbox": [
+        0.67067,
+        2.87866,
+        -73.66042,
+        -69.9955
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 351
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Huila",
+      "bbox": [
+        1.59646,
+        3.71671,
+        -76.4299,
+        -74.5081
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 198
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "La Guajira",
+      "bbox": [
+        10.4018,
+        12.45247,
+        -73.65,
+        -71.1572
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 206
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Magdalena",
+      "bbox": [
+        8.88914,
+        11.30348,
+        -74.94586,
+        -73.5693
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 289
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Meta",
+      "bbox": [
+        1.63113,
+        4.91698,
+        -74.8779,
+        -71.06039
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 880
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Nariño",
+      "bbox": [
+        0.361,
+        2.47684,
+        -79.00662,
+        -76.89381
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 202
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Norte de Santander",
+      "bbox": [
+        6.87644,
+        9.29455,
+        -73.62292,
+        -71.99754
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 251
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Putumayo",
+      "bbox": [
+        -0.55099,
+        1.40387,
+        -77.11878,
+        -73.87118
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 249
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Quindío",
+      "bbox": [
+        4.1339,
+        4.66101,
+        -75.87573,
+        -75.55898
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 22
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Risaralda",
+      "bbox": [
+        4.73629,
+        5.5419,
+        -76.10651,
+        -75.4052
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 38
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "San Andrés y Providencia",
+      "bbox": [
+        12.55388,
+        13.35307,
+        -81.71181,
+        -81.36185
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 3
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Santander",
+      "bbox": [
+        5.74158,
+        8.15354,
+        -74.51815,
+        -72.4796
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 349
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Sucre",
+      "bbox": [
+        8.28061,
+        10.13842,
+        -75.69775,
+        -74.55035
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 140
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Tolima",
+      "bbox": [
+        2.95442,
+        5.3115,
+        -76.09105,
+        -74.48931
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 258
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Valle del Cauca",
+      "bbox": [
+        3.10084,
+        4.99212,
+        -77.2781,
+        -75.72387
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 167
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Vaupés",
+      "bbox": [
+        -1.23566,
+        2.0685,
+        -72.0008,
+        -69.15467
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 299
+    },
+    {
+      "country_name": "Colombia",
+      "iso_a3": "COL",
+      "admin1_name": "Vichada",
+      "bbox": [
+        2.7913,
+        6.31155,
+        -71.06364,
+        -67.42596
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 925
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Azuay",
+      "bbox": [
+        -3.6345,
+        -2.49808,
+        -79.74987,
+        -78.54809
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 106
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Bolivar",
+      "bbox": [
+        -2.17645,
+        -1.15508,
+        -79.38193,
+        -78.85636
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 57
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Carchi",
+      "bbox": [
+        0.38188,
+        0.93879,
+        -78.3276,
+        -77.51972
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 37
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Cañar",
+      "bbox": [
+        -2.82328,
+        -2.2057,
+        -79.51199,
+        -78.54366
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 55
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Chimborazo",
+      "bbox": [
+        -2.39859,
+        -1.44376,
+        -79.11359,
+        -78.39981
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 71
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Cotopaxi",
+      "bbox": [
+        -1.2079,
+        -0.38959,
+        -79.32008,
+        -78.39237
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 72
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "El Oro",
+      "bbox": [
+        -3.8795,
+        -3.05167,
+        -80.31185,
+        -79.3687
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 79
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Esmeraldas",
+      "bbox": [
+        -0.04768,
+        1.422,
+        -80.09592,
+        -78.4238
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 150
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Galápagos",
+      "bbox": [
+        -1.2787,
+        0.6236,
+        -91.6624,
+        -89.2618
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 60
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Guayas",
+      "bbox": [
+        -3.0566,
+        -0.839,
+        -80.52506,
+        -79.1341
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 192
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Imbabura",
+      "bbox": [
+        0.13435,
+        0.86199,
+        -78.98604,
+        -77.85371
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 55
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Loja",
+      "bbox": [
+        -4.76054,
+        -3.34808,
+        -80.50051,
+        -79.10275
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 142
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Los Rios",
+      "bbox": [
+        -2.12536,
+        -0.5458,
+        -79.8704,
+        -79.0937
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 103
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Manabi",
+      "bbox": [
+        -1.84093,
+        0.34625,
+        -80.8899,
+        -79.41249
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 230
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Morona Santiago",
+      "bbox": [
+        -3.57464,
+        -1.62377,
+        -78.9379,
+        -76.72003
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 137
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Napo",
+      "bbox": [
+        -1.48821,
+        -0.96716,
+        -78.91753,
+        -78.34439
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 34
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Orellana",
+      "bbox": [
+        -1.2077,
+        -0.05081,
+        -77.51485,
+        -75.3131
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 117
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Pastaza",
+      "bbox": [
+        -2.53648,
+        -1.087,
+        -78.0666,
+        -75.81267
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 139
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Pichincha",
+      "bbox": [
+        -0.647,
+        0.3159,
+        -79.35992,
+        -77.9895
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 102
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Santa Elena",
+      "bbox": [
+        -2.492,
+        -1.6563,
+        -81.0023,
+        -80.2153
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 57
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Santo Domingo de los Tsáchilas",
+      "bbox": [
+        -0.69362,
+        0.02859,
+        -79.59825,
+        -78.75037
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 47
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Sucumbios",
+      "bbox": [
+        -0.6202,
+        0.45254,
+        -77.70273,
+        -75.28239
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 134
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Tungurahua",
+      "bbox": [
+        -1.23258,
+        -0.08027,
+        -78.43861,
+        -77.12202
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 69
+    },
+    {
+      "country_name": "Ecuador",
+      "iso_a3": "ECU",
+      "admin1_name": "Zamora Chinchipe",
+      "bbox": [
+        -5.0097,
+        -3.3591,
+        -79.4577,
+        -78.4516
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 98
+    },
+    {
+      "country_name": "Falkland Islands",
+      "iso_a3": "FLK",
+      "admin1_name": "Falkland Islands",
+      "bbox": [
+        -51.9052,
+        -51.06724,
+        -61.10386,
+        -58.45063
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 7
+    },
+    {
+      "country_name": "French Guiana",
+      "iso_a3": "GUF",
+      "admin1_name": "Guyane française",
+      "bbox": [
+        2.2019,
+        5.74368,
+        -54.48504,
+        -51.6535
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 263
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Barima-Waini",
+      "bbox": [
+        6.99485,
+        8.50418,
+        -60.65413,
+        -58.797
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 149
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Cuyuni-Mazaruni",
+      "bbox": [
+        6.85117,
+        7.6489,
+        -59.07684,
+        -58.47501
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 48
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Demerara-Mahaica",
+      "bbox": [
+        6.13037,
+        6.97596,
+        -58.80828,
+        -58.17794
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 42
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "East Berbice-Corentyne",
+      "bbox": [
+        6.09649,
+        6.82482,
+        -58.29261,
+        -57.88274
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 34
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Essequibo Islands-West Demerara",
+      "bbox": [
+        5.86445,
+        6.69587,
+        -58.1187,
+        -57.52388
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 47
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Mahaica-Berbice",
+      "bbox": [
+        1.82282,
+        6.32145,
+        -58.39864,
+        -57.0809
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 111
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Pomeroon-Supenaam",
+      "bbox": [
+        5.20862,
+        7.11011,
+        -61.3337,
+        -58.57609
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 343
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Potaro-Siparuni",
+      "bbox": [
+        4.12933,
+        5.65009,
+        -60.16142,
+        -58.3298
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 137
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Upper Demerara-Berbice",
+      "bbox": [
+        1.378,
+        4.50157,
+        -59.99963,
+        -58.02431
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 259
+    },
+    {
+      "country_name": "Guyana",
+      "iso_a3": "GUY",
+      "admin1_name": "Upper Takutu-Upper Essequibo",
+      "bbox": [
+        4.63624,
+        6.44262,
+        -58.87146,
+        -57.6068
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 158
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Alto Paraguay",
+      "bbox": [
+        -22.42212,
+        -19.28711,
+        -61.87621,
+        -57.81709
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 836
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Alto Paraná",
+      "bbox": [
+        -26.23842,
+        -24.46799,
+        -55.52564,
+        -54.43948
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 170
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Amambay",
+      "bbox": [
+        -23.8634,
+        -22.0798,
+        -56.837,
+        -55.52619
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 165
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Asunción",
+      "bbox": [
+        -25.39602,
+        -25.23773,
+        -57.66618,
+        -57.54393
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 6
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Boquerón",
+      "bbox": [
+        -23.87247,
+        -20.06972,
+        -62.62692,
+        -59.30667
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 928
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Caaguazú",
+      "bbox": [
+        -25.70931,
+        -24.50413,
+        -56.81308,
+        -54.94983
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 158
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Caazapá",
+      "bbox": [
+        -26.7755,
+        -25.54693,
+        -56.78195,
+        -55.2351
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 120
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Canindeyú",
+      "bbox": [
+        -24.78165,
+        -23.53815,
+        -56.158,
+        -54.26909
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 172
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Central",
+      "bbox": [
+        -26.00873,
+        -25.10726,
+        -57.81933,
+        -57.17543
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 45
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Concepción",
+      "bbox": [
+        -23.50407,
+        -22.08365,
+        -57.98045,
+        -56.12772
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 226
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Cordillera",
+      "bbox": [
+        -25.66141,
+        -24.91547,
+        -57.45389,
+        -56.49583
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 67
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Guairá",
+      "bbox": [
+        -26.17813,
+        -25.57784,
+        -56.67177,
+        -55.6274
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 59
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Itapúa",
+      "bbox": [
+        -27.43423,
+        -26.10123,
+        -56.6889,
+        -54.66371
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 185
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Misiones",
+      "bbox": [
+        -27.50617,
+        -26.40354,
+        -57.70391,
+        -56.53252
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 115
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Paraguarí",
+      "bbox": [
+        -26.62239,
+        -25.4312,
+        -57.70097,
+        -56.58665
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 120
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Presidente Hayes",
+      "bbox": [
+        -25.287,
+        -22.0891,
+        -60.78377,
+        -57.0913
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 815
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "San Pedro",
+      "bbox": [
+        -25.0382,
+        -23.3141,
+        -57.4592,
+        -55.75238
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 246
+    },
+    {
+      "country_name": "Paraguay",
+      "iso_a3": "PRY",
+      "admin1_name": "Ñeembucú",
+      "bbox": [
+        -27.41612,
+        -25.80816,
+        -58.65746,
+        -57.19939
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 157
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Amazonas",
+      "bbox": [
+        -7.00918,
+        -2.9798,
+        -78.76126,
+        -77.1685
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 340
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Apurímac",
+      "bbox": [
+        -14.81026,
+        -13.22647,
+        -73.84612,
+        -72.08246
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 228
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Arequipa",
+      "bbox": [
+        -17.28985,
+        -14.6925,
+        -75.0564,
+        -70.87601
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 502
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Ayacucho",
+      "bbox": [
+        -15.59595,
+        -12.14834,
+        -75.09056,
+        -72.8754
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 427
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Cajamarca",
+      "bbox": [
+        -7.75812,
+        -4.82977,
+        -79.45772,
+        -77.7706
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 372
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Callao",
+      "bbox": [
+        -12.1117,
+        -12.00413,
+        -77.2468,
+        -77.11517
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 2
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Cusco",
+      "bbox": [
+        -15.22283,
+        -11.20269,
+        -73.95985,
+        -70.35619
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 707
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Huancavelica",
+      "bbox": [
+        -14.10698,
+        -11.9831,
+        -75.79513,
+        -74.31258
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 221
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Huánuco",
+      "bbox": [
+        -10.4373,
+        -8.37995,
+        -77.31071,
+        -74.51628
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 415
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Ica",
+      "bbox": [
+        -15.37801,
+        -13.00373,
+        -76.4644,
+        -74.71133
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 184
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Junín",
+      "bbox": [
+        -12.61298,
+        -10.68385,
+        -76.48689,
+        -73.48142
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 456
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "La Libertad",
+      "bbox": [
+        -8.96013,
+        -6.99056,
+        -79.66522,
+        -76.86098
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 287
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Lambayeque",
+      "bbox": [
+        -7.12123,
+        -5.5583,
+        -80.46588,
+        -79.16519
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 136
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Lima",
+      "bbox": [
+        -13.26697,
+        -10.33991,
+        -77.86118,
+        -75.56083
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 332
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Lima Province",
+      "bbox": [
+        -12.49371,
+        -11.68345,
+        -77.19249,
+        -76.6761
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 36
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Loreto",
+      "bbox": [
+        -8.5645,
+        -0.03057,
+        -77.78287,
+        -69.97274
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1878
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Madre de Dios",
+      "bbox": [
+        -13.24792,
+        -10.43009,
+        -72.37959,
+        -68.69036
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 516
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Moquegua",
+      "bbox": [
+        -17.77992,
+        -16.02043,
+        -71.41959,
+        -70.18962
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 133
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Pasco",
+      "bbox": [
+        -11.10197,
+        -9.72423,
+        -76.7298,
+        -74.20072
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 240
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Piura",
+      "bbox": [
+        -6.4697,
+        -4.09943,
+        -81.29436,
+        -79.23601
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 334
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Puno",
+      "bbox": [
+        -17.28205,
+        -13.01436,
+        -71.10986,
+        -68.83718
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 635
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "San Martín",
+      "bbox": [
+        -8.73484,
+        -5.52034,
+        -77.7806,
+        -75.4692
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 461
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Tacna",
+      "bbox": [
+        -18.33546,
+        -16.8524,
+        -71.13071,
+        -69.53834
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 143
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Tumbes",
+      "bbox": [
+        -4.20533,
+        -3.4153,
+        -81.04632,
+        -80.181
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 49
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Ucayali",
+      "bbox": [
+        -11.4218,
+        -7.57964,
+        -75.7945,
+        -70.52484
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 780
+    },
+    {
+      "country_name": "Peru",
+      "iso_a3": "PER",
+      "admin1_name": "Áncash",
+      "bbox": [
+        -10.7469,
+        -8.01973,
+        -78.64951,
+        -76.7393
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 373
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Brokopondo",
+      "bbox": [
+        4.15485,
+        5.32191,
+        -55.4923,
+        -54.76355
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 84
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Commewijne",
+      "bbox": [
+        5.5481,
+        5.99289,
+        -55.13226,
+        -54.70992
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 23
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Coronie",
+      "bbox": [
+        5.3363,
+        5.9379,
+        -56.60308,
+        -55.90913
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 26
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Marowijne",
+      "bbox": [
+        5.2238,
+        5.96482,
+        -54.72876,
+        -53.99113
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 54
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Nickerie",
+      "bbox": [
+        5.23396,
+        5.97401,
+        -57.27884,
+        -56.48295
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 40
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Para",
+      "bbox": [
+        4.98153,
+        5.68285,
+        -55.9961,
+        -54.6587
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 73
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Paramaribo",
+      "bbox": [
+        5.7736,
+        5.90067,
+        -55.23066,
+        -55.11323
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 5
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Saramacca",
+      "bbox": [
+        5.41997,
+        5.96066,
+        -55.88799,
+        -55.25984
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 32
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Sipaliwini",
+      "bbox": [
+        1.83398,
+        5.38542,
+        -57.99656,
+        -53.99218
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 373
+    },
+    {
+      "country_name": "Suriname",
+      "iso_a3": "SUR",
+      "admin1_name": "Wanica",
+      "bbox": [
+        5.66163,
+        5.90702,
+        -55.3581,
+        -55.05391
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 12
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Artigas",
+      "bbox": [
+        -31.06267,
+        -30.10465,
+        -57.86971,
+        -56.00309
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 145
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Canelones",
+      "bbox": [
+        -34.87367,
+        -34.2194,
+        -56.46532,
+        -55.3871
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 61
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Cerro Largo",
+      "bbox": [
+        -33.02021,
+        -31.66698,
+        -55.3342,
+        -53.20625
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 165
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Colonia",
+      "bbox": [
+        -34.47343,
+        -33.7806,
+        -58.4131,
+        -56.9516
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 78
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Durazno",
+      "bbox": [
+        -33.49382,
+        -32.45069,
+        -57.11969,
+        -55.04949
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 136
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Flores",
+      "bbox": [
+        -33.97913,
+        -33.15638,
+        -57.328,
+        -56.45628
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 66
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Florida",
+      "bbox": [
+        -34.41595,
+        -33.14751,
+        -56.53202,
+        -55.10249
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 128
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Lavalleja",
+      "bbox": [
+        -34.61561,
+        -33.3442,
+        -55.61598,
+        -54.1516
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 125
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Maldonado",
+      "bbox": [
+        -34.9418,
+        -33.94149,
+        -55.4637,
+        -54.46418
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 65
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Montevideo",
+      "bbox": [
+        -34.90009,
+        -34.71746,
+        -56.41838,
+        -56.03895
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 12
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Paysandú",
+      "bbox": [
+        -32.60475,
+        -31.49569,
+        -58.1912,
+        -56.35382
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 148
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Rivera",
+      "bbox": [
+        -32.11618,
+        -30.84917,
+        -56.1496,
+        -54.46938
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 115
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Rocha",
+      "bbox": [
+        -34.74437,
+        -33.16135,
+        -54.53036,
+        -53.38657
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 126
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Río Negro",
+      "bbox": [
+        -33.41844,
+        -32.3653,
+        -58.41772,
+        -56.61308
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 112
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Salto",
+      "bbox": [
+        -31.8607,
+        -30.7552,
+        -58.06784,
+        -56.02964
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 158
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "San José",
+      "bbox": [
+        -34.78112,
+        -33.87441,
+        -57.14083,
+        -56.35434
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 68
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Soriano",
+      "bbox": [
+        -33.95649,
+        -33.02356,
+        -58.43371,
+        -57.09555
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 112
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Tacuarembó",
+      "bbox": [
+        -32.82825,
+        -31.2654,
+        -56.634,
+        -54.6853
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 167
+    },
+    {
+      "country_name": "Uruguay",
+      "iso_a3": "URY",
+      "admin1_name": "Treinta y Tres",
+      "bbox": [
+        -33.4567,
+        -32.7187,
+        -55.1429,
+        -53.33992
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 109
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Amazonas",
+      "bbox": [
+        0.75787,
+        6.17918,
+        -67.87205,
+        -63.39902
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 984
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Anzoátegui",
+      "bbox": [
+        7.66855,
+        10.24858,
+        -65.7037,
+        -62.68826
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 523
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Apure",
+      "bbox": [
+        6.08434,
+        8.0754,
+        -72.10516,
+        -66.32479
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 835
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Aragua",
+      "bbox": [
+        9.39252,
+        10.5284,
+        -67.8689,
+        -66.54359
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 94
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Barinas",
+      "bbox": [
+        7.28963,
+        9.01983,
+        -71.8418,
+        -67.51776
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 443
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Bolívar",
+      "bbox": [
+        3.62711,
+        8.44498,
+        -67.44639,
+        -60.34544
+      ],
+      "intersects_sama": true,
+      "historical_active_cells_10km": 1803
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Carabobo",
+      "bbox": [
+        9.81979,
+        10.59382,
+        -68.42259,
+        -67.52747
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 65
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Cojedes",
+      "bbox": [
+        8.53495,
+        10.12738,
+        -68.99226,
+        -67.75652
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 175
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Delta Amacuro",
+      "bbox": [
+        7.9259,
+        10.01272,
+        -62.58896,
+        -59.83458
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 301
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Dependencias Federales",
+      "bbox": [
+        10.8905,
+        11.8255,
+        -66.18034,
+        -64.6167
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 3
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Distrito Capital",
+      "bbox": [
+        10.39334,
+        10.56275,
+        -67.1419,
+        -66.87476
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 6
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Falcón",
+      "bbox": [
+        10.3094,
+        12.19161,
+        -71.2635,
+        -68.2692
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 310
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Guárico",
+      "bbox": [
+        7.63688,
+        10.0136,
+        -68.03393,
+        -64.79261
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 727
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Lara",
+      "bbox": [
+        9.39777,
+        10.75171,
+        -70.85606,
+        -68.88572
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 227
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Miranda",
+      "bbox": [
+        9.92927,
+        10.64679,
+        -67.20351,
+        -65.4306
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 112
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Monagas",
+      "bbox": [
+        8.38892,
+        10.31441,
+        -64.06149,
+        -62.00703
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 295
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Mérida",
+      "bbox": [
+        7.69433,
+        9.35346,
+        -71.9206,
+        -70.5406
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 138
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Nueva Esparta",
+      "bbox": [
+        10.7379,
+        11.15921,
+        -64.40254,
+        -63.80377
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 19
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Portuguesa",
+      "bbox": [
+        8.1124,
+        9.8398,
+        -70.181,
+        -68.5739
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 215
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Sucre",
+      "bbox": [
+        10.05161,
+        10.76014,
+        -64.52542,
+        -61.9071
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 148
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Trujillo",
+      "bbox": [
+        8.9829,
+        10.03602,
+        -71.07716,
+        -70.01672
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 106
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Táchira",
+      "bbox": [
+        7.36594,
+        8.6101,
+        -72.48608,
+        -71.3289
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 124
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Vargas",
+      "bbox": [
+        10.42576,
+        10.6307,
+        -67.3858,
+        -66.3096
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 20
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Yaracuy",
+      "bbox": [
+        9.85162,
+        10.73575,
+        -69.2363,
+        -68.25264
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 88
+    },
+    {
+      "country_name": "Venezuela",
+      "iso_a3": "VEN",
+      "admin1_name": "Zulia",
+      "bbox": [
+        8.3887,
+        11.77233,
+        -73.3908,
+        -70.63653
+      ],
+      "intersects_sama": false,
+      "historical_active_cells_10km": 525
+    }
+  ],
+  "totals": {
+    "countries": 14,
+    "admin1_units": 243,
+    "historical_active_cells_10km": 143613
+  }
+}

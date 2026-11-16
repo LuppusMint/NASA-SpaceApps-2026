@@ -1,0 +1,675 @@
+{
+  "generated_at_utc": "2026-11-15T04:08:53.916173+00:00",
+  "started_at_utc": "2026-11-15T03:56:59.738297+00:00",
+  "equal_area_crs": "+proj=aea +lat_0=-22.9 +lon_0=-54.8 +lat_1=-47.3 +lat_2=1.5 +datum=WGS84 +units=m",
+  "grid_cell_size_m": 10000.0,
+  "grid_cell_area_km2": 100.0,
+  "parquet_root": "data/parquet/south_america_hotspots",
+  "parquet_total_bytes": 4097988523,
+  "parquet_files": 27,
+  "raw_dedup_rows_before_sa_clip": 85143046,
+  "outside_sa_dropped_rows": 140758,
+  "final_sa_land_rows": 85002288,
+  "date_range": [
+    "2000-11-01",
+    "2026-11-15"
+  ],
+  "lat_range": [
+    -55.25494,
+    13.35307
+  ],
+  "lon_range": [
+    -109.43406,
+    -32.42027
+  ],
+  "polars_by_instrument": [
+    {
+      "instrument": "MODIS",
+      "n_rows": 17642593,
+      "sum_frp": 841259558.4800017
+    },
+    {
+      "instrument": "VIIRS",
+      "n_rows": 67359695,
+      "sum_frp": 773362769.1000011
+    }
+  ],
+  "by_source_feed": [
+    {
+      "source_feed": "sp_country",
+      "rows": 72920451
+    },
+    {
+      "source_feed": "sp_zip",
+      "rows": 6080468
+    },
+    {
+      "source_feed": "sp_api",
+      "rows": 3388148
+    },
+    {
+      "source_feed": "nrt_api",
+      "rows": 2613221
+    }
+  ],
+  "by_country": [
+    {
+      "country_name": "Brazil",
+      "rows": 46407087
+    },
+    {
+      "country_name": "Bolivia",
+      "rows": 10321913
+    },
+    {
+      "country_name": "Venezuela",
+      "rows": 8559698
+    },
+    {
+      "country_name": "Argentina",
+      "rows": 7080504
+    },
+    {
+      "country_name": "Paraguay",
+      "rows": 4465810
+    },
+    {
+      "country_name": "Colombia",
+      "rows": 3499931
+    },
+    {
+      "country_name": "Peru",
+      "rows": 2439358
+    },
+    {
+      "country_name": "Chile",
+      "rows": 958559
+    },
+    {
+      "country_name": "Ecuador",
+      "rows": 592543
+    },
+    {
+      "country_name": "Guyana",
+      "rows": 396057
+    },
+    {
+      "country_name": "Suriname",
+      "rows": 120974
+    },
+    {
+      "country_name": "Uruguay",
+      "rows": 110995
+    },
+    {
+      "country_name": "French Guiana",
+      "rows": 48818
+    },
+    {
+      "country_name": "Falkland Islands",
+      "rows": 41
+    }
+  ],
+  "by_year_instrument_satellite": [
+    {
+      "year": 2000,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 31598,
+      "sum_frp_mw": 1474355.3
+    },
+    {
+      "year": 2001,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 257078,
+      "sum_frp_mw": 10391652.2
+    },
+    {
+      "year": 2002,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 454872,
+      "sum_frp_mw": 28769722.9
+    },
+    {
+      "year": 2002,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 296465,
+      "sum_frp_mw": 11360365.5
+    },
+    {
+      "year": 2003,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 623031,
+      "sum_frp_mw": 35740178.8
+    },
+    {
+      "year": 2003,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 294420,
+      "sum_frp_mw": 10888828.5
+    },
+    {
+      "year": 2004,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 659889,
+      "sum_frp_mw": 39844543.0
+    },
+    {
+      "year": 2004,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 337116,
+      "sum_frp_mw": 12348594.4
+    },
+    {
+      "year": 2005,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 619888,
+      "sum_frp_mw": 37192057.4
+    },
+    {
+      "year": 2005,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 335138,
+      "sum_frp_mw": 12870937.9
+    },
+    {
+      "year": 2006,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 466241,
+      "sum_frp_mw": 25318400.9
+    },
+    {
+      "year": 2006,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 234270,
+      "sum_frp_mw": 8248790.8
+    },
+    {
+      "year": 2007,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 688934,
+      "sum_frp_mw": 38850790.4
+    },
+    {
+      "year": 2007,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 385398,
+      "sum_frp_mw": 15191386.7
+    },
+    {
+      "year": 2008,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 437495,
+      "sum_frp_mw": 23034643.2
+    },
+    {
+      "year": 2008,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 234898,
+      "sum_frp_mw": 9086294.0
+    },
+    {
+      "year": 2009,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 332950,
+      "sum_frp_mw": 15847367.2
+    },
+    {
+      "year": 2009,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 177367,
+      "sum_frp_mw": 6601017.8
+    },
+    {
+      "year": 2010,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 596014,
+      "sum_frp_mw": 33830840.9
+    },
+    {
+      "year": 2010,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 347777,
+      "sum_frp_mw": 14780226.4
+    },
+    {
+      "year": 2011,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 334064,
+      "sum_frp_mw": 16449745.3
+    },
+    {
+      "year": 2011,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 194630,
+      "sum_frp_mw": 7625983.9
+    },
+    {
+      "year": 2012,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 392517,
+      "sum_frp_mw": 20305859.8
+    },
+    {
+      "year": 2012,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 243152,
+      "sum_frp_mw": 9392624.0
+    },
+    {
+      "year": 2012,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2465733,
+      "sum_frp_mw": 28140800.38
+    },
+    {
+      "year": 2013,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 294678,
+      "sum_frp_mw": 13670195.3
+    },
+    {
+      "year": 2013,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 178343,
+      "sum_frp_mw": 6418015.1
+    },
+    {
+      "year": 2013,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 1862059,
+      "sum_frp_mw": 20387978.69
+    },
+    {
+      "year": 2014,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 318653,
+      "sum_frp_mw": 15477049.2
+    },
+    {
+      "year": 2014,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 200775,
+      "sum_frp_mw": 7269534.6
+    },
+    {
+      "year": 2014,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2086191,
+      "sum_frp_mw": 22766190.74
+    },
+    {
+      "year": 2015,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 384522,
+      "sum_frp_mw": 19808557.4
+    },
+    {
+      "year": 2015,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 258466,
+      "sum_frp_mw": 9406419.6
+    },
+    {
+      "year": 2015,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2598186,
+      "sum_frp_mw": 28571401.87
+    },
+    {
+      "year": 2016,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 382241,
+      "sum_frp_mw": 18264078.7
+    },
+    {
+      "year": 2016,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 233564,
+      "sum_frp_mw": 8248416.4
+    },
+    {
+      "year": 2016,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2413543,
+      "sum_frp_mw": 25964137.48
+    },
+    {
+      "year": 2017,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 395966,
+      "sum_frp_mw": 21292133.7
+    },
+    {
+      "year": 2017,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 257060,
+      "sum_frp_mw": 10432301.8
+    },
+    {
+      "year": 2017,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2511114,
+      "sum_frp_mw": 29171857.37
+    },
+    {
+      "year": 2018,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 305484,
+      "sum_frp_mw": 14328895.0
+    },
+    {
+      "year": 2018,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 186335,
+      "sum_frp_mw": 6680254.8
+    },
+    {
+      "year": 2018,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 1489298,
+      "sum_frp_mw": 16367256.09
+    },
+    {
+      "year": 2018,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 1905319,
+      "sum_frp_mw": 20680734.89
+    },
+    {
+      "year": 2019,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 416041,
+      "sum_frp_mw": 22842019.0
+    },
+    {
+      "year": 2019,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 274511,
+      "sum_frp_mw": 10484991.3
+    },
+    {
+      "year": 2019,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 2685765,
+      "sum_frp_mw": 31082665.02
+    },
+    {
+      "year": 2019,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2717495,
+      "sum_frp_mw": 31070671.24
+    },
+    {
+      "year": 2020,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 500822,
+      "sum_frp_mw": 27507657.2
+    },
+    {
+      "year": 2020,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 331935,
+      "sum_frp_mw": 13327848.1
+    },
+    {
+      "year": 2020,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 3301748,
+      "sum_frp_mw": 40009509.77
+    },
+    {
+      "year": 2020,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 3361302,
+      "sum_frp_mw": 40138237.89
+    },
+    {
+      "year": 2021,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 367619,
+      "sum_frp_mw": 21302573.5
+    },
+    {
+      "year": 2021,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 241607,
+      "sum_frp_mw": 9584179.0
+    },
+    {
+      "year": 2021,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 2331872,
+      "sum_frp_mw": 28632645.19
+    },
+    {
+      "year": 2021,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2368489,
+      "sum_frp_mw": 28963146.7
+    },
+    {
+      "year": 2022,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 420041,
+      "sum_frp_mw": 22675800.5
+    },
+    {
+      "year": 2022,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 265113,
+      "sum_frp_mw": 9782247.4
+    },
+    {
+      "year": 2022,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 2743083,
+      "sum_frp_mw": 31900040.06
+    },
+    {
+      "year": 2022,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2689993,
+      "sum_frp_mw": 30679102.69
+    },
+    {
+      "year": 2023,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 399786,
+      "sum_frp_mw": 19555360.6
+    },
+    {
+      "year": 2023,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 271542,
+      "sum_frp_mw": 9575723.7
+    },
+    {
+      "year": 2023,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 2487663,
+      "sum_frp_mw": 27072613.49
+    },
+    {
+      "year": 2023,
+      "instrument": "VIIRS",
+      "satellite": "N21",
+      "rows": 2232822,
+      "sum_frp_mw": 27995875.28
+    },
+    {
+      "year": 2023,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 2548400,
+      "sum_frp_mw": 27957934.53
+    },
+    {
+      "year": 2024,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 599336,
+      "sum_frp_mw": 34010823.3
+    },
+    {
+      "year": 2024,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 390935,
+      "sum_frp_mw": 14342733.5
+    },
+    {
+      "year": 2024,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 3918544,
+      "sum_frp_mw": 43802623.2
+    },
+    {
+      "year": 2024,
+      "instrument": "VIIRS",
+      "satellite": "N21",
+      "rows": 3829306,
+      "sum_frp_mw": 50735579.84
+    },
+    {
+      "year": 2024,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 3819764,
+      "sum_frp_mw": 42629872.96
+    },
+    {
+      "year": 2025,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 279522,
+      "sum_frp_mw": 12196888.3
+    },
+    {
+      "year": 2025,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 156236,
+      "sum_frp_mw": 4814058.4
+    },
+    {
+      "year": 2025,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 1658903,
+      "sum_frp_mw": 17218812.34
+    },
+    {
+      "year": 2025,
+      "instrument": "VIIRS",
+      "satellite": "N21",
+      "rows": 1616785,
+      "sum_frp_mw": 19699708.75
+    },
+    {
+      "year": 2025,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 1669654,
+      "sum_frp_mw": 17021915.96
+    },
+    {
+      "year": 2026,
+      "instrument": "MODIS",
+      "satellite": "Aqua",
+      "rows": 227252,
+      "sum_frp_mw": 8671508.8
+    },
+    {
+      "year": 2026,
+      "instrument": "MODIS",
+      "satellite": "Terra",
+      "rows": 129006,
+      "sum_frp_mw": 3844087.08
+    },
+    {
+      "year": 2026,
+      "instrument": "VIIRS",
+      "satellite": "N20",
+      "rows": 1400475,
+      "sum_frp_mw": 14669656.99
+    },
+    {
+      "year": 2026,
+      "instrument": "VIIRS",
+      "satellite": "N21",
+      "rows": 1359259,
+      "sum_frp_mw": 16557399.3
+    },
+    {
+      "year": 2026,
+      "instrument": "VIIRS",
+      "satellite": "SNPP",
+      "rows": 1286930,
+      "sum_frp_mw": 13474400.39
+    }
+  ]
+}
